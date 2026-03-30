@@ -1,0 +1,5 @@
+id: TASK-01KN015G1BMNM
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-verify-document-cross-reference-navigati
+summary: "Verify document cross-reference navigation: doc link in FeatureDetail switches to Documents view and opens viewer"
+status: ready

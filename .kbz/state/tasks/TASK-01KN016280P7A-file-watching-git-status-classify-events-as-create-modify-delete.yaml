@@ -1,0 +1,5 @@
+id: TASK-01KN016280P7A
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-classify-events-as-create-modify-delete
+summary: "Classify events as create / modify / delete using `getEventKind()`"
+status: ready

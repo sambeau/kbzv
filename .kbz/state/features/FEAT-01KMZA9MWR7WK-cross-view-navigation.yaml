@@ -1,0 +1,13 @@
+id: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation
+parent: P1-kbzv
+status: developing
+summary: "Cross-reference navigation between Documents and Workflows views. EntityLink clicks navigate to the target entity or document across views. Metadata lozenge clicks activate filters. Tree auto-expands and scrolls to selected entity. Navigation history with ⌘[/⌘] keyboard shortcuts."
+design: FEAT-01KMZA9MWR7WK/design-f5-cross-view-navigation
+spec: FEAT-01KMZA9MWR7WK/specification-f5-cross-view-navigation-spec
+dev_plan: FEAT-01KMZA9MWR7WK/dev-plan-f5-cross-view-navigation-dev-plan
+tags:
+  - navigation
+  - cross-reference
+created: "2026-03-30T12:08:02Z"
+created_by: sambeau

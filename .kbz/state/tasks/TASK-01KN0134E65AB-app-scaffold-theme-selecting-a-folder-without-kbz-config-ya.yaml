@@ -1,0 +1,5 @@
+id: TASK-01KN0134E65AB
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-selecting-a-folder-without-kbz-config-ya
+summary: "Selecting a folder without `.kbz/config.yaml` shows a native error dialog with the correct title and message"
+status: ready

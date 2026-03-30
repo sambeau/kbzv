@@ -1,0 +1,5 @@
+id: TASK-01KN015G18PD4
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-wire-statusbadge-onclick-to-activatefilt
+summary: Wire StatusBadge onClick to activateFilter for workflow status filters
+status: ready

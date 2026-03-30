@@ -1,0 +1,5 @@
+id: TASK-01KN015G1AW7Q
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-update-all-detail-panel-components-to-us
+summary: Update all detail panel components to use navigateToDocument and activateFilter
+status: ready

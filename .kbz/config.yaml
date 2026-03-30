@@ -1,0 +1,22 @@
+version: "2"
+prefixes:
+  - prefix: P
+    name: Plan
+documents:
+  roots:
+    - path: work/design
+      default_type: design
+    - path: work/spec
+      default_type: specification
+    - path: work/plan
+      default_type: plan
+    - path: work/dev
+      default_type: dev-plan
+    - path: work/research
+      default_type: research
+    - path: work/report
+      default_type: report
+    - path: work/review
+      default_type: report
+    - path: work/retro
+      default_type: retrospective

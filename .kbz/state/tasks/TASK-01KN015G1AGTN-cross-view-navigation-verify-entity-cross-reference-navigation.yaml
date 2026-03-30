@@ -1,0 +1,5 @@
+id: TASK-01KN015G1AGTN
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-verify-entity-cross-reference-navigation
+summary: "Verify entity cross-reference navigation: EntityLink in Document Viewer switches view and selects entity in tree"
+status: ready

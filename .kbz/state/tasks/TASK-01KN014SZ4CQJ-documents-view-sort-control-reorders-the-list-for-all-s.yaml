@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ4CQJ
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-sort-control-reorders-the-list-for-all-s
+summary: "Sort control reorders the list for all six sort options (default: Newest first)"
+status: ready

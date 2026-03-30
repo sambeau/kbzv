@@ -1,0 +1,12 @@
+id: FEAT-01KMZA9PWFRJF/specification-f6-file-watching-git-status-spec
+path: work/spec/f6-file-watching-git-status-spec.md
+type: specification
+title: "F6: File Watching + Git Status — Specification"
+status: approved
+owner: FEAT-01KMZA9PWFRJF
+approved_by: sambeau
+approved_at: "2026-03-30T18:21:45Z"
+content_hash: 42e798361c6c7d2320786355ddbd9752e2bba93865c8949df5f74e01e4380466
+created: "2026-03-30T18:17:47Z"
+created_by: sambeau
+updated: "2026-03-30T18:21:45Z"

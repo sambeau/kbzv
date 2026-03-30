@@ -1,0 +1,314 @@
+document_id: FEAT-01KMZA9PWFRJF/specification-f6-file-watching-git-status-spec
+document_path: work/spec/f6-file-watching-git-status-spec.md
+content_hash: 42e798361c6c7d2320786355ddbd9752e2bba93865c8949df5f74e01e4380466
+indexed_at: 2026-03-30T18:17:47.119979Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F6: File Watching + Git Status — Specification'
+      byte_offset: 0
+      byte_count: 46881
+      word_count: 6090
+      content_hash: 42e798361c6c7d2320786355ddbd9752e2bba93865c8949df5f74e01e4380466
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. File Manifest
+          byte_offset: 258
+          byte_count: 879
+          word_count: 110
+          content_hash: 192bedad0d5337430dd7f828f91256fbb5c369636ebcf04436da34df8068cdda
+        - path: "1.2"
+          level: 2
+          title: 2. File Watcher
+          byte_offset: 1137
+          byte_count: 22048
+          word_count: 2759
+          content_hash: 4f1273d2e97f5efbb90d1aeba8f453cfc9f02f11c109d4812042d8fedea7dbda
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 watcher.ts — Exports and Interfaces
+              byte_offset: 1157
+              byte_count: 2552
+              word_count: 296
+              content_hash: 19a367ee79464a2fde5c21bdaf31e4688720be9683e6a736f026b53f00990738
+            - path: 1.2.2
+              level: 3
+              title: 2.2 Watch Targets — .kbz/state/ and Document Roots
+              byte_offset: 3709
+              byte_count: 1153
+              word_count: 159
+              content_hash: e21205976b7e6a0ef9326d3528377a7e64a0b1424d9874c858b888a1ae8b32df
+            - path: 1.2.3
+              level: 3
+              title: 2.3 @tauri-apps/plugin-fs watch API — Exact Call Signature and Options
+              byte_offset: 4862
+              byte_count: 1737
+              word_count: 242
+              content_hash: acbe8a729d609436cfd1e3fa0410b1244a18cdc7fb5a44bb5eaa325b26f1402e
+            - path: 1.2.4
+              level: 3
+              title: 2.4 Debounce Implementation — Exact Timer Logic with Code
+              byte_offset: 6599
+              byte_count: 2995
+              word_count: 385
+              content_hash: e4c2bd4c08967644b61e62704eae18ce231aa58813fdeab868dfa8ec6fabbe10
+            - path: 1.2.5
+              level: 3
+              title: 2.5 Event Classification — Create, Modify, Delete Determination
+              byte_offset: 9594
+              byte_count: 1119
+              word_count: 174
+              content_hash: 47dd43369081069e1b828f994896b68d06a481ec611f39c7707bc4a52d7c69fa
+            - path: 1.2.6
+              level: 3
+              title: 2.6 File Path → Entity Resolution — Exact Regex Patterns and Directory Mapping
+              byte_offset: 10713
+              byte_count: 4316
+              word_count: 496
+              content_hash: 36ea5976942871a296f90cdbddeccdfb90a572f65ef1ab1b4a783172bec4f962
+            - path: 1.2.7
+              level: 3
+              title: 2.7 Batch Processing Pipeline — Exact Algorithm
+              byte_offset: 15029
+              byte_count: 2591
+              word_count: 307
+              content_hash: a4e4dc926e461adfa9c09dd86d920d8048bb12f6f26179fa21f9004b6ba24129
+            - path: 1.2.8
+              level: 3
+              title: 2.8 Store Integration — Which Store Actions to Call
+              byte_offset: 17620
+              byte_count: 1056
+              word_count: 124
+              content_hash: ba42512064857ca087f24319c72f51578d58233046e5bc96bba6b6debc44af64
+            - path: 1.2.9
+              level: 3
+              title: 2.9 Lifecycle — Start on openProject, Stop on closeProject
+              byte_offset: 18676
+              byte_count: 2861
+              word_count: 321
+              content_hash: c4f057a0312299548a4f56aa30da1769cfa60e09f280909ab9ff77caec30a176
+            - path: 1.2.10
+              level: 3
+              title: 2.10 Error Handling — Watcher Errors, Parse Errors, Restart Logic
+              byte_offset: 21537
+              byte_count: 1648
+              word_count: 251
+              content_hash: 1242395884ab653c3894e5d47da2d7376de47a36afdeedfb48138bcd0dcdadf7
+        - path: "1.3"
+          level: 2
+          title: 3. Git Status
+          byte_offset: 23185
+          byte_count: 7555
+          word_count: 1010
+          content_hash: fe2d449ee5b44470e10c0e9a2aa40c8ee26602587a016e8ad40b05a4ea32f53c
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 GitStatus Interface — Exact Fields
+              byte_offset: 23203
+              byte_count: 756
+              word_count: 111
+              content_hash: 2073752dea8e2e29038cb8b86f7c3a7210fb2014a3f095a9c607cedaa3e59e3e
+            - path: 1.3.2
+              level: 3
+              title: 3.2 fetchGitStatus() — Exact Implementation with All 3 Git Commands
+              byte_offset: 23959
+              byte_count: 3430
+              word_count: 408
+              content_hash: 03127d8303513e1a8038c74818b1b0f1ff06f6b42937b14311a430195a17562d
+            - path: 1.3.3
+              level: 3
+              title: 3.3 Git Command Output Parsing — Exact Regex/String Operations
+              byte_offset: 27389
+              byte_count: 1592
+              word_count: 222
+              content_hash: 8130aeadc9482f33b500038db8b7465800098ca26024a15cc985119a4beed972
+            - path: 1.3.4
+              level: 3
+              title: 3.4 Error Handling — Non-Git Repos, Missing Upstream, Command Failures
+              byte_offset: 28981
+              byte_count: 1146
+              word_count: 173
+              content_hash: 0893255ff423044e00e41dcbc4b8a3b7577485d9bd193e8af89e35fe8decd2a2
+            - path: 1.3.5
+              level: 3
+              title: 3.5 Refresh Triggers — When to Re-Fetch
+              byte_offset: 30127
+              byte_count: 613
+              word_count: 92
+              content_hash: 60ba5a663901aaf3cef03409525eefb0627b3aff3160c830e0acf8c9dc86add8
+        - path: "1.4"
+          level: 2
+          title: 4. GitInfo Component
+          byte_offset: 30740
+          byte_count: 4615
+          word_count: 623
+          content_hash: f7ae9acb3b181089769d9668bc4aa70d26101f35db857ab56840d28f805d1c45
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 GitInfo.tsx — Props, Rendering, Tailwind Classes
+              byte_offset: 30765
+              byte_count: 1897
+              word_count: 179
+              content_hash: 33dc93890cfa1432ceaa9f7a1313edc05bc9e8552637810033ed90b3aab7e364
+            - path: 1.4.2
+              level: 3
+              title: 4.2 Conditional Rendering — Non-Git, No Upstream, Normal
+              byte_offset: 32662
+              byte_count: 837
+              word_count: 133
+              content_hash: e6766d70ee9f69c213d7bd524895f4de473c8ced50b6a3d55c12094979c7434b
+            - path: 1.4.3
+              level: 3
+              title: 4.3 Lucide Icons — Exact Icon Names
+              byte_offset: 33499
+              byte_count: 386
+              word_count: 69
+              content_hash: 45a0fe93ecb66b907c8b14774c6f08a76f7e90aac274c5bdda0f9f9737cb098a
+            - path: 1.4.4
+              level: 3
+              title: 4.4 Layout — Exact Dimensions and Spacing
+              byte_offset: 33885
+              byte_count: 1470
+              word_count: 238
+              content_hash: 7c0d537af40cd736f9982bd92df1a0ab4875570b66f4f3699c9adac2cc3a0f38
+        - path: "1.5"
+          level: 2
+          title: 5. Store Extensions
+          byte_offset: 35355
+          byte_count: 5012
+          word_count: 598
+          content_hash: d9949e7c62df67a0a4adf8763f4c40bbf5778ad478bd961cf8480d47ff67b2f8
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 project-store.ts Additions — New Fields and New Actions
+              byte_offset: 35379
+              byte_count: 1968
+              word_count: 226
+              content_hash: 54f9884379509b5a012f7055f04ed7eff2552895cb8cb0da70be43be8eaa1791
+            - path: 1.5.2
+              level: 3
+              title: 5.2 reloadEntity() Implementation
+              byte_offset: 37347
+              byte_count: 1580
+              word_count: 193
+              content_hash: 7a9076d9062a1a0a54a0aee48d90a69c9ecb2431d96e34df58e5307c8f12d4e5
+            - path: 1.5.3
+              level: 3
+              title: 5.3 removeEntity() Implementation
+              byte_offset: 38927
+              byte_count: 477
+              word_count: 52
+              content_hash: 9422d31b9b463eec116ecf0df4a55cac407a93be6bba23e93b698ea2910744b7
+            - path: 1.5.4
+              level: 3
+              title: 5.4 rebuildDerivedData() Implementation
+              byte_offset: 39404
+              byte_count: 540
+              word_count: 68
+              content_hash: 90cdc73f45edc90ca5302e51bce44028aa34dd6211cbace41012cf93f39de28e
+            - path: 1.5.5
+              level: 3
+              title: 5.5 refreshGitStatus() Implementation
+              byte_offset: 39944
+              byte_count: 423
+              word_count: 55
+              content_hash: b7b151dd55a3aa8c44b18032721976bc93b9e901f244d28a0e1c80a3d37d2dba
+        - path: "1.6"
+          level: 2
+          title: 6. Tauri Configuration
+          byte_offset: 40367
+          byte_count: 2613
+          word_count: 316
+          content_hash: 22c0145d75315ea3301d7a51b68ae54f900a69e79dc0458186b92eeeb84790b4
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 Capability Additions for Shell Plugin
+              byte_offset: 40394
+              byte_count: 906
+              word_count: 83
+              content_hash: 50c92e109fce9a4656987f14df45fb5ca899ede8bf2e84ab26004a5b68cdeff1
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Shell Command Scoping (Security)
+              byte_offset: 41300
+              byte_count: 1680
+              word_count: 229
+              content_hash: 9948997a11b6e86e2eb1c5d2d9ef8456e2beec08fd1508abba3cc669475f8812
+        - path: "1.7"
+          level: 2
+          title: 7. Implementation Order
+          byte_offset: 42980
+          byte_count: 1162
+          word_count: 169
+          content_hash: a18683441e202e2aaa206df3222ca96c3b10c2d1f319c92018979e12a0dbdf51
+        - path: "1.8"
+          level: 2
+          title: 8. Acceptance Criteria
+          byte_offset: 44142
+          byte_count: 2739
+          word_count: 476
+          content_hash: 6d5e24e54b0754abf8250aa5e75d184592c5fb8528f8497bbbb72950dc0c06d8
+entity_refs:
+    - entity_id: FEAT-01KMZA9PWFRJF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 68
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 157
+    - entity_id: FEAT-01KMZA9PWFRJF
+      entity_type: feature
+      section_path: 1.2.6
+      byte_offset: 11704
+    - entity_id: FEAT-01KMZA
+      entity_type: feature
+      section_path: 1.2.6
+      byte_offset: 12928
+    - entity_id: TASK-01KMZA
+      entity_type: task
+      section_path: 1.2.6
+      byte_offset: 13000
+    - entity_id: TASK-01KMZA9Q1ABCD
+      entity_type: task
+      section_path: 1.2.6
+      byte_offset: 14530
+    - entity_id: BUG-01KMZA
+      entity_type: bug
+      section_path: 1.2.6
+      byte_offset: 13072
+    - entity_id: BUG-01KMZB1234567
+      entity_type: bug
+      section_path: 1.2.6
+      byte_offset: 14610
+    - entity_id: DEC-01KMZA
+      entity_type: decision
+      section_path: 1.2.6
+      byte_offset: 13143
+    - entity_id: DEC-01KMZA9123456
+      entity_type: decision
+      section_path: 1.2.6
+      byte_offset: 14688
+    - entity_id: DOC-01JX
+      entity_type: document
+      section_path: 1.2.6
+      byte_offset: 14828
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 133
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.2.6
+      byte_offset: 12636
+conventional_roles:
+    - section_path: "1.8"
+      role: requirement
+      confidence: high
+classified: false

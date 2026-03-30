@@ -1,0 +1,429 @@
+document_id: FEAT-01KMZA9MWR7WK/design-f5-cross-view-navigation
+document_path: work/design/f5-cross-view-navigation.md
+content_hash: 2e76d6aeffe2f03e99049d6e29d8938524c4691dc6cb3ab95d3c9e4e4f84b66b
+indexed_at: 2026-03-30T12:31:30.02855Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'Feature 5: Cross-View Navigation — Design Document'
+      byte_offset: 0
+      byte_count: 28979
+      word_count: 3755
+      content_hash: 2e76d6aeffe2f03e99049d6e29d8938524c4691dc6cb3ab95d3c9e4e4f84b66b
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. Purpose
+          byte_offset: 291
+          byte_count: 1008
+          word_count: 148
+          content_hash: 5959e31a47c68870e4a4fbead9d4a7d7b1968ef1abbb316c6db0a14928769b47
+        - path: "1.2"
+          level: 2
+          title: 2. Navigation State Machine
+          byte_offset: 1299
+          byte_count: 3232
+          word_count: 286
+          content_hash: 32eea659b39fc0c1eea4618736fe3dd61de8cba22dfc6eb59d0e6de61c15de81
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 UI Store Shape
+              byte_offset: 1331
+              byte_count: 1278
+              word_count: 160
+              content_hash: 9f16ca1215c848a9c482e3b957c7c52f11648adb2fe14e97dd024eb335cbf851
+            - path: 1.2.2
+              level: 3
+              title: 2.2 State Transitions
+              byte_offset: 2609
+              byte_count: 1922
+              word_count: 121
+              content_hash: 2017e020908c05318aa30048e5667f7e14d3d2cb97e2d2e6c3ee2d3b3ecd4c12
+        - path: "1.3"
+          level: 2
+          title: 3. Navigation Actions
+          byte_offset: 4531
+          byte_count: 2312
+          word_count: 326
+          content_hash: c6a155dace33c24d17e3f13fc2bd6b22ba8a5ff9b69d493acb87189f74784873
+          children:
+            - path: 1.3.1
+              level: 3
+              title: '3.1 `navigateToEntity(id: string)`'
+              byte_offset: 4743
+              byte_count: 1091
+              word_count: 155
+              content_hash: cfa9643be263f765413b9f09c651c7a4415e00feea607de722b920b76e7c18c5
+            - path: 1.3.2
+              level: 3
+              title: '3.2 `navigateToDocument(id: string)`'
+              byte_offset: 5834
+              byte_count: 480
+              word_count: 63
+              content_hash: 05526cfd4218fea721b2ea75ef60174b7e3d62d5d6655039948318026bd95810
+            - path: 1.3.3
+              level: 3
+              title: '3.3 `activateFilter(view: ''documents'' | ''workflows'', field: ''types'' | ''statuses'', value: string)`'
+              byte_offset: 6314
+              byte_count: 529
+              word_count: 75
+              content_hash: 073fbf49df62fcbed65ea34e615c785226cc206935e19093c0731d6df6f89858
+        - path: "1.4"
+          level: 2
+          title: 4. Entity Type Resolution
+          byte_offset: 6843
+          byte_count: 1659
+          word_count: 229
+          content_hash: 2bc89df57b61a74f9d6792e4e239d1a6b686afa2c0f20ef37058fff235901a58
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 ID Prefix → Type Mapping
+              byte_offset: 6873
+              byte_count: 1003
+              word_count: 118
+              content_hash: abbc41a8ddb437329fdd6d9e45fb0d5d8bc40e7c03ad427ee63585d51c705032
+            - path: 1.4.2
+              level: 3
+              title: 4.2 Store Lookup
+              byte_offset: 7876
+              byte_count: 626
+              word_count: 106
+              content_hash: 22f4e4593be6a5df6f7ef90f73ae3b26b9f2069dd9260c158e9680d28a132fe5
+        - path: "1.5"
+          level: 2
+          title: 5. Tree Selection Sync
+          byte_offset: 8502
+          byte_count: 2849
+          word_count: 357
+          content_hash: a6d2fb3f2dd1f3df3a08ba297e9bd5abae42f326febcb23bc2f8a0c1481a0242
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 Expansion Logic
+              byte_offset: 8529
+              byte_count: 1474
+              word_count: 177
+              content_hash: 1eb2eaac4178b2872576e77b5ee64f4bb44fa58dc06713e4b09f1609f14ff550
+            - path: 1.5.2
+              level: 3
+              title: 5.2 Scroll-to-Selected
+              byte_offset: 10003
+              byte_count: 769
+              word_count: 92
+              content_hash: 652fbe4d804e36115faea7559e0cc9383cb913fe7c4461da85d836e0e44879b6
+            - path: 1.5.3
+              level: 3
+              title: 5.3 Selection Sources
+              byte_offset: 10772
+              byte_count: 579
+              word_count: 83
+              content_hash: b8141d2bc115cf99b120910cc36236d76dbaf6133289e18f63261921eace34cd
+        - path: "1.6"
+          level: 2
+          title: 6. EntityLink Component Wiring
+          byte_offset: 11351
+          byte_count: 1366
+          word_count: 188
+          content_hash: 47e5619e1f380d24b3f3d9fbd6d5a7e3fcbf7610785d7c25750194fdab15a4e8
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 Rendering States
+              byte_offset: 11483
+              byte_count: 584
+              word_count: 87
+              content_hash: be158dcad2477baa2d7e27df5fd36143ff1295e3c2b48bab6167ad2fa628cf1f
+            - path: 1.6.2
+              level: 3
+              title: 6.2 onClick Handler
+              byte_offset: 12067
+              byte_count: 650
+              word_count: 82
+              content_hash: 72c02d47f3be3035cd087314ec05d203c25e9c746413d26dd2ffa4274c00370a
+        - path: "1.7"
+          level: 2
+          title: 7. Cross-View Interaction Flows
+          byte_offset: 12717
+          byte_count: 2875
+          word_count: 394
+          content_hash: 333a888e81c39773daa6f031d05740b2a596ccde3382b60859b60454ec3d5fd2
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 Entity Reference in Documents View → Workflows
+              byte_offset: 12753
+              byte_count: 717
+              word_count: 105
+              content_hash: da615cc20ce2b6d622f14a2f10d151e12852b3b99261c330220e5dd5e86b091d
+            - path: 1.7.2
+              level: 3
+              title: 7.2 Document Reference in Workflows View → Documents
+              byte_offset: 13470
+              byte_count: 681
+              word_count: 88
+              content_hash: 1d02a7ea3d36bdc12858fe0331229b97107b6f2aca5ec231efd3e777355443aa
+            - path: 1.7.3
+              level: 3
+              title: 7.3 Lozenge Filter Activation (Within View)
+              byte_offset: 14151
+              byte_count: 489
+              word_count: 69
+              content_hash: 3a02f3e6debe97c20704c27f92738f2ef641020058a3a51e50ab9199d457b4d3
+            - path: 1.7.4
+              level: 3
+              title: 7.4 Lozenge Filter Activation (Cross-View)
+              byte_offset: 14640
+              byte_count: 452
+              word_count: 63
+              content_hash: 4ee61a4623dff48fa5a9afed9df70835746974ecf05e1c20c96187d3b60fd2cb
+            - path: 1.7.5
+              level: 3
+              title: 7.5 Superseded Document Chain
+              byte_offset: 15092
+              byte_count: 500
+              word_count: 64
+              content_hash: f4474fa308f1f0c1563758e1bb89f1b4ee1e99b5f5ec9615e21ad423b67f3962
+        - path: "1.8"
+          level: 2
+          title: 8. Navigation History
+          byte_offset: 15592
+          byte_count: 2337
+          word_count: 324
+          content_hash: 9e450b7c26bd990590bdcd34340c1ee2b69c9746be1dce9aa742fcbdf52be1db
+          children:
+            - path: 1.8.1
+              level: 3
+              title: 8.1 Scope
+              byte_offset: 15618
+              byte_count: 247
+              word_count: 41
+              content_hash: 2d72f5bd8f4094f5b7ccac5dd92be7a1721e94bb62ba9dc553ee20b2196769a6
+            - path: 1.8.2
+              level: 3
+              title: 8.2 History Stack
+              byte_offset: 15865
+              byte_count: 660
+              word_count: 97
+              content_hash: c7d43b57e10c6170be59e9af17cfb22f6f040b824f5c5cb842a47b7cc8b13b99
+            - path: 1.8.3
+              level: 3
+              title: 8.3 Keyboard Shortcuts
+              byte_offset: 16525
+              byte_count: 962
+              word_count: 121
+              content_hash: 53a5180a3f70154f13cd62ac97a705ac8d206fc4d799428816482bc2639c6ab4
+            - path: 1.8.4
+              level: 3
+              title: 8.4 Back Button Behaviour
+              byte_offset: 17487
+              byte_count: 442
+              word_count: 61
+              content_hash: 0b2334a199e369f1a2b155b46dd1e097a612bd8e0867085627a8a36ec012cbf6
+        - path: "1.9"
+          level: 2
+          title: 9. Lozenge Click Handlers
+          byte_offset: 17929
+          byte_count: 2262
+          word_count: 284
+          content_hash: c9d67e8c4b3d8b4646c1bf50091ebeebd3ddef739ddaf45234960ae62a723227
+          children:
+            - path: 1.9.1
+              level: 3
+              title: 9.1 Which Lozenges Are Clickable
+              byte_offset: 17959
+              byte_count: 928
+              word_count: 121
+              content_hash: fdce18ecc06f5acdc713ba26b48f872af937580aee3eddbc3f5a81250edff1ff
+            - path: 1.9.2
+              level: 3
+              title: 9.2 Implementation Pattern
+              byte_offset: 18887
+              byte_count: 903
+              word_count: 103
+              content_hash: dc25e7eb9ad527f05af19f8aa7ced9522e1e2aa1b56d99ebb9d7a74e3033310e
+            - path: 1.9.3
+              level: 3
+              title: 9.3 Visual Affordance
+              byte_offset: 19790
+              byte_count: 401
+              word_count: 55
+              content_hash: cb3232e33f737f3bdd53278b751d5dd2cf13d0c701673cd11675e2ac140059a7
+        - path: "1.10"
+          level: 2
+          title: 10. Components Modified
+          byte_offset: 20191
+          byte_count: 4126
+          word_count: 492
+          content_hash: b79c900ac7a9db247b34ee6cd3e51c3651aaa8b088dc73c470723e457173a938
+          children:
+            - path: 1.10.1
+              level: 3
+              title: 10.1 `src/lib/store/ui-store.ts`
+              byte_offset: 20310
+              byte_count: 625
+              word_count: 69
+              content_hash: 0bee95ef6e0a8fd226074d7ac0461e9f7def35da73a4f304a2cf645529aafa79
+            - path: 1.10.2
+              level: 3
+              title: 10.2 `src/components/common/EntityLink.tsx`
+              byte_offset: 20935
+              byte_count: 414
+              word_count: 52
+              content_hash: bc40772a5d08b4cf177a80e42733b817963f07fb759fb9df1a8b0dd57e89bd58
+            - path: 1.10.3
+              level: 3
+              title: 10.3 `src/components/tree/EntityTree.tsx`
+              byte_offset: 21349
+              byte_count: 461
+              word_count: 54
+              content_hash: 85443283cc4b9c4a86b51455418c32ed461e0aba36b9058bd126453236c40f16
+            - path: 1.10.4
+              level: 3
+              title: 10.4 `src/components/tree/TreeNode.tsx`
+              byte_offset: 21810
+              byte_count: 244
+              word_count: 30
+              content_hash: a7c12cebeaa66112d2c87f69d6d16d09b1c5cf5d62086c3058430c16917a0bda
+            - path: 1.10.5
+              level: 3
+              title: 10.5 `src/components/document/DocumentViewer.tsx`
+              byte_offset: 22054
+              byte_count: 467
+              word_count: 61
+              content_hash: d75d58b39140d92bffe7e32d4b8df72fe8f19a69b23c9c0b28460b2aea44f017
+            - path: 1.10.6
+              level: 3
+              title: 10.6 `src/components/document/MetadataPanel.tsx`
+              byte_offset: 22521
+              byte_count: 515
+              word_count: 61
+              content_hash: b3ae9484237b5a3ebb081e9568b9166d130e36500691da70336713f7f6e16ee2
+            - path: 1.10.7
+              level: 3
+              title: 10.7 `src/components/document/DocumentList.tsx`
+              byte_offset: 23036
+              byte_count: 413
+              word_count: 46
+              content_hash: 018a75435184947927cf4640702605307bfe965c4d0dc0b81d6cf1ff6e142793
+            - path: 1.10.8
+              level: 3
+              title: 10.8 Entity Detail Components
+              byte_offset: 23449
+              byte_count: 701
+              word_count: 77
+              content_hash: 74a6110cf8d56f3abe7ca1a8e912727aa00f293b578db4c0db962bc8320d4bf6
+            - path: 1.10.9
+              level: 3
+              title: 10.9 `src/App.tsx`
+              byte_offset: 24150
+              byte_count: 167
+              word_count: 23
+              content_hash: 5d954e72fea72c9609221078012df44da9dc4e4d274091e50e92aab9b9b1b30a
+        - path: "1.11"
+          level: 2
+          title: 11. Edge Cases
+          byte_offset: 24317
+          byte_count: 2103
+          word_count: 320
+          content_hash: 2e9c816a3d3cd3eea3aaac9bf4aacceb5bdcb294dcd2dd751910ead41e15afd7
+          children:
+            - path: 1.11.1
+              level: 3
+              title: 11.1 Broken References
+              byte_offset: 24336
+              byte_count: 388
+              word_count: 61
+              content_hash: c08b13b6cab08269c2b9effa151f542a29578dd732ffeb123c9ecf7f2cc988c3
+            - path: 1.11.2
+              level: 3
+              title: 11.2 Circular Supersession
+              byte_offset: 24724
+              byte_count: 275
+              word_count: 46
+              content_hash: 4ede0b06dc44e102d2203a112e39eb243af28d284be33711d8a1a90ef41bce8d
+            - path: 1.11.3
+              level: 3
+              title: 11.3 Deep Tree Expansion
+              byte_offset: 24999
+              byte_count: 362
+              word_count: 53
+              content_hash: 293b94a026cfab0a00947957e173014ec1368918087a9d9790af011333f2d789
+            - path: 1.11.4
+              level: 3
+              title: 11.4 Navigation During Loading
+              byte_offset: 25361
+              byte_count: 366
+              word_count: 58
+              content_hash: fb2d0f7604144ebfe2efb1b06deb72a91a4db650cf6002b8c0d60b22f6bc6f2f
+            - path: 1.11.5
+              level: 3
+              title: 11.5 View Switch Preserves State
+              byte_offset: 25727
+              byte_count: 331
+              word_count: 52
+              content_hash: 8820a92258cae7c9260698e148242bee350605c93d7b8ecf697a881f2eed1123
+            - path: 1.11.6
+              level: 3
+              title: 11.6 Rapid Navigation
+              byte_offset: 26058
+              byte_count: 362
+              word_count: 46
+              content_hash: dd44b7770c06115944590988cf6d5d7f041a24d5f6034d7a4ec494b883083d69
+        - path: "1.12"
+          level: 2
+          title: 12. Acceptance Criteria
+          byte_offset: 26420
+          byte_count: 1659
+          word_count: 245
+          content_hash: 50de751466218108bdcdadb189319b68c45d85e02f502a22b921d88e019966dd
+        - path: "1.13"
+          level: 2
+          title: 13. Out of Scope
+          byte_offset: 28079
+          byte_count: 440
+          word_count: 74
+          content_hash: d55fe7061191b8f4927d35553b42da4f14f6d5df7066dd345ecf8830f47d6f00
+        - path: "1.14"
+          level: 2
+          title: References
+          byte_offset: 28519
+          byte_count: 460
+          word_count: 57
+          content_hash: 552c781137ca2300e8a963812e5a0938c57ed49e4fe8c59dfda740ef4d438b9d
+entity_refs:
+    - entity_id: FEAT-01KMZA9MWR7WK
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 72
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 132
+    - entity_id: FEAT-01KMZA9JMZFNF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 173
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 108
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.7.1
+      byte_offset: 12908
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: 1.8.1
+      role: constraint
+      confidence: high
+    - section_path: "1.12"
+      role: requirement
+      confidence: high
+    - section_path: "1.13"
+      role: constraint
+      confidence: high
+classified: false

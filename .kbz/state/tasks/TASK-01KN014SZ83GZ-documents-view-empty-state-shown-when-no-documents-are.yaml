@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ83GZ
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-empty-state-shown-when-no-documents-are
+summary: Empty state shown when no documents are registered
+status: ready

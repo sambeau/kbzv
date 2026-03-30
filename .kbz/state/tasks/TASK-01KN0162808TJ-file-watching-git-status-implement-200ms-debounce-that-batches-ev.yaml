@@ -1,0 +1,5 @@
+id: TASK-01KN0162808TJ
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-implement-200ms-debounce-that-batches-ev
+summary: Implement 200ms debounce that batches events before processing
+status: ready

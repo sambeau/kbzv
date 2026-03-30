@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ1SVP
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-document-list-renders-all-registered-doc
+summary: "Document list renders all registered documents with title, relative date, type badge, and status badge"
+status: ready

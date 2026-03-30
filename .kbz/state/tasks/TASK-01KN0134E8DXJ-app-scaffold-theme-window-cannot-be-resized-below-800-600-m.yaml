@@ -1,0 +1,5 @@
+id: TASK-01KN0134E8DXJ
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-window-cannot-be-resized-below-800-600-m
+summary: Window cannot be resized below 800×600 minimum
+status: ready

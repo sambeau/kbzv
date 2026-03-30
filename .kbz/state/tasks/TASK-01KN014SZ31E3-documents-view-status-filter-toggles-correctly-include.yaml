@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ31E3
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-status-filter-toggles-correctly-include
+summary: "Status filter toggles correctly include/exclude documents by status (OR within status, AND with type)"
+status: ready

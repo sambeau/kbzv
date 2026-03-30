@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ7AWY
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-missing-file-shows-file-not-found-conten
+summary: "Missing file shows \"File not found\" content area and \"File missing\" metadata indicator"
+status: ready

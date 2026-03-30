@@ -1,0 +1,5 @@
+id: TASK-01KN0134E9DZ4
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-tests
+summary: Write tests for app-scaffold-theme
+status: ready

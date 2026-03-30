@@ -1,0 +1,5 @@
+id: TASK-01KN016281CFH
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-call-reloadentity-on-create-modify-remov
+summary: "Call `reloadEntity()` on create/modify, `removeEntity()` on delete, then `rebuildDerivedData()`"
+status: ready

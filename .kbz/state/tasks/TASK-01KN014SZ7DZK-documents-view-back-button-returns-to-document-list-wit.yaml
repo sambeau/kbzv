@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ7DZK
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-back-button-returns-to-document-list-wit
+summary: Back button returns to document list with scroll position and filter state preserved
+status: ready

@@ -1,0 +1,5 @@
+id: TASK-01KN015G17RHE
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-implement-scrolltoselected-scrolls-selec
+summary: Implement scrollToSelected() — scrolls selected tree node into view using requestAnimationFrame
+status: ready

@@ -1,0 +1,5 @@
+id: TASK-01KN0134E5FDN
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-clicking-open-project-in-empty-state-ope
+summary: "Clicking \"Open Project\" in empty state opens the OS native folder picker (directory only)"
+status: ready

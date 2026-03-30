@@ -1,0 +1,9 @@
+id: P1-kbzv
+slug: kbzv
+title: KBZV v1.0 — Kanbanzai Viewer
+status: active
+summary: "Read-only desktop application for browsing Kanbanzai-managed projects. Renders Markdown documents, displays entity hierarchy (Plans → Features → Tasks), shows lifecycle states and progress metrics, and provides cross-reference navigation. Built with Tauri v2 + React/TypeScript."
+design: P1-kbzv/design-kbzv-initial-proposal
+created: "2026-03-30T12:06:51Z"
+created_by: sambeau
+updated: "2026-03-30T12:07:03Z"

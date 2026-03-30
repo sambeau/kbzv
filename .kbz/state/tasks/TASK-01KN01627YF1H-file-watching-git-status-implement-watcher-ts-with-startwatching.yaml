@@ -1,0 +1,5 @@
+id: TASK-01KN01627YF1H
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-implement-watcher-ts-with-startwatching
+summary: "Implement `watcher.ts` with `startWatching()` / `stopWatching()` lifecycle tied to `openProject` / `closeProject`"
+status: ready

@@ -1,0 +1,14 @@
+id: FEAT-01KMZA9CP9XEX
+slug: data-layer
+parent: P1-kbzv
+status: developing
+summary: "Parse .kbz/state/ YAML files into typed entity maps (all 9 entity types), parse config, build Plan→Feature→Task hierarchy tree, compute progress metrics and estimate rollups, and resolve cross-references by ID prefix. Zustand store for all project state."
+design: FEAT-01KMZA9CP9XEX/design-f2-data-layer
+spec: FEAT-01KMZA9CP9XEX/specification-f2-data-layer-spec
+dev_plan: FEAT-01KMZA9CP9XEX/dev-plan-f2-data-layer-dev-plan
+tags:
+  - data
+  - yaml
+  - zustand
+created: "2026-03-30T12:07:54Z"
+created_by: sambeau

@@ -1,0 +1,5 @@
+id: TASK-01KN016283AJ6
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-hide-gitinfo-entirely-when-project-is-no
+summary: "Hide `GitInfo` entirely when project is not a git repository"
+status: ready

@@ -1,0 +1,521 @@
+document_id: FEAT-01KMZA9CP9XEX/specification-f2-data-layer-spec
+document_path: work/spec/f2-data-layer-spec.md
+content_hash: 805ab61daf0a2c296d65f5a7accaf476f0413df2b03fc3c66218f835a35d326b
+indexed_at: 2026-03-30T18:17:46.982881Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F2: Data Layer — Specification'
+      byte_offset: 0
+      byte_count: 81009
+      word_count: 10520
+      content_hash: 805ab61daf0a2c296d65f5a7accaf476f0413df2b03fc3c66218f835a35d326b
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. File Manifest
+          byte_offset: 266
+          byte_count: 1691
+          word_count: 226
+          content_hash: 4b3a6a50e7302fb99d740b78d54a9f6d042c9710042e079ccfe5f93816eea0e5
+        - path: "1.2"
+          level: 2
+          title: 2. Entity Type Definitions
+          byte_offset: 1957
+          byte_count: 17924
+          word_count: 2469
+          content_hash: 8d3d4054e7a749fb0a852adcbdef1495a22f4c68c11f71a144da26e6f3f231a6
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 plan.ts
+              byte_offset: 2250
+              byte_count: 1264
+              word_count: 180
+              content_hash: a25319a3048ae0dcbead091a9bd66754fe88134754c3528c836f86e0e60ed209
+            - path: 1.2.2
+              level: 3
+              title: 2.2 feature.ts
+              byte_offset: 3514
+              byte_count: 1815
+              word_count: 257
+              content_hash: 86b46490efa92d2c5241eab51d01c11bcad7a0bbecd3d0f84169d1e8859121e8
+            - path: 1.2.3
+              level: 3
+              title: 2.3 task.ts
+              byte_offset: 5329
+              byte_count: 1782
+              word_count: 248
+              content_hash: e15e649e1fd183d844224466135cfd1c736ccbde05d2c77f17ce32d8c342e06b
+            - path: 1.2.4
+              level: 3
+              title: 2.4 bug.ts
+              byte_offset: 7111
+              byte_count: 2161
+              word_count: 291
+              content_hash: 8729e187caa1f610f9d582e360bfecb3bb6497062400fe075deff048916fbef4
+            - path: 1.2.5
+              level: 3
+              title: 2.5 decision.ts
+              byte_offset: 9272
+              byte_count: 1070
+              word_count: 151
+              content_hash: 0b93b1ec339517cd61ce0aafe600796317ec8f090ccb6f32364f2b1749046dfe
+            - path: 1.2.6
+              level: 3
+              title: 2.6 knowledge.ts
+              byte_offset: 10342
+              byte_count: 1629
+              word_count: 232
+              content_hash: 5a82e7515a9663dca6d05cd8722d1ee2e52a3b3980cc8259a6ef90eb68fd3e55
+            - path: 1.2.7
+              level: 3
+              title: 2.7 document.ts
+              byte_offset: 11971
+              byte_count: 1629
+              word_count: 220
+              content_hash: 588c9f1804b7e0b1281082018c50e83aaa1b2e961501793eab889602b93a7ccf
+            - path: 1.2.8
+              level: 3
+              title: 2.8 incident.ts
+              byte_offset: 13600
+              byte_count: 1725
+              word_count: 231
+              content_hash: 0a96a6e77936e7e464e850603e003981f61069824f519344193170510f832afb
+            - path: 1.2.9
+              level: 3
+              title: 2.9 checkpoint.ts
+              byte_offset: 15325
+              byte_count: 1101
+              word_count: 152
+              content_hash: 8adef8f87f94e9013635f1c9fac201f93cad077d24a9b167d4b80636d4da96e0
+            - path: 1.2.10
+              level: 3
+              title: 2.10 config.ts
+              byte_offset: 16426
+              byte_count: 1563
+              word_count: 238
+              content_hash: 78ed80583743a4123cdb07b84e913bf4e26ebbbbcc275d613a274931983762a7
+            - path: 1.2.11
+              level: 3
+              title: 2.11 index.ts (barrel exports + union types)
+              byte_offset: 17989
+              byte_count: 1892
+              word_count: 223
+              content_hash: 4f442bded8ad4fdb5220cfdaa4c1d39fbda7793225ff159a78b4e4747c74cf32
+        - path: "1.3"
+          level: 2
+          title: 3. Constants
+          byte_offset: 19881
+          byte_count: 9244
+          word_count: 1060
+          content_hash: 295924dfdd4a891fa1a53f2254a11be209798a1cf0fc596653bb0c183969aa2e
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 status-colours.ts
+              byte_offset: 19898
+              byte_count: 7043
+              word_count: 813
+              content_hash: b65923b606ed39af15c58692937762c7539db649e89c16be2a6309fa16866af5
+            - path: 1.3.2
+              level: 3
+              title: 3.2 entity-types.ts
+              byte_offset: 26941
+              byte_count: 2184
+              word_count: 244
+              content_hash: 5580c18fc33bc25e54af5f21e412a831b042f0821ed818fbcf096e5eda7bd361
+        - path: "1.4"
+          level: 2
+          title: 4. Directory Reader
+          byte_offset: 29125
+          byte_count: 8850
+          word_count: 1130
+          content_hash: 2ecf56e271c8acb21aba48d9726b742401a79d09ccdbd33f5b40279d27f0b502
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 loader.ts — loadProject() function
+              byte_offset: 29149
+              byte_count: 7989
+              word_count: 1003
+              content_hash: 832d7dec2516df2f16de0463dea5b8632eafd5c624c39f05fa29ca17862d0b1b
+            - path: 1.4.2
+              level: 3
+              title: 4.2 document.ts — readDocumentContent() stub
+              byte_offset: 37138
+              byte_count: 837
+              word_count: 123
+              content_hash: ad5a3546c052669325fcf778c8204bc72759a09b558617833f4fd54be7693265
+        - path: "1.5"
+          level: 2
+          title: 5. Zustand Store
+          byte_offset: 37975
+          byte_count: 7484
+          word_count: 767
+          content_hash: 40c7af517005793586c38d35a4274951a2de3e0136188498c95f67ccda831807
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 project-store.ts — full implementation
+              byte_offset: 37996
+              byte_count: 7463
+              word_count: 763
+              content_hash: f77419290d0d311e89856229e35a78bce94efc9ba2e810b87ddb4056c28ae96c
+        - path: "1.6"
+          level: 2
+          title: 6. Query Layer
+          byte_offset: 45459
+          byte_count: 22996
+          word_count: 2944
+          content_hash: 8949b0b2df2704ba6afa6efe09583d4e55861ce359bf144a46d902f2ec6c1a00
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 tree.ts — buildTree() with exact algorithm
+              byte_offset: 45478
+              byte_count: 8808
+              word_count: 1080
+              content_hash: 01f19ee777888bc14cbebc1f18b82b8ad25ce2711b817bb17c16ae9613ce7a1d
+            - path: 1.6.2
+              level: 3
+              title: 6.2 metrics.ts — all metric functions
+              byte_offset: 54286
+              byte_count: 8781
+              word_count: 1224
+              content_hash: a5d2b206b96b3e5134729ebec1fb5e66f9caaa3f81dd53d91b05cf92bf9be230
+            - path: 1.6.3
+              level: 3
+              title: 6.3 references.ts — resolveEntityType() and resolveEntity()
+              byte_offset: 63067
+              byte_count: 5388
+              word_count: 636
+              content_hash: 4a18a7071b9d538cc5d241e51df9b3a23cfce10e0ab3ccd8ef0869b44377a59b
+        - path: "1.7"
+          level: 2
+          title: 7. Error Handling Matrix
+          byte_offset: 68455
+          byte_count: 3281
+          word_count: 524
+          content_hash: bec550ec58a4911d1ce266ccc5ba9b5f90f786ffb3c05328b7edb90550137475
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 Fatal Errors (openProject throws)
+              byte_offset: 68555
+              byte_count: 821
+              word_count: 123
+              content_hash: 147094dc4b0d57abcb945878005ac9a85281f4e0d9e849fe4498b330d0fec1de
+            - path: 1.7.2
+              level: 3
+              title: 7.2 Non-Fatal Warnings (logged, entity skipped)
+              byte_offset: 69376
+              byte_count: 2084
+              word_count: 351
+              content_hash: a7a9d33572d768b6cd7b533c70b9d4221e486df2abdff9d157160833f986750d
+            - path: 1.7.3
+              level: 3
+              title: 7.3 Log Format
+              byte_offset: 71460
+              byte_count: 276
+              word_count: 35
+              content_hash: 166ebb838520379f5e25bdc270b11c90e5eb56a17548bb66bd79f667ba6073b1
+        - path: "1.8"
+          level: 2
+          title: 8. Implementation Order
+          byte_offset: 71736
+          byte_count: 1518
+          word_count: 234
+          content_hash: 06b82dc048a69532dc235f3f97c025945cab42066b725a98d418d80d6c4b2639
+        - path: "1.9"
+          level: 2
+          title: 9. Acceptance Criteria
+          byte_offset: 73254
+          byte_count: 7413
+          word_count: 1080
+          content_hash: 825edf58095d961442a05a9491de8fc086a9673ed2e4507de2d79ae6f0544e1c
+          children:
+            - path: 1.9.1
+              level: 3
+              title: 'AC-1: Entity map population'
+              byte_offset: 73378
+              byte_count: 441
+              word_count: 62
+              content_hash: 68afaa203bb7799bd82a6a03d08e714584ed5f825d885796bc812caaa0117738
+            - path: 1.9.2
+              level: 3
+              title: 'AC-2: Tree hierarchy'
+              byte_offset: 73819
+              byte_count: 660
+              word_count: 99
+              content_hash: be2face8d097982d0ebe0f494489758a327a94f6f1536fc91ef4688893f1be66
+            - path: 1.9.3
+              level: 3
+              title: 'AC-3: Standalone entity lists'
+              byte_offset: 74479
+              byte_count: 314
+              word_count: 37
+              content_hash: e436a24115342a7afc8cd67cf1875876b64ca850ce52f57bce2362579ab29866
+            - path: 1.9.4
+              level: 3
+              title: 'AC-4: Pending checkpoints'
+              byte_offset: 74793
+              byte_count: 352
+              word_count: 41
+              content_hash: 6edf00008b28ee961e21fd7b460e0fc0029d8fdd362f04cf2fd68978311081fc
+            - path: 1.9.5
+              level: 3
+              title: 'AC-5: Task completion metrics'
+              byte_offset: 75145
+              byte_count: 642
+              word_count: 110
+              content_hash: 52c3365467408564ecbd0776a13c3773c033cabdcad5c8435edeae1d135f36d3
+            - path: 1.9.6
+              level: 3
+              title: 'AC-6: Feature completion metrics'
+              byte_offset: 75787
+              byte_count: 510
+              word_count: 84
+              content_hash: 819356d93b143316dbb17dacc5b69e98bdf1eefc00f338511f477a22cea0d144
+            - path: 1.9.7
+              level: 3
+              title: 'AC-7: Estimate rollups'
+              byte_offset: 76297
+              byte_count: 712
+              word_count: 104
+              content_hash: 7e2120ec18ad9088e3a2cba8f63d82688a2da53e0c54a09af02b8d098f7caa9e
+            - path: 1.9.8
+              level: 3
+              title: 'AC-8: Reference resolution — type detection'
+              byte_offset: 77009
+              byte_count: 625
+              word_count: 84
+              content_hash: 70ce26532dd3c97f97c6254286bf115a0db7712f246a64491366303c382e223e
+            - path: 1.9.9
+              level: 3
+              title: 'AC-9: Reference resolution — entity lookup'
+              byte_offset: 77634
+              byte_count: 316
+              word_count: 45
+              content_hash: ed64f36466ea902cb2754690e8e7d45cf5c5c87451250a0f3a435d4570166d2e
+            - path: 1.9.10
+              level: 3
+              title: 'AC-10: Config parsing'
+              byte_offset: 77950
+              byte_count: 312
+              word_count: 41
+              content_hash: ba1d018db7446a332a75a5b5dce0f1ec6dae8ee8e9930afa7fa63908e3719c90
+            - path: 1.9.11
+              level: 3
+              title: 'AC-11: Missing directory resilience'
+              byte_offset: 78262
+              byte_count: 269
+              word_count: 37
+              content_hash: 44622678f7b63c84b122b084fcc514f84eade158f545b8f48197d4e658ea54e8
+            - path: 1.9.12
+              level: 3
+              title: 'AC-12: Parse error resilience'
+              byte_offset: 78531
+              byte_count: 352
+              word_count: 53
+              content_hash: ca0284a77144e15a517ae5087518f7b53039716a3a60246c141d014d611ad338
+            - path: 1.9.13
+              level: 3
+              title: 'AC-13: Unknown field resilience'
+              byte_offset: 78883
+              byte_count: 291
+              word_count: 45
+              content_hash: c991afce8d2ab5955d09b722f2c440ba7daf856c7d83778b886227a46324d470
+            - path: 1.9.14
+              level: 3
+              title: 'AC-14: Unknown status resilience'
+              byte_offset: 79174
+              byte_count: 301
+              word_count: 35
+              content_hash: d909f35579c2a43e4ebe65895b969c0a0550b714916475ac5e5a6a2f2848a77c
+            - path: 1.9.15
+              level: 3
+              title: 'AC-15: Status colour correctness'
+              byte_offset: 79475
+              byte_count: 185
+              word_count: 26
+              content_hash: b66444822eba45dcd361e4c45f4b8af654118e6a22063c3dd5db7f165df6adfb
+            - path: 1.9.16
+              level: 3
+              title: 'AC-16: Orphan handling'
+              byte_offset: 79660
+              byte_count: 409
+              word_count: 64
+              content_hash: 8cc11d9922c49ad22e489a8f4857b5a42a5f8291b0a87b23cf0e909681af09a9
+            - path: 1.9.17
+              level: 3
+              title: 'AC-17: closeProject resets state'
+              byte_offset: 80069
+              byte_count: 338
+              word_count: 57
+              content_hash: 6a782ffc0afca6d81944f822ea53e0b26fd001883ca4a869aa1809a962bafd4b
+            - path: 1.9.18
+              level: 3
+              title: 'AC-18: Loading state management'
+              byte_offset: 80407
+              byte_count: 260
+              word_count: 38
+              content_hash: 9b2dd88169416565d224cb357056fa9716504d0844a6c7da9f90023201daa2ce
+        - path: "1.10"
+          level: 2
+          title: References
+          byte_offset: 80667
+          byte_count: 342
+          word_count: 41
+          content_hash: 9a4e4ec304e2a1521b79c68fbc077b2c08d78c94767382984c39643a387e9c1e
+entity_refs:
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 88
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 158
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: 1.2.2
+      byte_offset: 3742
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.2.7
+      byte_offset: 12253
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.6.3
+      byte_offset: 63771
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: 1.6.3
+      byte_offset: 64630
+    - entity_id: FEAT-01DEF
+      entity_type: feature
+      section_path: 1.7.3
+      byte_offset: 71692
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: 1.9.8
+      byte_offset: 77200
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.9.8
+      byte_offset: 77451
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1.10"
+      byte_offset: 80890
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1.10"
+      byte_offset: 80963
+    - entity_id: TASK-01KMZA9XXXYYY
+      entity_type: task
+      section_path: 1.2.3
+      byte_offset: 5485
+    - entity_id: TASK-01ABC123
+      entity_type: task
+      section_path: 1.6.3
+      byte_offset: 64709
+    - entity_id: TASK-01XYZ
+      entity_type: task
+      section_path: 1.7.3
+      byte_offset: 71624
+    - entity_id: TASK-01ABC123
+      entity_type: task
+      section_path: 1.9.8
+      byte_offset: 77241
+    - entity_id: BUG-01XYZ789
+      entity_type: bug
+      section_path: 1.6.3
+      byte_offset: 64786
+    - entity_id: BUG-01ABC
+      entity_type: bug
+      section_path: 1.7.3
+      byte_offset: 71552
+    - entity_id: BUG-01XYZ
+      entity_type: bug
+      section_path: 1.9.3
+      byte_offset: 74757
+    - entity_id: BUG-01XYZ789
+      entity_type: bug
+      section_path: 1.9.8
+      byte_offset: 77274
+    - entity_id: DEC-01AAA111
+      entity_type: decision
+      section_path: 1.6.3
+      byte_offset: 64862
+    - entity_id: DEC-01AAA111
+      entity_type: decision
+      section_path: 1.9.8
+      byte_offset: 77305
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 129
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.2.1
+      byte_offset: 2465
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.2.1
+      byte_offset: 2476
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.2.2
+      byte_offset: 4159
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.6.1
+      byte_offset: 46679
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.6.1
+      byte_offset: 46690
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.6.3
+      byte_offset: 65351
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.6.3
+      byte_offset: 65428
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.9.1
+      byte_offset: 73766
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.9.8
+      byte_offset: 77550
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.9.8
+      byte_offset: 77577
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1.10"
+      byte_offset: 80939
+cross_doc_links:
+    - target_path: ../design/f2-data-layer.md
+      link_text: 'F2: Data Layer — Design Document'
+      section_path: "1.10"
+    - target_path: ../design/kbzv-architecture.md
+      link_text: KBZV Architecture Design
+      section_path: "1.10"
+conventional_roles:
+    - section_path: "1.2"
+      role: definition
+      confidence: high
+    - section_path: 1.2.5
+      role: decision
+      confidence: high
+    - section_path: "1.9"
+      role: requirement
+      confidence: high
+classified: false

@@ -1,0 +1,5 @@
+id: TASK-01KN015G1DNAZ
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-verify-rapid-navigation-10-clicks-1s-pro
+summary: Verify rapid navigation (10+ clicks < 1s) produces no visual glitches or errors
+status: ready

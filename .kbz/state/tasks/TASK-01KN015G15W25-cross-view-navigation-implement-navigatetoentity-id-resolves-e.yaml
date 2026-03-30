@@ -1,0 +1,5 @@
+id: TASK-01KN015G15W25
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-implement-navigatetoentity-id-resolves-e
+summary: "Implement navigateToEntity(id) — resolves entity type, switches view, selects entity, expands tree ancestors"
+status: ready

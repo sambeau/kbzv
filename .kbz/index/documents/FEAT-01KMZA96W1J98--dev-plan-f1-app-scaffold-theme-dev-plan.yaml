@@ -1,0 +1,183 @@
+document_id: FEAT-01KMZA96W1J98/dev-plan-f1-app-scaffold-theme-dev-plan
+document_path: work/dev/f1-app-scaffold-theme-dev-plan.md
+content_hash: 4c5e5324e8c532599dcc6f0abe72491cc2a71dedcb229c5d08f3f2336b5e1ee8
+indexed_at: 2026-03-30T18:41:33.530936Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F1: App Scaffold + Theme — Development Plan'
+      byte_offset: 0
+      byte_count: 40270
+      word_count: 5071
+      content_hash: 4c5e5324e8c532599dcc6f0abe72491cc2a71dedcb229c5d08f3f2336b5e1ee8
+      children:
+        - path: "1.1"
+          level: 2
+          title: Overview
+          byte_offset: 281
+          byte_count: 755
+          word_count: 113
+          content_hash: 55d253e045c7138fb432e7882335c79305f5c448b9412aac2f3f26048546b1cf
+        - path: "1.2"
+          level: 2
+          title: Task Dependency Graph
+          byte_offset: 1036
+          byte_count: 1247
+          word_count: 131
+          content_hash: 97b87d66c421bcba80d4e33efd90e07e852f0514a39b62d9907a5e9ce63c6d1a
+        - path: "1.3"
+          level: 2
+          title: Tasks
+          byte_offset: 2283
+          byte_count: 33139
+          word_count: 3994
+          content_hash: 119fbd81c2bdebcfe2750774605c37b496b8419ae49503d233bea7db21e0cd84
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 'Task 1: Tauri v2 Project Scaffold'
+              byte_offset: 2293
+              byte_count: 4045
+              word_count: 476
+              content_hash: c17c6d38b54ce4b001533ef3c73e0ca18f946694e3d828d2381bc0a4e0a0f268
+            - path: 1.3.2
+              level: 3
+              title: 'Task 2: Frontend Foundation'
+              byte_offset: 6338
+              byte_count: 4830
+              word_count: 487
+              content_hash: 917daa46747e8ae6189026cfd418062642e878a82c27c52f77db9a8483c79319
+            - path: 1.3.3
+              level: 3
+              title: 'Task 3: Tailwind CSS + shadcn/ui Setup'
+              byte_offset: 11168
+              byte_count: 6188
+              word_count: 771
+              content_hash: c30e433f2727b68156a984dfb74b0081d4f8d10ff41108b0155ce64996346dba
+            - path: 1.3.4
+              level: 3
+              title: 'Task 4: UI Store'
+              byte_offset: 17356
+              byte_count: 3708
+              word_count: 469
+              content_hash: 691be549aec1ca79bf10e78735fc0951a2edb99da4743664ff64bc8d1f5eea99
+            - path: 1.3.5
+              level: 3
+              title: 'Task 5: Layout Shell + View Switcher'
+              byte_offset: 21064
+              byte_count: 8262
+              word_count: 1000
+              content_hash: 08379824d9bc3c5723fc2e6adf00ec6612925a12439f270a23561d3c9b500e46
+            - path: 1.3.6
+              level: 3
+              title: 'Task 6: Project Open Flow'
+              byte_offset: 29326
+              byte_count: 6096
+              word_count: 789
+              content_hash: 6dc4d864e7f37ef5755d1785f93f076bb80031eaf27eb6f0e6b0a6b61aa816ba
+        - path: "1.4"
+          level: 2
+          title: Testing Strategy
+          byte_offset: 35422
+          byte_count: 1801
+          word_count: 322
+          content_hash: d317993f04f4f96f5905e1871786b7d1c6ce3268809efabd87659e763c5e7f35
+          children:
+            - path: 1.4.1
+              level: 3
+              title: Per-Task Verification
+              byte_offset: 35443
+              byte_count: 619
+              word_count: 112
+              content_hash: c73cea4672b88d86aa36dcbc553a076572bb1ca7cbbfaeb1f072dfcdcb9fb165
+            - path: 1.4.2
+              level: 3
+              title: Optional Unit Tests (Task 4)
+              byte_offset: 36062
+              byte_count: 368
+              word_count: 63
+              content_hash: 0bec3020f2aa7f00c48e227f173701e0007aacd921850d14f103945549801299
+            - path: 1.4.3
+              level: 3
+              title: Integration Acceptance Tests
+              byte_offset: 36430
+              byte_count: 793
+              word_count: 144
+              content_hash: 54fa2361d8b94fa9ed1e66c0174470f351edb4c06f960551c5a1eeedaf6deae1
+        - path: "1.5"
+          level: 2
+          title: Risk Areas
+          byte_offset: 37223
+          byte_count: 2399
+          word_count: 341
+          content_hash: 5b52e3b586fbec175577d9d9366849a4841dda9297f6141d703e89d8974c88f6
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 1. shadcn/ui Preset Availability
+              byte_offset: 37238
+              byte_count: 535
+              word_count: 83
+              content_hash: 9e9f06332f48cac5641320fc76eb07003066001e580072744541eb3081b51dcf
+            - path: 1.5.2
+              level: 3
+              title: 2. Tailwind CSS 4 Config Model
+              byte_offset: 37773
+              byte_count: 482
+              word_count: 66
+              content_hash: 4aa0e07520939b5c292c7b1c31392a65d6fce8af8fe6204de332e4c96330421c
+            - path: 1.5.3
+              level: 3
+              title: 3. Tauri v2 Plugin API Surfaces
+              byte_offset: 38255
+              byte_count: 453
+              word_count: 60
+              content_hash: 2f1d05b234eaa58d96c6dcdb642248b42fe5df7a9f2996e8857b53e009b370b2
+            - path: 1.5.4
+              level: 3
+              title: 4. `create-tauri-app` Template Drift
+              byte_offset: 38708
+              byte_count: 411
+              word_count: 55
+              content_hash: b6f2c9fd1b7e4c21441059d9697a1b9cd1ddfef064f26b9bebf9b5e90e2f2211
+            - path: 1.5.5
+              level: 3
+              title: 5. Dark Mode Bootstrap Timing
+              byte_offset: 39119
+              byte_count: 503
+              word_count: 74
+              content_hash: 4b36869542fe21b250192b381f5641d817aa44cbfaacf5854a5bdae35e062cf3
+        - path: "1.6"
+          level: 2
+          title: Summary
+          byte_offset: 39622
+          byte_count: 648
+          word_count: 147
+          content_hash: 4f9b78bad9ad1639c5e804e146463910e900567e55059d3042598bf5d1bb7f4f
+entity_refs:
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 62
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 121
+cross_doc_links:
+    - target_path: ../spec/f1-app-scaffold-theme-spec.md
+      link_text: F1 Specification
+      section_path: "1"
+    - target_path: ../design/f1-app-scaffold-theme.md
+      link_text: F1 Design Document
+      section_path: "1"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: "1.5"
+      role: risk
+      confidence: high
+    - section_path: "1.6"
+      role: narrative
+      confidence: high
+classified: false

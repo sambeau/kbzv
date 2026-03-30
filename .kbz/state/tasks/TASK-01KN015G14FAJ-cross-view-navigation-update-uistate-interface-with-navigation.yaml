@@ -1,0 +1,5 @@
+id: TASK-01KN015G14FAJ
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-update-uistate-interface-with-navigation
+summary: "Update UIState interface with navigation fields (navigateToEntity, navigateToDocument, activateFilter, goBack, goForward, history stack, expandedNodeIds)"
+status: ready

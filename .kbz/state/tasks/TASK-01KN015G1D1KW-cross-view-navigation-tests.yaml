@@ -1,0 +1,5 @@
+id: TASK-01KN015G1D1KW
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-tests
+summary: Write tests for cross-view-navigation
+status: ready

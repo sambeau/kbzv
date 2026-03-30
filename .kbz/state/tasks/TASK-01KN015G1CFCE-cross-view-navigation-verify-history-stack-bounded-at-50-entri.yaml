@@ -1,0 +1,5 @@
+id: TASK-01KN015G1CFCE
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-verify-history-stack-bounded-at-50-entri
+summary: Verify history stack bounded at 50 entries
+status: ready

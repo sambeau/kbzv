@@ -1,0 +1,5 @@
+id: TASK-01KN0162846F4
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-add-reloadentity-removeentity-rebuildder
+summary: "Add `reloadEntity()`, `removeEntity()`, `rebuildDerivedData()`, `refreshGitStatus()`, `invalidateContentHash()` actions to project store"
+status: ready

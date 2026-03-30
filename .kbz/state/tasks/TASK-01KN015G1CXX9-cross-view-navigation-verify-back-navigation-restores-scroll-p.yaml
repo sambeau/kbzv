@@ -1,0 +1,5 @@
+id: TASK-01KN015G1CXX9
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-verify-back-navigation-restores-scroll-p
+summary: "Verify ⌘[ back navigation restores scroll position and filters"
+status: ready

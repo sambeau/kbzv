@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ56YS
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-gfm-rendering-tables-task-lists-striketh
+summary: "GFM rendering: tables, task lists, strikethrough, and autolinks render correctly"
+status: ready

@@ -1,0 +1,14 @@
+id: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status
+parent: P1-kbzv
+status: developing
+summary: "Live file watching of .kbz/state/ and document roots using @tauri-apps/plugin-fs with 200ms debounce. Auto-refresh entity maps and derived data on file create/modify/delete. Git status panel in header showing branch name, uncommitted changes count, and ahead/behind remote."
+design: FEAT-01KMZA9PWFRJF/design-f6-file-watching-git-status
+spec: FEAT-01KMZA9PWFRJF/specification-f6-file-watching-git-status-spec
+dev_plan: FEAT-01KMZA9PWFRJF/dev-plan-f6-file-watching-git-status-dev-plan
+tags:
+  - file-watching
+  - git
+  - live-updates
+created: "2026-03-30T12:08:04Z"
+created_by: sambeau

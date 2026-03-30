@@ -1,0 +1,5 @@
+id: TASK-01KN016286HXE
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-tests
+summary: Write tests for file-watching-git-status
+status: ready

@@ -1,0 +1,344 @@
+document_id: FEAT-01KMZA9GFB075/specification-f3-workflows-view-spec
+document_path: work/spec/f3-workflows-view-spec.md
+content_hash: af0be3dc69467a157bb817ac90b4903fd04fb641b8adb73a642fbf5ff56c9161
+indexed_at: 2026-03-30T18:17:47.017743Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F3: Workflows View — Specification'
+      byte_offset: 0
+      byte_count: 70383
+      word_count: 8963
+      content_hash: af0be3dc69467a157bb817ac90b4903fd04fb641b8adb73a642fbf5ff56c9161
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. File Manifest
+          byte_offset: 376
+          byte_count: 3490
+          word_count: 402
+          content_hash: faa6474e17233a363d39e1cdc92a8017479e8fc9921e6acac81b4e69a49ba918
+          children:
+            - path: 1.1.1
+              level: 3
+              title: 1.1 New Files
+              byte_offset: 485
+              byte_count: 2347
+              word_count: 269
+              content_hash: 7e1620c37641ba099f222d3a6a586f25aecd66c4a028e0edb14a60c86694e66b
+            - path: 1.1.2
+              level: 3
+              title: 1.2 Modified Files
+              byte_offset: 2832
+              byte_count: 284
+              word_count: 36
+              content_hash: abe341f948a6c44fb776838dc12421192edd15bedca78650f413b792e4ab7b06
+            - path: 1.1.3
+              level: 3
+              title: 1.3 Consumed (Read-Only) From F2
+              byte_offset: 3116
+              byte_count: 750
+              word_count: 78
+              content_hash: 2e9139bf8f9559c5c4366f0fa021227f95c3045d5e7ea1bb2e019cbe50baa44f
+        - path: "1.2"
+          level: 2
+          title: 2. Layout
+          byte_offset: 3866
+          byte_count: 2213
+          word_count: 262
+          content_hash: 4e0897e777021de068fb9f5ece4eaca42c586954d8b26bce59bcd1ba95e43db2
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 WorkflowsView.tsx — Container Component
+              byte_offset: 3880
+              byte_count: 1644
+              word_count: 180
+              content_hash: 2ca4ae90f0430b8e80f00dbb356aaea12ba358f64870e34131aa51fa7e7814e4
+            - path: 1.2.2
+              level: 3
+              title: 2.2 Column Dimensions and Responsive Behaviour
+              byte_offset: 5524
+              byte_count: 555
+              word_count: 79
+              content_hash: 026e8e68eaed867719fb7a2b6a61beb784a0d390ea79dcc11d5aad3060a1bf6b
+        - path: "1.3"
+          level: 2
+          title: 3. Entity Tree Components
+          byte_offset: 6079
+          byte_count: 12675
+          word_count: 1464
+          content_hash: 3460855b261ed4b7dbbbafde7d4bd4154881d76cc00a66142a577a97a89bc6ac
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 EntityTree.tsx — Props, State, Rendering
+              byte_offset: 6109
+              byte_count: 2369
+              word_count: 260
+              content_hash: 22f686b336aded00517af9c1666b8845577099c2d05b13b7b2a6babaf817ccdb
+            - path: 1.3.2
+              level: 3
+              title: 3.2 TreeNode.tsx — Props, Rendering per Entity Type, Expand/Collapse
+              byte_offset: 8478
+              byte_count: 3462
+              word_count: 449
+              content_hash: 53d439f5f9fb60caeaf1aa25567675d6f430acd88bc9fed50e4fc403d09dd48c
+            - path: 1.3.3
+              level: 3
+              title: 3.3 TreeContext.tsx — Context Value, Provider, Consumer Hook
+              byte_offset: 11940
+              byte_count: 2947
+              word_count: 343
+              content_hash: 290fe599fffd87b116c52dcc6cf829b12d64d29a1c78df5a37d356913bb49e11
+            - path: 1.3.4
+              level: 3
+              title: 3.4 Standalone Sections (Bugs, Decisions, Incidents, Checkpoints)
+              byte_offset: 14887
+              byte_count: 3867
+              word_count: 407
+              content_hash: c8ceb5c942ddc7aae960cac42384ceb75dac67a6cd0d08d97d1c2a55b2e7777c
+        - path: "1.4"
+          level: 2
+          title: 4. Entity Detail Components
+          byte_offset: 18754
+          byte_count: 20678
+          word_count: 2866
+          content_hash: 441bbf79f984576f0b364f82402e8befbf5488fc2f596cb1d77c259acde0c1fa
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 EntityDetail.tsx — Router Component
+              byte_offset: 18786
+              byte_count: 1719
+              word_count: 219
+              content_hash: 5acc2d9628eda643d4d339d0813066f7234a06d70da9fe14abfc352a596732bd
+            - path: 1.4.2
+              level: 3
+              title: 4.2 PlanDetail.tsx — Exact Field Layout
+              byte_offset: 20505
+              byte_count: 2949
+              word_count: 311
+              content_hash: 19b3d3e9233736fd14160dd1c43c0f8fbd257ba29f3a46302bd97b47c5969082
+            - path: 1.4.3
+              level: 3
+              title: 4.3 FeatureDetail.tsx — Exact Field Layout
+              byte_offset: 23454
+              byte_count: 1660
+              word_count: 276
+              content_hash: 1706ba6fa3672d979f7434d2ef97f94865654a552f8de123984bcd7945b1e555
+            - path: 1.4.4
+              level: 3
+              title: 4.4 TaskDetail.tsx — Exact Field Layout
+              byte_offset: 25114
+              byte_count: 1477
+              word_count: 262
+              content_hash: 2d4ea017ad02b272fa18400172dfdba53037f7b15f7623737eb3b641236812ef
+            - path: 1.4.5
+              level: 3
+              title: 4.5 BugDetail.tsx — Exact Field Layout
+              byte_offset: 26591
+              byte_count: 1296
+              word_count: 246
+              content_hash: 77678caad237f111d1817958c9a4a4e5936af673332f92fd5be8750cf33d42ed
+            - path: 1.4.6
+              level: 3
+              title: 4.6 DecisionDetail.tsx — Exact Field Layout
+              byte_offset: 27887
+              byte_count: 722
+              word_count: 126
+              content_hash: e8230dde9da0d22ac3f95eb5df7a7688bd13d5f73160dc9a732eb7dbaf33664b
+            - path: 1.4.7
+              level: 3
+              title: 4.7 CheckpointDetail.tsx — Exact Field Layout
+              byte_offset: 28609
+              byte_count: 1124
+              word_count: 167
+              content_hash: e20d42eeae42705b78332811039c804654dfe5e66637066a629f3aef19b07cd5
+            - path: 1.4.8
+              level: 3
+              title: 4.8 IncidentDetail.tsx — Exact Field Layout
+              byte_offset: 29733
+              byte_count: 871
+              word_count: 151
+              content_hash: 3edf17705e051272ea9c3549bd9d7f5a1177bacf8b8627662fac9a8ff6560fe7
+            - path: 1.4.9
+              level: 3
+              title: 4.9 KnowledgeDetail.tsx — Exact Field Layout
+              byte_offset: 30604
+              byte_count: 1143
+              word_count: 206
+              content_hash: 8b44431a38e2e5be9d44a3415903a28d537afc25acd9b6a308fa4d3fc574aff6
+            - path: 1.4.10
+              level: 3
+              title: 4.10 FieldValue.tsx — Polymorphic Field Renderer
+              byte_offset: 31747
+              byte_count: 4221
+              word_count: 528
+              content_hash: 2eca8b05e6ff2acca5a4c27b2da2e5fced36568c856fc64c88f55154a13561ed
+            - path: 1.4.11
+              level: 3
+              title: 4.11 Empty / Default State
+              byte_offset: 35968
+              byte_count: 3464
+              word_count: 369
+              content_hash: ecd69549c25ee2148f8d70b7d441f1534dc064a4e33ef2a3b61b171cced90d90
+        - path: "1.5"
+          level: 2
+          title: 5. Common Components
+          byte_offset: 39432
+          byte_count: 8591
+          word_count: 1057
+          content_hash: 876d0bfd807986c72134921c47509b8d7b7a455851567b9792ecea33b4125423
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 StatusBadge.tsx — Exact Colour Classes per Status
+              byte_offset: 39457
+              byte_count: 2491
+              word_count: 347
+              content_hash: 8783934749b3ece18658358209b16d20c28f4121864d9e31ca82ef84cac53e61
+            - path: 1.5.2
+              level: 3
+              title: 5.2 StatusDot.tsx — Exact Colour Classes per Status
+              byte_offset: 41948
+              byte_count: 943
+              word_count: 134
+              content_hash: b9d14eb69148cc7f0469d030147b1c5efe2885a80f394f2e90e6d6abab8245dc
+            - path: 1.5.3
+              level: 3
+              title: 5.3 EntityLink.tsx — Rendering States, Click Behaviour
+              byte_offset: 42891
+              byte_count: 2281
+              word_count: 268
+              content_hash: ef85d5bf4811f0f8a7126990f4ce952037ceff5d23bf8dd834e40544c23c577f
+            - path: 1.5.4
+              level: 3
+              title: 5.4 ProgressBar.tsx — Exact Rendering
+              byte_offset: 45172
+              byte_count: 1264
+              word_count: 139
+              content_hash: 5cd575fbf36a2233754f4ad15d5bbfe66c4977505c7776a948f95d02a1d62185
+            - path: 1.5.5
+              level: 3
+              title: 5.5 EstimateDisplay.tsx — Exact Rendering
+              byte_offset: 46436
+              byte_count: 1587
+              word_count: 165
+              content_hash: 7541205a3d4679b09f612724616457e941b661fed454664f72110d005ed007af
+        - path: "1.6"
+          level: 2
+          title: 6. Filter Bar
+          byte_offset: 48023
+          byte_count: 11294
+          word_count: 1223
+          content_hash: 477155ab0237f0564b9055b697c7c7e3d6e72955179ce02e6c9ef1df855d71e3
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 FilterBar.tsx — Type Toggles, Status Toggles
+              byte_offset: 48041
+              byte_count: 4975
+              word_count: 522
+              content_hash: 972f0c0a41231e1012f2daf65bc8e4d540834c30b08a18b51486020ff8a87f95
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Filter State Interface
+              byte_offset: 53016
+              byte_count: 1898
+              word_count: 212
+              content_hash: 664a9cbb279cb0b6f0058877aee339bbba01811f638477e5aa1daadbb6dcf707
+            - path: 1.6.3
+              level: 3
+              title: 6.3 Filter Application Algorithm (AND Logic, Ghost Parents)
+              byte_offset: 54914
+              byte_count: 4403
+              word_count: 485
+              content_hash: 999cfa98bbbd52a19ef79c79f36a21dc279f07f0daa87cef69b3bf91ca329d39
+        - path: "1.7"
+          level: 2
+          title: 7. UI Store Extensions
+          byte_offset: 59317
+          byte_count: 1214
+          word_count: 149
+          content_hash: 8d05746bedda1b653c9b341a6e2cb43edf9b959fb007f6a548c126a2aa46dc96
+        - path: "1.8"
+          level: 2
+          title: 8. Implementation Order
+          byte_offset: 60531
+          byte_count: 2093
+          word_count: 302
+          content_hash: d0ab1b7c4710394efe33f833b9d8e8481614fdd4c1f48e9770bbce449a6aab47
+        - path: "1.9"
+          level: 2
+          title: 9. Acceptance Criteria
+          byte_offset: 62624
+          byte_count: 5670
+          word_count: 923
+          content_hash: 56709da6a95cf8c2c6e8a6b8cdb337c30066ee50def6e50bf43bc83af776f6a8
+          children:
+            - path: 1.9.1
+              level: 3
+              title: Functional
+              byte_offset: 62651
+              byte_count: 4147
+              word_count: 661
+              content_hash: f3cb1fb5529832ff1859e741da9d8b94bcbbf4d13728f3232391e66355c7188e
+            - path: 1.9.2
+              level: 3
+              title: Error Resilience
+              byte_offset: 66798
+              byte_count: 1496
+              word_count: 258
+              content_hash: ae188c4df65482f7559445a91e19cd3560118a3c77fbde452f8b4e47c7097c3b
+        - path: "1.10"
+          level: 2
+          title: References
+          byte_offset: 68294
+          byte_count: 2089
+          word_count: 259
+          content_hash: 3a25ed630fee6d1df77674f6f8700275f734d5a06297fe5c6ccaf4e127ac2048
+entity_refs:
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 95
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 197
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 244
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 168
+cross_doc_links:
+    - target_path: work/design/f3-workflows-view.md
+      link_text: work/design/f3-workflows-view.md
+      section_path: "1"
+    - target_path: work/design/f3-workflows-view.md
+      link_text: work/design/f3-workflows-view.md
+      section_path: "1.10"
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: "1.10"
+    - target_path: work/design/f2-data-layer.md
+      link_text: work/design/f2-data-layer.md
+      section_path: "1.10"
+conventional_roles:
+    - section_path: 1.3.3
+      role: narrative
+      confidence: high
+    - section_path: 1.3.4
+      role: decision
+      confidence: high
+    - section_path: 1.4.6
+      role: decision
+      confidence: high
+    - section_path: "1.9"
+      role: requirement
+      confidence: high
+classified: false

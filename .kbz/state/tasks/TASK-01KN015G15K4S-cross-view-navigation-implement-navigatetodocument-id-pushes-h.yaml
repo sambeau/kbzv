@@ -1,0 +1,5 @@
+id: TASK-01KN015G15K4S
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-implement-navigatetodocument-id-pushes-h
+summary: "Implement navigateToDocument(id) — pushes history entry, switches to documents view, opens document viewer"
+status: ready

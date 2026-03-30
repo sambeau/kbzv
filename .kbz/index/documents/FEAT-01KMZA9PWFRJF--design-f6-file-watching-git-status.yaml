@@ -1,0 +1,322 @@
+document_id: FEAT-01KMZA9PWFRJF/design-f6-file-watching-git-status
+document_path: work/design/f6-file-watching-git-status.md
+content_hash: 97886614c5c7478f7b9f0d4378ab25b790c746b54e425fc5c9bb3f42378c3301
+indexed_at: 2026-03-30T12:31:30.053295Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'Feature 6: File Watching + Git Status — Design Document'
+      byte_offset: 0
+      byte_count: 22116
+      word_count: 3032
+      content_hash: 97886614c5c7478f7b9f0d4378ab25b790c746b54e425fc5c9bb3f42378c3301
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. Purpose
+          byte_offset: 289
+          byte_count: 596
+          word_count: 90
+          content_hash: 0d0d8029052211406c026baed1429a335159d8c86c45effa90ddec92d1321aa5
+        - path: "1.2"
+          level: 2
+          title: 2. Scope
+          byte_offset: 885
+          byte_count: 797
+          word_count: 123
+          content_hash: 97c7ca3fe21839968d1867f2da71e1fe23fc5048d788a29cb88c042aea60c700
+          children:
+            - path: 1.2.1
+              level: 3
+              title: In Scope
+              byte_offset: 898
+              byte_count: 497
+              word_count: 73
+              content_hash: 0da679e1c90a6d31f60292874f8de5bb393ea48d873bf308bb6cd8dab091e441
+            - path: 1.2.2
+              level: 3
+              title: Out of Scope
+              byte_offset: 1395
+              byte_count: 287
+              word_count: 47
+              content_hash: b7f313cfd7ef07315d70bd008720e026096071b4aaadbba0d9fcfcfe5ecf7125
+        - path: "1.3"
+          level: 2
+          title: 3. File Watching
+          byte_offset: 1682
+          byte_count: 2135
+          word_count: 294
+          content_hash: 562c744e52c06d30d208a8ee9a3c6948c6d81fb697d4ab69d4499b7b29ae43ca
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 Watch Targets
+              byte_offset: 1703
+              byte_count: 716
+              word_count: 90
+              content_hash: 8dd4ca0943f214f36603ceb9564fc6cc644f07676db5ddc0f2fe2b282598da64
+            - path: 1.3.2
+              level: 3
+              title: 3.2 Watch API
+              byte_offset: 2419
+              byte_count: 344
+              word_count: 50
+              content_hash: 983fc146a2ce29e5944837e66cdbdc8fbbfcab07e821a3edf548a7e6e31cbc8a
+            - path: 1.3.3
+              level: 3
+              title: 3.3 Watcher Lifecycle
+              byte_offset: 2763
+              byte_count: 537
+              word_count: 62
+              content_hash: 2cf05c2a406bd7793c5fd53594e762a7e28a05b14a2da6c3aba97c6ce73a0331
+            - path: 1.3.4
+              level: 3
+              title: 3.4 Watcher Error Handling
+              byte_offset: 3300
+              byte_count: 517
+              word_count: 88
+              content_hash: e8d1d8cf8d829df9c3f93879bcd91b7afe4b740290b04b5b04011b48b3a9cfa7
+        - path: "1.4"
+          level: 2
+          title: 4. Event Processing
+          byte_offset: 3817
+          byte_count: 5747
+          word_count: 804
+          content_hash: fd99251768289e1457fec5cd51c456ce9358b2c9152eecf9b2b902d9296385cc
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 Debounce Strategy
+              byte_offset: 3841
+              byte_count: 1111
+              word_count: 151
+              content_hash: 913dd4ae66806a3d035c585dbee98ef96b3d95348d0f11e95bbb398142b32f16
+            - path: 1.4.2
+              level: 3
+              title: 4.2 File Path → Entity Resolution
+              byte_offset: 4952
+              byte_count: 2121
+              word_count: 313
+              content_hash: d029e13f3d202bc8e912deddfc5a71862f6f313e76d80999dff152183cca2cee
+            - path: 1.4.3
+              level: 3
+              title: 4.3 Batch Processing Pipeline
+              byte_offset: 7073
+              byte_count: 1318
+              word_count: 167
+              content_hash: 38a289bbaf1aaa761a7aeb9c01bb8e77ea19707b6d8126fad4a6a749cc2e0f28
+            - path: 1.4.4
+              level: 3
+              title: 4.4 Deduplication
+              byte_offset: 8391
+              byte_count: 487
+              word_count: 65
+              content_hash: e8125681c66fcd66f8352ca58398c0db529d5880f2ace0181c8b889fb56ace24
+            - path: 1.4.5
+              level: 3
+              title: 4.5 Concurrency Safety
+              byte_offset: 8878
+              byte_count: 686
+              word_count: 104
+              content_hash: 97f2c55b67529c23279203336199cd7203f77a894b0d4d928e9f3dd9e0280a90
+        - path: "1.5"
+          level: 2
+          title: 5. Integration with Data Layer (F2)
+          byte_offset: 9564
+          byte_count: 1579
+          word_count: 237
+          content_hash: 4f7f6cbc8d29abf9932a38bb260035f2cbdf4e768c1609cc2555877dc4913fe2
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 Store Actions
+              byte_offset: 9604
+              byte_count: 631
+              word_count: 99
+              content_hash: ef74b5f1bde163efcaf1326f9e85d1a9187cb401bccaed49e090b10f1eb24af4
+            - path: 1.5.2
+              level: 3
+              title: 5.2 Derived Data Rebuild
+              byte_offset: 10235
+              byte_count: 393
+              word_count: 53
+              content_hash: 8e3982804e0c28e24b9857242cd5327238723ecfc19a581d3b38808c07840059
+            - path: 1.5.3
+              level: 3
+              title: 5.3 Document Drift Invalidation
+              byte_offset: 10628
+              byte_count: 515
+              word_count: 78
+              content_hash: f91f6efc517d9c5d82239aa07852b4230193659b10acd65e586873c02c455246
+        - path: "1.6"
+          level: 2
+          title: 6. Git Status Panel
+          byte_offset: 11143
+          byte_count: 4965
+          word_count: 647
+          content_hash: 47d8588d1237a94c069d73034bc6465c69bc849ec2814eaf43f6fd95ad73ac7e
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 Visual Design
+              byte_offset: 11167
+              byte_count: 1612
+              word_count: 180
+              content_hash: 2d907f32cf985d1b2ae28dca11d1c2bb5ef735e3f5611288f89d6c0489435913
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Git Data Retrieval
+              byte_offset: 12779
+              byte_count: 914
+              word_count: 129
+              content_hash: e9d3305ade42b9af442cb036327bb6fbf288c54b6652f16208ab42da545a0d8a
+            - path: 1.6.3
+              level: 3
+              title: 6.3 Git Status Data Model
+              byte_offset: 13693
+              byte_count: 534
+              word_count: 83
+              content_hash: 87c52a94758efc5da8ad56ba930fa4cdf417ce113458bd4002f395d1b2f41998
+            - path: 1.6.4
+              level: 3
+              title: 6.4 Git Command Execution
+              byte_offset: 14227
+              byte_count: 1249
+              word_count: 149
+              content_hash: 57b2c7e5403f58e833bf6b3f1c8f5dbb0057aa3827a02162b4128223690a4bb5
+            - path: 1.6.5
+              level: 3
+              title: 6.5 Refresh Timing
+              byte_offset: 15476
+              byte_count: 374
+              word_count: 62
+              content_hash: 7fd9cdacf3ae307cccb64081dc8acadd76462bfdc55783f5e96308130cc08642
+            - path: 1.6.6
+              level: 3
+              title: 6.6 Non-Git Projects
+              byte_offset: 15850
+              byte_count: 258
+              word_count: 39
+              content_hash: efc5d5c4ac63a0d9f20146d735a259ce9e177ae44a01b7f25c46cb5568e6ca28
+        - path: "1.7"
+          level: 2
+          title: 7. Component Design
+          byte_offset: 16108
+          byte_count: 2348
+          word_count: 248
+          content_hash: 6e8537387f6b578b3293820768e58d446899c6a6ab342e98aeae4eb8dcf0c284
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 File Layout
+              byte_offset: 16132
+              byte_count: 223
+              word_count: 25
+              content_hash: ebe9dd0eb8c7d2cb1964c9bffa8a769cfa61e33d9580958ec2d403d13df9daa2
+            - path: 1.7.2
+              level: 3
+              title: 7.2 watcher.ts
+              byte_offset: 16355
+              byte_count: 971
+              word_count: 121
+              content_hash: f7f7088b015c430e1dba13c7fdadb38d0f5b3852d9a566da0fe42152c3dc5695
+            - path: 1.7.3
+              level: 3
+              title: 7.3 GitInfo.tsx
+              byte_offset: 17326
+              byte_count: 1130
+              word_count: 98
+              content_hash: 92b89965c9e28ca933a8aae4ac6692a96fd1a93378d1c645b201bac7530365a6
+        - path: "1.8"
+          level: 2
+          title: 8. Store Extensions
+          byte_offset: 18456
+          byte_count: 585
+          word_count: 89
+          content_hash: ac9c6062e78b36cace2b9a2f3020a8dd641063e3e3f876c47ecde309c5e03a5f
+        - path: "1.9"
+          level: 2
+          title: 9. Error Handling
+          byte_offset: 19041
+          byte_count: 757
+          word_count: 137
+          content_hash: ab2168af74e66848c2b760422a8eda36b1532c804886fb15acd666b60ff3f849
+        - path: "1.10"
+          level: 2
+          title: 10. Acceptance Criteria
+          byte_offset: 19798
+          byte_count: 1274
+          word_count: 189
+          content_hash: 633feeea79ced00f9cb266571412a14ed360af0785abc91ab4da447e8e4ec01f
+        - path: "1.11"
+          level: 2
+          title: 11. Dependencies
+          byte_offset: 21072
+          byte_count: 729
+          word_count: 107
+          content_hash: bfe8d2cfba3c1ed9e5fbaea87f35c15df89df2430799240815fb988a95438979
+          children:
+            - path: 1.11.1
+              level: 3
+              title: Tauri Capability Additions
+              byte_offset: 21536
+              byte_count: 265
+              word_count: 31
+              content_hash: 689582406265a57205b51090928f0ecf16f67962525e5f4481bcaa99017d1e70
+        - path: "1.12"
+          level: 2
+          title: 12. References
+          byte_offset: 21801
+          byte_count: 315
+          word_count: 34
+          content_hash: b0a73943ef398c952c2eb75d2e34e61830e807d2cec40f2273020dc48acfb620
+entity_refs:
+    - entity_id: FEAT-01KMZA9PWFRJF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 77
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 166
+    - entity_id: FEAT-01KMZA9PWFRJF
+      entity_type: feature
+      section_path: 1.4.2
+      byte_offset: 5958
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1.12"
+      byte_offset: 22098
+    - entity_id: DOC-01JX
+      entity_type: document
+      section_path: 1.4.2
+      byte_offset: 6072
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 142
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.4.2
+      byte_offset: 5783
+cross_doc_links:
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: "1.12"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: "1.2"
+      role: constraint
+      confidence: high
+    - section_path: 1.2.1
+      role: constraint
+      confidence: high
+    - section_path: 1.2.2
+      role: constraint
+      confidence: high
+    - section_path: "1.10"
+      role: requirement
+      confidence: high
+classified: false

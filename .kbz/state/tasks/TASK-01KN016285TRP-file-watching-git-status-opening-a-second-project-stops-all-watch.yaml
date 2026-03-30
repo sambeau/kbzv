@@ -1,0 +1,5 @@
+id: TASK-01KN016285TRP
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-opening-a-second-project-stops-all-watch
+summary: Opening a second project stops all watchers from the previous project
+status: ready

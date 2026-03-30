@@ -1,0 +1,423 @@
+document_id: FEAT-01KMZA9CP9XEX/dev-plan-f2-data-layer-dev-plan
+document_path: work/dev/f2-data-layer-dev-plan.md
+content_hash: f7c5e5a2c58996cfddcf8904fc8d0179ddb86fa6ad69ae6d00c0ac4ff8a1c382
+indexed_at: 2026-03-30T18:41:33.574788Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F2: Data Layer — Development Plan'
+      byte_offset: 0
+      byte_count: 104391
+      word_count: 12517
+      content_hash: f7c5e5a2c58996cfddcf8904fc8d0179ddb86fa6ad69ae6d00c0ac4ff8a1c382
+      children:
+        - path: "1.1"
+          level: 2
+          title: Overview
+          byte_offset: 272
+          byte_count: 899
+          word_count: 124
+          content_hash: ba2a798384fbaf4b7652c22242fb2ae20f36bd86ecabf325020db617974fce8d
+        - path: "1.2"
+          level: 2
+          title: Task Dependency Graph
+          byte_offset: 1171
+          byte_count: 1331
+          word_count: 186
+          content_hash: 3d87c5a78f44274c713acee4e21441b1f1229d7356f2ac77f80bcc8c88c9cf96
+        - path: "1.3"
+          level: 2
+          title: Tasks
+          byte_offset: 2502
+          byte_count: 95017
+          word_count: 11035
+          content_hash: 3708b293b7671264bbf3b314fcdbef879fcf6fc3b17596cf3b1d445bfa8c39c5
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 'Task 1: Entity Type Definitions'
+              byte_offset: 2512
+              byte_count: 18713
+              word_count: 2605
+              content_hash: ceef5c079fe357ebc27db74cf8c115ecbddf76853e6473f275b9cb8e88a5cab7
+            - path: 1.3.2
+              level: 3
+              title: 'Task 2: Constants'
+              byte_offset: 21225
+              byte_count: 7411
+              word_count: 706
+              content_hash: 366dcb09c0cd70d8ff82bc2510e0d19a41671c82ecc16f1df7381ceb28b43e10
+            - path: 1.3.3
+              level: 3
+              title: 'Task 3: YAML Loader'
+              byte_offset: 28636
+              byte_count: 8495
+              word_count: 1064
+              content_hash: 7b49f026362dde7e8d18deedd78985941574c094e27bc4a6bed6ada816f0e011
+            - path: 1.3.4
+              level: 3
+              title: 'Task 4: Zustand Project Store'
+              byte_offset: 37131
+              byte_count: 7752
+              word_count: 773
+              content_hash: 2a263fde3efd201aaac9592f14428b53da0c17643562793d35bcfab3d2673faa
+            - path: 1.3.5
+              level: 3
+              title: 'Task 5: Tree Builder'
+              byte_offset: 44883
+              byte_count: 9085
+              word_count: 1091
+              content_hash: 6eae56f276314aadab5dc94c883325cb03c832b4adfed11ca1cd30d148356a36
+            - path: 1.3.6
+              level: 3
+              title: 'Task 6: Metrics'
+              byte_offset: 53968
+              byte_count: 7598
+              word_count: 989
+              content_hash: 4b44944337c20d7059e9ed9800f723aea22e72807c026b8f2e7a77ea6898afc8
+            - path: 1.3.7
+              level: 3
+              title: 'Task 7: Reference Resolution'
+              byte_offset: 61566
+              byte_count: 5507
+              word_count: 695
+              content_hash: 0d0aa52180aba996c7634155dfd57b9f1349de90550f2ec0906dc24cd7074e46
+            - path: 1.3.8
+              level: 3
+              title: 'Task 8: Wire to UI'
+              byte_offset: 67073
+              byte_count: 5831
+              word_count: 699
+              content_hash: 710ea476bf467e825601d4c6773cdaa57799908d5bbde7ca08eac6ef752ae0aa
+            - path: 1.3.9
+              level: 3
+              title: 'Task 9: Integration Testing'
+              byte_offset: 72904
+              byte_count: 24615
+              word_count: 2411
+              content_hash: 55973fcb25a672e1ee222b85dc3ba27754bea27293e3c730160556780dab02f9
+        - path: "1.4"
+          level: 2
+          title: Implementation Order Summary
+          byte_offset: 97519
+          byte_count: 554
+          word_count: 111
+          content_hash: f430f2d18995ea41e0ae68806757414db98ab5f246b0ebee2215098da7ab6f00
+        - path: "1.5"
+          level: 2
+          title: Testing Strategy
+          byte_offset: 98073
+          byte_count: 1661
+          word_count: 260
+          content_hash: 7e74380dc08e2a3a05a21a2c20a993f48447f50e7f0a722aee4cdecf05f51d50
+          children:
+            - path: 1.5.1
+              level: 3
+              title: Unit Tests (Vitest — no Tauri runtime needed)
+              byte_offset: 98094
+              byte_count: 625
+              word_count: 94
+              content_hash: b54a944784d9c68ff0f529db2f023096ed6d3dfc8d515eca959bba08dfddadf2
+            - path: 1.5.2
+              level: 3
+              title: Manual Integration Tests (Tauri runtime required)
+              byte_offset: 98719
+              byte_count: 807
+              word_count: 131
+              content_hash: df03349fd9b9a05a76bda5ecaf2a9465239925b3abfca6eb201dd9868d0e202c
+            - path: 1.5.3
+              level: 3
+              title: 'Future: Automated Integration Tests'
+              byte_offset: 99526
+              byte_count: 208
+              word_count: 32
+              content_hash: bc33068e92554a857d15b5fb673170475b4c51758e92961db084346b5be981ba
+        - path: "1.6"
+          level: 2
+          title: Acceptance Criteria Mapping
+          byte_offset: 99734
+          byte_count: 1599
+          word_count: 295
+          content_hash: 1c4be43d4312efaaf1ca3668d6c736731f5fbcbda30a237fda8a79144e4eb5bb
+        - path: "1.7"
+          level: 2
+          title: Risk Areas
+          byte_offset: 101333
+          byte_count: 2114
+          word_count: 320
+          content_hash: 5173a15578fb9e2b9fbb20c34a7dcba8bd207449742f612d0f1cbc4ef6578d32
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 1. Tauri FS API Mismatch (Medium Risk)
+              byte_offset: 101348
+              byte_count: 445
+              word_count: 64
+              content_hash: 81bf4440c4b44ffdd320a77701ad9436f4747f1444a9cd76226554a0ff7827ce
+            - path: 1.7.2
+              level: 3
+              title: 2. Large Project Performance (Low Risk)
+              byte_offset: 101793
+              byte_count: 369
+              word_count: 57
+              content_hash: 2e495a7f7e1ff6fa686a58ba15027683fe9e0cdd484716716d6d544f55699ebe
+            - path: 1.7.3
+              level: 3
+              title: 3. YAML Library Type Coercion (Medium Risk)
+              byte_offset: 102162
+              byte_count: 477
+              word_count: 79
+              content_hash: e7b0d55f92156c49db5499631716200e13f84585e2e7e80794612c9059382405
+            - path: 1.7.4
+              level: 3
+              title: 4. Two-Store Coordination (Low Risk)
+              byte_offset: 102639
+              byte_count: 387
+              word_count: 46
+              content_hash: 80dfaeba6c72456be4a41d59c7f5a3f4cc108ad376d7a466e292794f26e64f1e
+            - path: 1.7.5
+              level: 3
+              title: 5. Document ID Encoding (Low Risk)
+              byte_offset: 103026
+              byte_count: 421
+              word_count: 71
+              content_hash: 58fc98c3bfdf267bc3b1ee33bb024b19a32b68a58e990b9f0fcad4bf5315d7f0
+        - path: "1.8"
+          level: 2
+          title: npm Dependencies
+          byte_offset: 103447
+          byte_count: 595
+          word_count: 102
+          content_hash: 893110c507d5713285fc0ff78239cb01fb7ed6646e9dc4e68598d9811e0f2d50
+        - path: "1.9"
+          level: 2
+          title: References
+          byte_offset: 104042
+          byte_count: 349
+          word_count: 37
+          content_hash: 98dd5e34637b124e74b67ea1536039885bc42d231fcefa9f9f39a9ea00e96ab3
+entity_refs:
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 91
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 161
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: 1.3.1
+      byte_offset: 5081
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.3.1
+      byte_offset: 13280
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.3.7
+      byte_offset: 62753
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: 1.3.7
+      byte_offset: 65694
+    - entity_id: FEAT-01AAA
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 73506
+    - entity_id: FEAT-01BBB
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 73606
+    - entity_id: FEAT-01CCC
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 73711
+    - entity_id: FEAT-99NONEXISTENT
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 77691
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 94114
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 94351
+    - entity_id: FEAT-01NONEXISTENT
+      entity_type: feature
+      section_path: 1.3.9
+      byte_offset: 96174
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1.9"
+      byte_offset: 104272
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1.9"
+      byte_offset: 104345
+    - entity_id: TASK-01KMZA9XXXYYY
+      entity_type: task
+      section_path: 1.3.1
+      byte_offset: 6747
+    - entity_id: TASK-01ABC123
+      entity_type: task
+      section_path: 1.3.7
+      byte_offset: 66413
+    - entity_id: TASK-01DDD
+      entity_type: task
+      section_path: 1.3.9
+      byte_offset: 73839
+    - entity_id: TASK-01EEE
+      entity_type: task
+      section_path: 1.3.9
+      byte_offset: 73948
+    - entity_id: TASK-01FFF
+      entity_type: task
+      section_path: 1.3.9
+      byte_offset: 74059
+    - entity_id: TASK-01GGG
+      entity_type: task
+      section_path: 1.3.9
+      byte_offset: 74176
+    - entity_id: TASK-01ABC123
+      entity_type: task
+      section_path: 1.3.9
+      byte_offset: 94153
+    - entity_id: BUG-01XYZ789
+      entity_type: bug
+      section_path: 1.3.7
+      byte_offset: 66449
+    - entity_id: BUG-01HHH
+      entity_type: bug
+      section_path: 1.3.9
+      byte_offset: 74301
+    - entity_id: BUG-01XYZ789
+      entity_type: bug
+      section_path: 1.3.9
+      byte_offset: 94184
+    - entity_id: DEC-01AAA111
+      entity_type: decision
+      section_path: 1.3.7
+      byte_offset: 66483
+    - entity_id: DEC-01III
+      entity_type: decision
+      section_path: 1.3.9
+      byte_offset: 74396
+    - entity_id: DEC-01AAA111
+      entity_type: decision
+      section_path: 1.3.9
+      byte_offset: 94213
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 132
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.3.1
+      byte_offset: 3824
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.3.1
+      byte_offset: 3835
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.3.5
+      byte_offset: 46527
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.3.5
+      byte_offset: 46538
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.3.7
+      byte_offset: 66746
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.3.7
+      byte_offset: 66776
+    - entity_id: P1-test
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 73321
+    - entity_id: P2-other
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 73402
+    - entity_id: P99-nonexistent
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 76575
+    - entity_id: P2-beta
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 84827
+    - entity_id: P1-alpha
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 84875
+    - entity_id: P10-gamma
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 84925
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 94446
+    - entity_id: P12-infra
+      entity_type: plan
+      section_path: 1.3.9
+      byte_offset: 94471
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1.9"
+      byte_offset: 104321
+cross_doc_links:
+    - target_path: ../spec/f2-data-layer-spec.md
+      link_text: F2 Specification
+      section_path: "1.1"
+    - target_path: ../design/f2-data-layer.md
+      link_text: F2 Design Document
+      section_path: "1.1"
+    - target_path: ../spec/f2-data-layer-spec.md
+      link_text: 'F2: Data Layer — Specification'
+      section_path: "1.9"
+    - target_path: ../design/f2-data-layer.md
+      link_text: 'F2: Data Layer — Design Document'
+      section_path: "1.9"
+    - target_path: ../design/kbzv-architecture.md
+      link_text: KBZV Architecture Design
+      section_path: "1.9"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: 1.3.1
+      role: definition
+      confidence: high
+    - section_path: "1.4"
+      role: narrative
+      confidence: high
+    - section_path: "1.6"
+      role: requirement
+      confidence: high
+    - section_path: "1.7"
+      role: risk
+      confidence: high
+    - section_path: 1.7.1
+      role: risk
+      confidence: high
+    - section_path: 1.7.2
+      role: risk
+      confidence: high
+    - section_path: 1.7.3
+      role: risk
+      confidence: high
+    - section_path: 1.7.4
+      role: risk
+      confidence: high
+    - section_path: 1.7.5
+      role: risk
+      confidence: high
+classified: false

@@ -1,0 +1,9 @@
+id: base
+description: "Project-wide conventions for all agents"
+# Add your project's global conventions here.
+# All other roles inherit from base unless they declare their own inherits field.
+conventions: []
+# architecture:
+#   summary: "One paragraph describing the overall project structure"
+#   key_interfaces:
+#     - "The most important files/packages and what they do"

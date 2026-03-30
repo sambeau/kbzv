@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ73QV
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-drift-detection-approved-different-hash
+summary: "Drift detection: approved + different hash shows orange \"Modified since approval\" badge"
+status: ready

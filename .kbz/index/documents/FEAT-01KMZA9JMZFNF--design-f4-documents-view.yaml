@@ -1,0 +1,434 @@
+document_id: FEAT-01KMZA9JMZFNF/design-f4-documents-view
+document_path: work/design/f4-documents-view.md
+content_hash: 2a67d780caf89f7ff1e00a64166b8af272f35b1c2e918452d1afa3c87b294a65
+indexed_at: 2026-03-30T12:31:30.003192Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'Feature 4: Documents View — Design Document'
+      byte_offset: 0
+      byte_count: 32316
+      word_count: 4230
+      content_hash: 2a67d780caf89f7ff1e00a64166b8af272f35b1c2e918452d1afa3c87b294a65
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. Purpose
+          byte_offset: 426
+          byte_count: 1556
+          word_count: 238
+          content_hash: 0f57b462a1defde0c8a107ec5a2c1c11e9247ec8c22c35e4acf1d44cc8e7e6d7
+          children:
+            - path: 1.1.1
+              level: 3
+              title: 1.1 What Ships
+              byte_offset: 1010
+              byte_count: 528
+              word_count: 81
+              content_hash: e1e411d241d3ac39535e84191157f23203c8c7d77745cb63ce0d6357c37fa884
+            - path: 1.1.2
+              level: 3
+              title: 1.2 What Does Not Ship (Out of Scope)
+              byte_offset: 1538
+              byte_count: 444
+              word_count: 70
+              content_hash: 6600935e22590411b128b666e8ffb83c87887ed3a604ab248b10c3425fe9cc10
+        - path: "1.2"
+          level: 2
+          title: 2. Data Model
+          byte_offset: 1982
+          byte_count: 1647
+          word_count: 228
+          content_hash: f0b50edb1f7d2dc621b1867f84e9df882c04317e0f2450156496b46e44e75086
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 DocumentRecord (from `.kbz/state/documents/`)
+              byte_offset: 2000
+              byte_count: 1002
+              word_count: 126
+              content_hash: 4913d3672b2f146e14bc910cc3b42addf5f7265ff1b4b36306d258ea78aa48b9
+            - path: 1.2.2
+              level: 3
+              title: 2.2 Key Data Invariants
+              byte_offset: 3002
+              byte_count: 627
+              word_count: 98
+              content_hash: 1529685ddf646599fe9f1dce3662920d25d30f36fcd160524b9cd69f1a57d244
+        - path: "1.3"
+          level: 2
+          title: 3. Document List
+          byte_offset: 3629
+          byte_count: 5876
+          word_count: 735
+          content_hash: 8ff4fac922b25b65c88743349c360914d65bd26832276667b2c604810ac55fae
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 Layout
+              byte_offset: 3650
+              byte_count: 1712
+              word_count: 80
+              content_hash: 0360c72aeb1be0470b1c68e20abeddea49bbc39eb3b6fc0b32732b8b28e8ed2d
+            - path: 1.3.2
+              level: 3
+              title: 3.2 List Row Anatomy
+              byte_offset: 5362
+              byte_count: 828
+              word_count: 130
+              content_hash: e43ef3bd5e4eb94d6afb4bb61d6392526367b71315ce8bb8cb1bebc817741f11
+            - path: 1.3.3
+              level: 3
+              title: 3.3 Empty State
+              byte_offset: 6190
+              byte_count: 410
+              word_count: 62
+              content_hash: da83b685ab61fa2960eb287f19618ed16acba81aa5f08e94650fae2b5cb60fdf
+            - path: 1.3.4
+              level: 3
+              title: 3.4 Status Colours
+              byte_offset: 6600
+              byte_count: 437
+              word_count: 71
+              content_hash: 644baf479a8c1a6b375a3cba5064f43939c5f31137c197829277b287ae8f000d
+            - path: 1.3.5
+              level: 3
+              title: 3.5 Type Colours
+              byte_offset: 7037
+              byte_count: 494
+              word_count: 89
+              content_hash: 8676c28adf48110ffca61d89486ade3924a86d68f9a93c8f0940a1632e87fa80
+            - path: 1.3.6
+              level: 3
+              title: 3.5 Default Sort and Sort Control
+              byte_offset: 7531
+              byte_count: 392
+              word_count: 62
+              content_hash: 0e7dccc27667a1231630099706657d057d2fd7554079d5f998eb24410aabfa17
+            - path: 1.3.7
+              level: 3
+              title: 3.6 Filter Bar
+              byte_offset: 7923
+              byte_count: 1329
+              word_count: 194
+              content_hash: db2f002e647433c04cb3a95fe26211740dfb024e279f7149fc169bd7fc31ec9a
+            - path: 1.3.8
+              level: 3
+              title: 3.7 No Pagination
+              byte_offset: 9252
+              byte_count: 253
+              word_count: 43
+              content_hash: a492a0728588b40be007f7b50af99f56ed403a0fd32b8a09b959589a9699eb95
+        - path: "1.4"
+          level: 2
+          title: 4. Document Viewer
+          byte_offset: 9505
+          byte_count: 6938
+          word_count: 864
+          content_hash: bd66a24c14234aa6bc5c5265fc88e5edda8ee1d92c91a126eeb02744b300494c
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 Layout
+              byte_offset: 9528
+              byte_count: 2551
+              word_count: 199
+              content_hash: 6b2e3195fe4ab0cddbfb6a7e7ab9586b82e40f45db6819f80f1120030b94b8c9
+            - path: 1.4.2
+              level: 3
+              title: 4.2 Viewer Header
+              byte_offset: 12079
+              byte_count: 312
+              word_count: 44
+              content_hash: f99a009f2aa3e699e6541f631f178c569f0577d0a34fc4ad208961c96e04edae
+            - path: 1.4.3
+              level: 3
+              title: 4.3 Back Button Behaviour
+              byte_offset: 12391
+              byte_count: 612
+              word_count: 90
+              content_hash: 696e59d876a7a6875afec7630c893cbf8cb101b7404bcd3a0f904027ba3a85f3
+            - path: 1.4.4
+              level: 3
+              title: 4.4 Content Area (Left)
+              byte_offset: 13003
+              byte_count: 666
+              word_count: 99
+              content_hash: eccd8c653a8553ee252538f43e4bb888da7aa2deff9ff12aa18bf7912ee51d6a
+            - path: 1.4.5
+              level: 3
+              title: 4.5 Metadata Panel (Right Sidebar)
+              byte_offset: 13669
+              byte_count: 2774
+              word_count: 428
+              content_hash: 11a414877bb9853aa96265935be03d55361decf5137a091b079c064739d5053a
+              children:
+                - path: 1.4.5.1
+                  level: 4
+                  title: Metadata Fields (top to bottom)
+                  byte_offset: 13943
+                  byte_count: 2500
+                  word_count: 385
+                  content_hash: 0341df3aff10175bd35b2a56ba6b432ab5fab3b0e24a31e631eb8f8450ac0167
+        - path: "1.5"
+          level: 2
+          title: 5. Markdown Rendering
+          byte_offset: 16443
+          byte_count: 3262
+          word_count: 444
+          content_hash: ec166f2863f97db119ccedddc7bc8071366fb5df76b00f326cec99a4d46d5e5c
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 Technology Stack
+              byte_offset: 16469
+              byte_count: 416
+              word_count: 58
+              content_hash: f149659bbf4ddfc2b321a3f9a3223c45ea42a2aa7805930970789154f8cf554f
+            - path: 1.5.2
+              level: 3
+              title: 5.2 Configuration
+              byte_offset: 16885
+              byte_count: 499
+              word_count: 48
+              content_hash: 6ba243742f743b8d8aa283a8890aad87f9979439d3b3727e4ee5cb07ab27c1b3
+            - path: 1.5.3
+              level: 3
+              title: 5.3 GFM Features
+              byte_offset: 17384
+              byte_count: 554
+              word_count: 85
+              content_hash: c8adc904a8a40468d41f2e3d04137647d0f2938093108688b9eee03392b132e3
+            - path: 1.5.4
+              level: 3
+              title: 5.4 Paper-Width Layout
+              byte_offset: 17938
+              byte_count: 294
+              word_count: 40
+              content_hash: 91ebeb66ef80184193761c0446d6ee54abec059c3ff2158327186a9e37812bdd
+            - path: 1.5.5
+              level: 3
+              title: 5.5 GitHub-Style Theme
+              byte_offset: 18232
+              byte_count: 1004
+              word_count: 141
+              content_hash: f8b1f3517f2a73c1d05f976184111bd1351590a1514d366cda2ab52cc1ab4bea
+            - path: 1.5.6
+              level: 3
+              title: 5.6 Heading Anchors
+              byte_offset: 19236
+              byte_count: 469
+              word_count: 68
+              content_hash: def71ad43c6f94615cf124ca6b09524198a2c69dcaf5f007a5db702040322e7c
+        - path: "1.6"
+          level: 2
+          title: 6. DriftBadge Component
+          byte_offset: 19705
+          byte_count: 1961
+          word_count: 246
+          content_hash: 1bc1c8388ef1e1e87fa0c48eb61119567f114336f20336265a6991e64cad03d6
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 Purpose
+              byte_offset: 19733
+              byte_count: 178
+              word_count: 25
+              content_hash: 18d67ffe9ba99909a93251467f4c11e6bef7e0eb8f47e1f87b2d8a19df0ef9c8
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Props
+              byte_offset: 19911
+              byte_count: 362
+              word_count: 41
+              content_hash: 97299a09a1ccf34b931618d5adf53d099977fbcadcd4235b6b78d909e18b0fa3
+            - path: 1.6.3
+              level: 3
+              title: 6.3 State Resolution Logic
+              byte_offset: 20273
+              byte_count: 630
+              word_count: 61
+              content_hash: 2cef005e32f9d600eb76e1d0803a5735fa52a85078be9357715f726b4baa845d
+            - path: 1.6.4
+              level: 3
+              title: 6.4 Visual States
+              byte_offset: 20903
+              byte_count: 466
+              word_count: 69
+              content_hash: 3ec27dbe2ca2a5edcba230bf191ba947c61e9f957f8b52a1ce382d1e18692839
+            - path: 1.6.5
+              level: 3
+              title: 6.5 Unknown Status Handling
+              byte_offset: 21369
+              byte_count: 297
+              word_count: 46
+              content_hash: 234043e5c0fff397e2d4c3c4cf00d3607767f5dff7b6b8116cbba75bb011947a
+        - path: "1.7"
+          level: 2
+          title: 7. Document Content Reader
+          byte_offset: 21666
+          byte_count: 2345
+          word_count: 300
+          content_hash: 98c3f2eb52446a673e77aed6c36ad3c1e5845e6930c4b6d034d1c574e21d332a
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 Module Location
+              byte_offset: 21697
+              byte_count: 55
+              word_count: 5
+              content_hash: 7343ae8a6905a5b26c8d483fb397fbbd94f8ac5aa05e5fbeb894521a13b4e315
+            - path: 1.7.2
+              level: 3
+              title: 7.2 Responsibilities
+              byte_offset: 21752
+              byte_count: 259
+              word_count: 41
+              content_hash: c2a43e02d19a69e95037d946c0b386c6051549c48b0daa84e0c8e259369a0af7
+            - path: 1.7.3
+              level: 3
+              title: 7.3 Interface
+              byte_offset: 22011
+              byte_count: 578
+              word_count: 62
+              content_hash: 381a23ea6e739c9d5f99d6374ba83f0620f3e45aef23e50e9e01d8c854d825b4
+            - path: 1.7.4
+              level: 3
+              title: 7.4 Implementation Notes
+              byte_offset: 22589
+              byte_count: 806
+              word_count: 113
+              content_hash: a96434dd905e8b110fe5dcb1958f8fa0c0813077438ec80edac450221772b285
+            - path: 1.7.5
+              level: 3
+              title: 7.5 Hash Computation Detail
+              byte_offset: 23395
+              byte_count: 616
+              word_count: 74
+              content_hash: 741c4c33841318c24a0b39b5279856b8f3ff78b8b5bb78f4455ad1b57021481a
+        - path: "1.8"
+          level: 2
+          title: 8. Component Structure
+          byte_offset: 24011
+          byte_count: 3703
+          word_count: 477
+          content_hash: e61023835301cab6b4d0b0b6f5cfb72eba8cf68518ca7c8cb468dd92258b0227
+          children:
+            - path: 1.8.1
+              level: 3
+              title: 8.1 File Layout
+              byte_offset: 24038
+              byte_count: 512
+              word_count: 59
+              content_hash: 54b7a545d2e0608fa7b0dda001e0d00615007a4b5720e47e11fdf882325a5e5d
+            - path: 1.8.2
+              level: 3
+              title: 8.2 Component Responsibilities
+              byte_offset: 24550
+              byte_count: 1776
+              word_count: 251
+              content_hash: 59f7088c355e6f70f1df902b8ffdd4f1c0b1db3842f2601ba106dc0177c27101
+            - path: 1.8.3
+              level: 3
+              title: 8.3 Data Flow
+              byte_offset: 26326
+              byte_count: 611
+              word_count: 66
+              content_hash: 4fe35c076650bb3a8ede263db0e76f7051e2f4c5f3e1eebee2d86f5d2452cab0
+            - path: 1.8.4
+              level: 3
+              title: 8.4 Documents View Container
+              byte_offset: 26937
+              byte_count: 777
+              word_count: 97
+              content_hash: 554d39790c51388e0293a06153e45e9e6e18acb7e12c8b8386f8c96b993d4c4f
+        - path: "1.9"
+          level: 2
+          title: 9. Related Entity Resolution
+          byte_offset: 27714
+          byte_count: 1142
+          word_count: 160
+          content_hash: 136f10a515e88e6c8d4d7c906e37bdbefd2038e7ed88de6eadea8c7623369da4
+          children:
+            - path: 1.9.1
+              level: 3
+              title: 9.1 Lookup Strategy
+              byte_offset: 27863
+              byte_count: 394
+              word_count: 59
+              content_hash: 72b1004b7f7c5221a94c3dc9b1099eac37577a7effeb961537f459f4e9a10e27
+            - path: 1.9.2
+              level: 3
+              title: 9.2 Implementation
+              byte_offset: 28257
+              byte_count: 599
+              word_count: 81
+              content_hash: 17bc6b87726947605e922533354df50bd8d35d4b9e4ef377162ccdc4cf2496cd
+        - path: "1.10"
+          level: 2
+          title: 10. Error Handling
+          byte_offset: 28856
+          byte_count: 1392
+          word_count: 230
+          content_hash: 2d6a674cdccacf79cf14034f99710762c8ab0864b470849b11ea1ce93df0176c
+        - path: "1.11"
+          level: 2
+          title: 11. Acceptance Criteria
+          byte_offset: 30248
+          byte_count: 1487
+          word_count: 215
+          content_hash: d3cb223ff8a722cb6f2fba1ac411e99168d66fff0f642de5ff358ed5c13aa043
+        - path: "1.12"
+          level: 2
+          title: References
+          byte_offset: 31735
+          byte_count: 581
+          word_count: 52
+          content_hash: e155284a662c731c58d504f305f88ae6acdd91e06b17efd9dc0963c7dd2aca77
+entity_refs:
+    - entity_id: FEAT-01KMZA9JMZFNF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 187
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 308
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 333
+    - entity_id: FEAT-001
+      entity_type: feature
+      section_path: 1.4.1
+      byte_offset: 11110
+    - entity_id: FEAT-002
+      entity_type: feature
+      section_path: 1.4.1
+      byte_offset: 11183
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 247
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.4.1
+      byte_offset: 10891
+cross_doc_links:
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: "1.12"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: 1.1.2
+      role: constraint
+      confidence: high
+    - section_path: 1.6.1
+      role: narrative
+      confidence: high
+    - section_path: "1.11"
+      role: requirement
+      confidence: high
+classified: false

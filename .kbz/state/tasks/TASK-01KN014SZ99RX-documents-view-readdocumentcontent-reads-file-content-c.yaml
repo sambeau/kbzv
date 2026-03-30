@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ99RX
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-readdocumentcontent-reads-file-content-c
+summary: "readDocumentContent() reads file content, computes SHA-256, and returns DocumentContent or DocumentMissing"
+status: ready

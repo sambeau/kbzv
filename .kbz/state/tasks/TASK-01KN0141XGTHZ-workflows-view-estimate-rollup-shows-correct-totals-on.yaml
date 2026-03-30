@@ -1,0 +1,5 @@
+id: TASK-01KN0141XGTHZ
+parent_feature: FEAT-01KMZA9GFB075
+slug: workflows-view-estimate-rollup-shows-correct-totals-on
+summary: Estimate rollup shows correct totals on FeatureDetail and PlanDetail
+status: ready

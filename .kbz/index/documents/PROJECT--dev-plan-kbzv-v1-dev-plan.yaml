@@ -1,0 +1,372 @@
+document_id: PROJECT/dev-plan-kbzv-v1-dev-plan
+document_path: work/plan/kbzv-v1-dev-plan.md
+content_hash: 16aa468d8de19a83786e96f74fe1c18eb64c459d9fd2ce07f4b87016edf41d6d
+indexed_at: 2026-03-30T10:59:36.007175Z
+sections:
+    - path: "1"
+      level: 1
+      title: KBZV v1.0 Development Plan
+      byte_offset: 0
+      byte_count: 20938
+      word_count: 2975
+      content_hash: 16aa468d8de19a83786e96f74fe1c18eb64c459d9fd2ce07f4b87016edf41d6d
+      children:
+        - path: "1.1"
+          level: 2
+          title: Overview
+          byte_offset: 30
+          byte_count: 831
+          word_count: 120
+          content_hash: 286ac9558c1b22c36606782a3ea56e6d4977d37707e7aafc6ff614226a444289
+          children:
+            - path: 1.1.1
+              level: 3
+              title: Dependency Graph
+              byte_offset: 337
+              byte_count: 524
+              word_count: 79
+              content_hash: 0fc219acdac60962a4f62099c5e35f12dbb90e3667d0ba5616359703ce54f0bd
+        - path: "1.2"
+          level: 2
+          title: 'Feature 1: App Scaffold + Theme'
+          byte_offset: 861
+          byte_count: 2016
+          word_count: 300
+          content_hash: 1bb732aaafade4ba53f224c088c39a6fdb7d8047c94838438f17859e9296b936
+          children:
+            - path: 1.2.1
+              level: 3
+              title: Scope
+              byte_offset: 1299
+              byte_count: 1047
+              word_count: 147
+              content_hash: fd0674c337936a4e048ea72fae64ea57eb3ba18a250f290639be3f07b2d0a9f9
+            - path: 1.2.2
+              level: 3
+              title: Acceptance Criteria
+              byte_offset: 2346
+              byte_count: 436
+              word_count: 67
+              content_hash: 1318dde41318eb10980be05ee08ceb02fa3b74340c23d882c99e347715754c4a
+            - path: 1.2.3
+              level: 3
+              title: Out of Scope
+              byte_offset: 2782
+              byte_count: 95
+              word_count: 18
+              content_hash: fd26279d0dec3e96e1f43749341a92224946d4cc081a58777b3a1890afecb6fb
+        - path: "1.3"
+          level: 2
+          title: 'Feature 2: Data Layer'
+          byte_offset: 2877
+          byte_count: 2828
+          word_count: 380
+          content_hash: 7cb4940bd25463e4cd4d99cf07a24c1296b6eb38231aa977991b6ca88f7f86e2
+          children:
+            - path: 1.3.1
+              level: 3
+              title: Scope
+              byte_offset: 3372
+              byte_count: 1746
+              word_count: 207
+              content_hash: 0c2a9e2e691f62dddf3dcfc4254310ef6978cdebdbcd01e1e8fb5b41943ce270
+            - path: 1.3.2
+              level: 3
+              title: Acceptance Criteria
+              byte_offset: 5118
+              byte_count: 422
+              word_count: 60
+              content_hash: a6052afc874fd3f29ad95618a2e2410a0fcea7be9a1e890bbc3e0a9b561d4613
+            - path: 1.3.3
+              level: 3
+              title: Out of Scope
+              byte_offset: 5540
+              byte_count: 165
+              word_count: 30
+              content_hash: caa9a67f6ca6374a70bca4365148ba402d71ff2cae8c7037ba2c24983a055fee
+        - path: "1.4"
+          level: 2
+          title: 'Feature 3: Workflows View'
+          byte_offset: 5705
+          byte_count: 4070
+          word_count: 570
+          content_hash: 353a61427b112b97f35e82be0c3f280493342745052ff9625943e04fea66880f
+          children:
+            - path: 1.4.1
+              level: 3
+              title: Scope
+              byte_offset: 6096
+              byte_count: 2844
+              word_count: 371
+              content_hash: 783eeff984732d12e6ea57dc5f76e31eb79a982e5c6d7a9b1f57ef9ff21aa47d
+              children:
+                - path: 1.4.1.1
+                  level: 4
+                  title: Entity Tree (left column)
+                  byte_offset: 6107
+                  byte_count: 723
+                  word_count: 100
+                  content_hash: cc2cf86cd3c3430c806ad58e48f4a08a9f1ac296b3c98cc54669e407653edb92
+                - path: 1.4.1.2
+                  level: 4
+                  title: Entity Detail Panel (right column)
+                  byte_offset: 6830
+                  byte_count: 1679
+                  word_count: 204
+                  content_hash: ac8f192bdede34414f97353c6ac08adbbc8bbeb8732bb417e88bd0b54de70e03
+                - path: 1.4.1.3
+                  level: 4
+                  title: Filter Bar
+                  byte_offset: 8509
+                  byte_count: 431
+                  word_count: 65
+                  content_hash: 9525a19b7de5a83f1b343437f575d7b4b69a6495113735c4d6f34916738a9ef3
+            - path: 1.4.2
+              level: 3
+              title: Acceptance Criteria
+              byte_offset: 8940
+              byte_count: 612
+              word_count: 98
+              content_hash: fa106838acfea93cad466fa084d7517a4ef5e92234925da9ae4b47d519757e01
+            - path: 1.4.3
+              level: 3
+              title: Out of Scope
+              byte_offset: 9552
+              byte_count: 223
+              word_count: 37
+              content_hash: 77e0adc6201ffdbeddb08b0d9f64e209e50bd59edb47b35a64f9eecdbdaa20b7
+        - path: "1.5"
+          level: 2
+          title: 'Feature 4: Documents View'
+          byte_offset: 9775
+          byte_count: 3557
+          word_count: 496
+          content_hash: f1f9e270f0e1077a1159e40eadcbd6b97db23c75decd05045557292c3b9494cf
+          children:
+            - path: 1.5.1
+              level: 3
+              title: Scope
+              byte_offset: 10172
+              byte_count: 2360
+              word_count: 310
+              content_hash: 9f60561b5e71af96a1524c0c2609cd0c79168f0ffb078e694ffe4ae59a633ee2
+              children:
+                - path: 1.5.1.1
+                  level: 4
+                  title: Document List
+                  byte_offset: 10183
+                  byte_count: 776
+                  word_count: 112
+                  content_hash: a71198cb327870b849eebf66d8f8f850b8a1d9b2d155774e39ff284d47259842
+                - path: 1.5.1.2
+                  level: 4
+                  title: Document Viewer
+                  byte_offset: 10959
+                  byte_count: 1573
+                  word_count: 196
+                  content_hash: 5a4d0a83b8995666a0408edeecf44e0cfca2a23e6cb63dc9f3ab5da1e9d46153
+            - path: 1.5.2
+              level: 3
+              title: Acceptance Criteria
+              byte_offset: 12532
+              byte_count: 622
+              word_count: 96
+              content_hash: 6dd4825ab5369fe0e71ff15c5d0889f6b8664b6304be11e0603f181e226a59ef
+            - path: 1.5.3
+              level: 3
+              title: Out of Scope
+              byte_offset: 13154
+              byte_count: 178
+              word_count: 29
+              content_hash: 5bf8015d7193480167f1074559d7ff86bbf05f772d2f4d4650d40f94ec6d3b1e
+        - path: "1.6"
+          level: 2
+          title: 'Feature 5: Cross-View Navigation'
+          byte_offset: 13332
+          byte_count: 2842
+          word_count: 432
+          content_hash: 937966af1849c897bcaeb610d7382771dfc3fd7d0a11dde826c8e7f2bdbb3366
+          children:
+            - path: 1.6.1
+              level: 3
+              title: Scope
+              byte_offset: 13782
+              byte_count: 1721
+              word_count: 251
+              content_hash: 33fd5ef6d3a07a71fba0832e08c55674dd6d1c164e079c879b16461ba143380d
+            - path: 1.6.2
+              level: 3
+              title: Acceptance Criteria
+              byte_offset: 15503
+              byte_count: 619
+              word_count: 99
+              content_hash: 3c4aeb957d73df03cdf37722377f7f76721fd9abf7b6f1cf23635fc30cf2b80f
+            - path: 1.6.3
+              level: 3
+              title: Out of Scope
+              byte_offset: 16122
+              byte_count: 52
+              word_count: 10
+              content_hash: eaa1334034db197f67d0f1d8cfd83eae6c886ed3ed67451f2f0028c23939eab1
+        - path: "1.7"
+          level: 2
+          title: 'Feature 6: File Watching + Git Status'
+          byte_offset: 16174
+          byte_count: 2737
+          word_count: 411
+          content_hash: a06531b9a57b0569f24382bab80c0f66066b2c014d36755dd9cef2957230dbf6
+          children:
+            - path: 1.7.1
+              level: 3
+              title: Scope
+              byte_offset: 16569
+              byte_count: 1575
+              word_count: 226
+              content_hash: d51e9a39005a7430033e520300930c4de8059ada13a511318c93e668339c1f74
+              children:
+                - path: 1.7.1.1
+                  level: 4
+                  title: File Watching
+                  byte_offset: 16580
+                  byte_count: 709
+                  word_count: 101
+                  content_hash: 6bd271c63d9e772e07936ac5b2ab812d454d22e5801a67d0189d71e74517d078
+                - path: 1.7.1.2
+                  level: 4
+                  title: Git Status Panel
+                  byte_offset: 17289
+                  byte_count: 855
+                  word_count: 123
+                  content_hash: 130eb6c81a21c188f717516fccce61c4107e57c27c7a6577398b3d5ff6162b23
+            - path: 1.7.2
+              level: 3
+              title: Acceptance Criteria
+              byte_offset: 18144
+              byte_count: 572
+              word_count: 90
+              content_hash: e5850958236e420c38fc6b35a7d9ad76b31e68a106a31bcfa7b2bbb29964c991
+            - path: 1.7.3
+              level: 3
+              title: Out of Scope
+              byte_offset: 18716
+              byte_count: 195
+              word_count: 30
+              content_hash: 00189a12c6d00332e612aa621f6039074142b368495e7b6c97046ba7bd3482e5
+        - path: "1.8"
+          level: 2
+          title: Implementation Notes
+          byte_offset: 18911
+          byte_count: 1575
+          word_count: 216
+          content_hash: 4bd97d2d45c4568579ea8c42db53651869d5a418193cd00e414fd85f283580fb
+          children:
+            - path: 1.8.1
+              level: 3
+              title: Parallel Work
+              byte_offset: 18936
+              byte_count: 236
+              word_count: 40
+              content_hash: 401e194e59ab2df686f31ad401072c3453debb89c88ea0f8b24159238c52e3d8
+            - path: 1.8.2
+              level: 3
+              title: Test Strategy
+              byte_offset: 19172
+              byte_count: 534
+              word_count: 72
+              content_hash: a9dd2e88bf0c5ba504c0710c5557e848a12cb2a1905290f60a8344c5dcf40dfc
+            - path: 1.8.3
+              level: 3
+              title: Development Data
+              byte_offset: 19706
+              byte_count: 303
+              word_count: 40
+              content_hash: 662d9461c99aadf8575333a2e115154e0c04b785ff78375b37f46478ec1de050
+            - path: 1.8.4
+              level: 3
+              title: shadcn Component Installation Order
+              byte_offset: 20009
+              byte_count: 477
+              word_count: 61
+              content_hash: 85990110a9d2b8c09106c813428ec73c30e449c50584d2d1839536cf3cca1640
+        - path: "1.9"
+          level: 2
+          title: References
+          byte_offset: 20486
+          byte_count: 452
+          word_count: 45
+          content_hash: 6797396d2171b09bd7644d81636bdf6119b81326ec1dd514f4778fe266ee78c8
+cross_doc_links:
+    - target_path: ../design/kbzv-architecture.md
+      link_text: KBZV Architecture Design
+      section_path: "1.9"
+    - target_path: kbzv-initial-proposal.md
+      link_text: KBZV Initial Proposal
+      section_path: "1.9"
+    - target_path: kbz-references/kanbanzai-guide-for-viewer-agents.md
+      link_text: Kanbanzai Viewer Guide
+      section_path: "1.9"
+    - target_path: kbz-references/schema-reference.md
+      link_text: Schema Reference
+      section_path: "1.9"
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: "1.1"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: 1.2.1
+      role: constraint
+      confidence: high
+    - section_path: 1.2.2
+      role: requirement
+      confidence: high
+    - section_path: 1.2.3
+      role: constraint
+      confidence: high
+    - section_path: 1.3.1
+      role: constraint
+      confidence: high
+    - section_path: 1.3.2
+      role: requirement
+      confidence: high
+    - section_path: 1.3.3
+      role: constraint
+      confidence: high
+    - section_path: 1.4.1
+      role: constraint
+      confidence: high
+    - section_path: 1.4.2
+      role: requirement
+      confidence: high
+    - section_path: 1.4.3
+      role: constraint
+      confidence: high
+    - section_path: 1.5.1
+      role: constraint
+      confidence: high
+    - section_path: 1.5.2
+      role: requirement
+      confidence: high
+    - section_path: 1.5.3
+      role: constraint
+      confidence: high
+    - section_path: 1.6.1
+      role: constraint
+      confidence: high
+    - section_path: 1.6.2
+      role: requirement
+      confidence: high
+    - section_path: 1.6.3
+      role: constraint
+      confidence: high
+    - section_path: 1.7.1
+      role: constraint
+      confidence: high
+    - section_path: 1.7.2
+      role: requirement
+      confidence: high
+    - section_path: 1.7.3
+      role: constraint
+      confidence: high
+classified: false

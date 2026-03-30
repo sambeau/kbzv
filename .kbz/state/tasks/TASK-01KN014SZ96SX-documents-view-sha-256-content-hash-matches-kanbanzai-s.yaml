@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ96SX
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-sha-256-content-hash-matches-kanbanzai-s
+summary: "SHA-256 content hash matches Kanbanzai's recorded hash for approved documents"
+status: ready

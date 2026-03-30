@@ -1,0 +1,14 @@
+id: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme
+parent: P1-kbzv
+status: developing
+summary: "Tauri v2 desktop app scaffold with React/TypeScript, shadcn/ui (Nova/Mist/Sky theme), Vite, Tailwind CSS 4, two-view layout with header and view switcher, native folder picker for project open, and empty states for both views."
+design: FEAT-01KMZA96W1J98/design-f1-app-scaffold-theme
+spec: FEAT-01KMZA96W1J98/specification-f1-app-scaffold-theme-spec
+dev_plan: FEAT-01KMZA96W1J98/dev-plan-f1-app-scaffold-theme-dev-plan
+tags:
+  - foundation
+  - tauri
+  - shadcn
+created: "2026-03-30T12:07:48Z"
+created_by: sambeau

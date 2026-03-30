@@ -1,0 +1,5 @@
+id: TASK-01KN0134E6PN3
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-selecting-a-folder-with-kbz-config-yaml
+summary: "Selecting a folder with `.kbz/config.yaml` accepts the project and updates `useUIStore.projectPath`"
+status: ready

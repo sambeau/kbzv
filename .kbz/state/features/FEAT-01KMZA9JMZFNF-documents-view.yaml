@@ -1,0 +1,14 @@
+id: FEAT-01KMZA9JMZFNF
+slug: documents-view
+parent: P1-kbzv
+status: developing
+summary: "Documents view with filterable document list (by type and status) and Markdown viewer. Paper-width GFM rendering with syntax highlighting, metadata sidebar with drift detection (content hash comparison), and document type/status lozenges."
+design: FEAT-01KMZA9JMZFNF/design-f4-documents-view
+spec: FEAT-01KMZA9JMZFNF/specification-f4-documents-view-spec
+dev_plan: FEAT-01KMZA9JMZFNF/dev-plan-f4-documents-view-dev-plan
+tags:
+  - ui
+  - markdown
+  - documents
+created: "2026-03-30T12:08:00Z"
+created_by: sambeau

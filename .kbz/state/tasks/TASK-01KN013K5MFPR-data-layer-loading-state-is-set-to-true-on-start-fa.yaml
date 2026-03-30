@@ -1,0 +1,5 @@
+id: TASK-01KN013K5MFPR
+parent_feature: FEAT-01KMZA9CP9XEX
+slug: data-layer-loading-state-is-set-to-true-on-start-fa
+summary: "Loading state is set to `true` on start, `false` on completion or failure"
+status: ready

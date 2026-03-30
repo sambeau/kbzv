@@ -1,0 +1,5 @@
+id: TASK-01KN0134E77Z3
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-ui-uses-the-nova-mist-sky-shadcn-theme-n
+summary: "UI uses the Nova/Mist/Sky shadcn theme — not browser defaults (Sky blue primary, themed borders, system font)"
+status: ready

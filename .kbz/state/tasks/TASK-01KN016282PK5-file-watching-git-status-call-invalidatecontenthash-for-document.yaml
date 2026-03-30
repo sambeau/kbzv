@@ -1,0 +1,5 @@
+id: TASK-01KN016282PK5
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-call-invalidatecontenthash-for-document
+summary: "Call `invalidateContentHash()` for document root file changes to trigger drift re-check"
+status: ready

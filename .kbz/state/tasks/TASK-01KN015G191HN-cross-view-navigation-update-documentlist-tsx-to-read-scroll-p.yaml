@@ -1,0 +1,5 @@
+id: TASK-01KN015G191HN
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-update-documentlist-tsx-to-read-scroll-p
+summary: Update DocumentList.tsx to read scroll position from store and restore on mount
+status: ready

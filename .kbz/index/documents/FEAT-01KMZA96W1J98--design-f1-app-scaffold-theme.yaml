@@ -1,0 +1,411 @@
+document_id: FEAT-01KMZA96W1J98/design-f1-app-scaffold-theme
+document_path: work/design/f1-app-scaffold-theme.md
+content_hash: 6ae04fe285da540177b232936f8974de8d9145ed145b5eee00774b0010611b6d
+indexed_at: 2026-03-30T12:31:29.942629Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'Feature 1: App Scaffold + Theme — Design Document'
+      byte_offset: 0
+      byte_count: 26948
+      word_count: 3553
+      content_hash: 6ae04fe285da540177b232936f8974de8d9145ed145b5eee00774b0010611b6d
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. Overview
+          byte_offset: 239
+          byte_count: 1303
+          word_count: 208
+          content_hash: 3fac144aff08bdb3618813b5ec5a1de38d10a499324f6a01fc8b02122a45168e
+          children:
+            - path: 1.1.1
+              level: 3
+              title: What This Feature Delivers
+              byte_offset: 855
+              byte_count: 470
+              word_count: 74
+              content_hash: bceff43df947dfc90305cd7cc7af9e44998440938e3b84512cc10046ef9d1802
+            - path: 1.1.2
+              level: 3
+              title: What This Feature Does Not Deliver
+              byte_offset: 1325
+              byte_count: 217
+              word_count: 40
+              content_hash: 3add8845bc367370eabd702b2262c96bb74cc449a3178e8a29a5d1c440aad7c7
+        - path: "1.2"
+          level: 2
+          title: 2. Technology Stack (Feature 1 Subset)
+          byte_offset: 1542
+          byte_count: 876
+          word_count: 165
+          content_hash: f46cb57f1efd045e3e5636c955e8e02f60f84211a5330d743f75775858bdfd57
+        - path: "1.3"
+          level: 2
+          title: 3. Project Structure (Feature 1 Files)
+          byte_offset: 2418
+          byte_count: 3204
+          word_count: 379
+          content_hash: 5e813b0bbbcb7d3bfdfead6c57179f3fcd1604aa34e012a78c904328fa973a54
+          children:
+            - path: 1.3.1
+              level: 3
+              title: Files Deferred to Later Features
+              byte_offset: 4657
+              byte_count: 965
+              word_count: 125
+              content_hash: 2fc4217f6614136dda4ac5536808c70d16f7561f65a10480b9f928f567b897a8
+        - path: "1.4"
+          level: 2
+          title: 4. Tauri v2 Rust Scaffold
+          byte_offset: 5622
+          byte_count: 2538
+          word_count: 296
+          content_hash: 4acbe490bde50e6a2fd7f064f8d2d4aebbac0a8c01bf195c67fe26a33368f495
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 `src-tauri/Cargo.toml`
+              byte_offset: 5825
+              byte_count: 354
+              word_count: 48
+              content_hash: 28bac502857f2bc73a2f4d85f3f2476c474511131d29e438677fa2f153e92cb5
+            - path: 1.4.2
+              level: 3
+              title: 4.2 `src-tauri/src/lib.rs`
+              byte_offset: 6179
+              byte_count: 471
+              word_count: 46
+              content_hash: 3ad1c79f8c84716e98bbeaefc4dcd2a046cb01259dddc9ac49c345a2e0d11a84
+            - path: 1.4.3
+              level: 3
+              title: 4.3 `src-tauri/tauri.conf.json`
+              byte_offset: 6650
+              byte_count: 725
+              word_count: 73
+              content_hash: ad5faf43bf2d7416d8631fd0b64f815b108d3e3fc9b5c5228c45b1332d3e0339
+            - path: 1.4.4
+              level: 3
+              title: 4.4 Capabilities (`capabilities/default.json`)
+              byte_offset: 7375
+              byte_count: 785
+              word_count: 96
+              content_hash: 2a19bf06ae4a6369b9a07fc57059b50cba3ad2df28bfcc5df51c0787722ce7b2
+        - path: "1.5"
+          level: 2
+          title: 5. Frontend Scaffold
+          byte_offset: 8160
+          byte_count: 1252
+          word_count: 161
+          content_hash: 5f574bdab26ae11efc89b13c8f79d9a05026c361c244186e52d546ad13ee96a8
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 Entry Point (`main.tsx`)
+              byte_offset: 8185
+              byte_count: 148
+              word_count: 22
+              content_hash: 1a3043151a46819a770361b4d3f3d96f6b38ce2a9fb69e8497aabedf32606abd
+            - path: 1.5.2
+              level: 3
+              title: 5.2 Root Component (`App.tsx`)
+              byte_offset: 8333
+              byte_count: 510
+              word_count: 62
+              content_hash: 22b2acb027d41e7933ecf73275ac21cb1fd4588b634f598957d53a64634e0680
+            - path: 1.5.3
+              level: 3
+              title: 5.3 Vite Configuration (`vite.config.ts`)
+              byte_offset: 8843
+              byte_count: 258
+              word_count: 36
+              content_hash: 1cc9138786d1ae043d9fa43e5accf28761ff3306d14f9f8a490e588764685126
+            - path: 1.5.4
+              level: 3
+              title: 5.4 TypeScript Configuration
+              byte_offset: 9101
+              byte_count: 311
+              word_count: 37
+              content_hash: 5528f502cdac86e5d2323e5fff3fc9cbce130d3c8b269a11dc6c08627c703294
+        - path: "1.6"
+          level: 2
+          title: 6. shadcn/ui Theme Configuration
+          byte_offset: 9412
+          byte_count: 2644
+          word_count: 407
+          content_hash: 24efbe37240d48cea858a703bb9ecd78e0f211fc69868881ddf3f3d7c3c2adb2
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 Theme Settings
+              byte_offset: 9449
+              byte_count: 364
+              word_count: 64
+              content_hash: 8c30d885ce93885019a703b600f9811e0f0424e58ca17bd6484289eec5ed0cf3
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Core Components to Install (Feature 1)
+              byte_offset: 9813
+              byte_count: 957
+              word_count: 153
+              content_hash: 59d49916c725602ec6d14b0cbe90cd758aa1f91b05b81b79c3124dd1fbbad563
+            - path: 1.6.3
+              level: 3
+              title: 6.3 `globals.css` Structure
+              byte_offset: 10770
+              byte_count: 610
+              word_count: 79
+              content_hash: 1b3de80eba901e10b6414fe12a0e0d1b274b0ffb09357741763ed0fd344769cc
+            - path: 1.6.4
+              level: 3
+              title: 6.4 Design Fundamentals Applied in Feature 1
+              byte_offset: 11380
+              byte_count: 676
+              word_count: 106
+              content_hash: 70c958ce2f2f308600b0b374c7c0dbff9bcb8a48065b6ecc67481c51746a28cb
+        - path: "1.7"
+          level: 2
+          title: 7. Layout Design
+          byte_offset: 12056
+          byte_count: 3533
+          word_count: 394
+          content_hash: 3da8c1124865e0bc4e85a1617170d53d07a49c2e3336a0ee046fc604659f9996
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 Two-View Model
+              byte_offset: 12077
+              byte_count: 1351
+              word_count: 67
+              content_hash: 1a5e3f1dfcfecd062271ddcd3053f1e298a5aa1d572be866676bfd2439a75f74
+            - path: 1.7.2
+              level: 3
+              title: 7.2 Header Bar (`HeaderBar.tsx`)
+              byte_offset: 13428
+              byte_count: 879
+              word_count: 139
+              content_hash: da27a2ad9886be8f9cf82e3b434c9f1641912cd3f5f25cb67e53d1fb9e5bf3f0
+            - path: 1.7.3
+              level: 3
+              title: 7.3 Main Panel (`MainPanel.tsx`)
+              byte_offset: 14307
+              byte_count: 548
+              word_count: 78
+              content_hash: 756ca109c89ca08294623d44d6056b0216ba92e335e10b49f56d9f4dbc5ff42c
+            - path: 1.7.4
+              level: 3
+              title: 7.4 Empty State (`EmptyState.tsx`)
+              byte_offset: 14855
+              byte_count: 734
+              word_count: 106
+              content_hash: 7cfea7002b04a01db7fa454043a1bb5d24161c500b22060595ac1218b5cb2ee5
+        - path: "1.8"
+          level: 2
+          title: 8. Project Open Flow
+          byte_offset: 15589
+          byte_count: 2004
+          word_count: 276
+          content_hash: fd6f359d7855a2dd3e5e13d4b9d8b2b464d49155d395dcc74a4753c95ad52521
+          children:
+            - path: 1.8.1
+              level: 3
+              title: 8.1 Trigger
+              byte_offset: 15614
+              byte_count: 213
+              word_count: 37
+              content_hash: 836aef94e14bf3769eab453c57209d16e6e928b1a22ce86c3d1bf6d02ecb8369
+            - path: 1.8.2
+              level: 3
+              title: 8.2 Flow
+              byte_offset: 15827
+              byte_count: 756
+              word_count: 88
+              content_hash: 03565c5a63de2fe06ea19c764dd1f7b363edc7bd95b87530d01b4cda4b94da81
+            - path: 1.8.3
+              level: 3
+              title: 8.3 Validation Details
+              byte_offset: 16583
+              byte_count: 542
+              word_count: 78
+              content_hash: c0e22ba3651fac17a9f1a179ad374a96232a3af556533e245a947b9de784b0dc
+            - path: 1.8.4
+              level: 3
+              title: 8.4 Error Dialog
+              byte_offset: 17125
+              byte_count: 468
+              word_count: 68
+              content_hash: fc09df45403aab6841f52df388e40ac3e83264f001fc8a065675f316debd452b
+        - path: "1.9"
+          level: 2
+          title: 9. State Management
+          byte_offset: 17593
+          byte_count: 1653
+          word_count: 234
+          content_hash: 3f7c3669f8f87256c2c7ca68d9d73f05a08cca2de42a03fd2de93372819a8979
+          children:
+            - path: 1.9.1
+              level: 3
+              title: 9.1 UI Store (`ui-store.ts`)
+              byte_offset: 17617
+              byte_count: 1047
+              word_count: 151
+              content_hash: a6064f2c03ab46fb23c6988ffdd90621be6a5e540df916c97f7a004a5afcd44f
+            - path: 1.9.2
+              level: 3
+              title: 9.2 Store Separation
+              byte_offset: 18664
+              byte_count: 582
+              word_count: 79
+              content_hash: 396f02ebef3ef72f905f1c4467dbff5cbc44fd07e014e2b4f5fc9eb17bed479f
+        - path: "1.10"
+          level: 2
+          title: 10. Component Specifications
+          byte_offset: 19246
+          byte_count: 3138
+          word_count: 353
+          content_hash: a63df708557634fa2587b6a1de4ac376dbc3e56bae7d16f10afad5de42882beb
+          children:
+            - path: 1.10.1
+              level: 3
+              title: 10.1 `AppLayout.tsx`
+              byte_offset: 19279
+              byte_count: 322
+              word_count: 43
+              content_hash: 4681f5988fb54d469720c161f6dde334d58d722abd88bc400ce866891c4808ae
+            - path: 1.10.2
+              level: 3
+              title: 10.2 `HeaderBar.tsx`
+              byte_offset: 19601
+              byte_count: 1360
+              word_count: 149
+              content_hash: 557113459d5c5c215f58c36e8d0d4fe1849a99034cb3996d5b30a5704924ad7e
+            - path: 1.10.3
+              level: 3
+              title: 10.3 `MainPanel.tsx`
+              byte_offset: 20961
+              byte_count: 1043
+              word_count: 112
+              content_hash: 8938238f610f0cdd785e78ad20410044796b2044b4885f2618ffc030319838ad
+            - path: 1.10.4
+              level: 3
+              title: 10.4 `EmptyState.tsx`
+              byte_offset: 22004
+              byte_count: 380
+              word_count: 45
+              content_hash: 9f93bc56a892ffc0631fc01d1501754eb4d73c0cd1ee900551b9eb05b41080db
+        - path: "1.11"
+          level: 2
+          title: 11. Dependency Installation Sequence
+          byte_offset: 22384
+          byte_count: 1018
+          word_count: 135
+          content_hash: 779dd79e8d016785c340f732a5d59e313054f2c1ed477539e5bbf8c1585cb0f8
+          children:
+            - path: 1.11.1
+              level: 3
+              title: 11.1 Tauri + Rust Setup
+              byte_offset: 22425
+              byte_count: 306
+              word_count: 40
+              content_hash: 7e66d003626fb43efaf75925ba7d64f8e07dc0f07f0cd7257e9380f71224f599
+            - path: 1.11.2
+              level: 3
+              title: 11.2 Frontend Dependencies
+              byte_offset: 22731
+              byte_count: 233
+              word_count: 31
+              content_hash: 832a912a77b71a112c4271233bba087ce6fcf49aa7b32f379b4211604eb7b0c6
+            - path: 1.11.3
+              level: 3
+              title: 11.3 shadcn/ui Setup
+              byte_offset: 22964
+              byte_count: 438
+              word_count: 59
+              content_hash: 5f681a1f36c706775a176a536844e2c67b21bebd8360f680717312971e2677f1
+        - path: "1.12"
+          level: 2
+          title: 12. Acceptance Criteria
+          byte_offset: 23402
+          byte_count: 1183
+          word_count: 198
+          content_hash: 81f0247fcc60067e9378a6c0a19ad18f3bcee8f3219f0e8174edc443e3c7bd5e
+        - path: "1.13"
+          level: 2
+          title: 13. Risks and Decisions
+          byte_offset: 24585
+          byte_count: 1152
+          word_count: 155
+          content_hash: 3ab5d57a70a7eca6327dc1ec6084cc985f414e24aefeb62b39b3ebc85cc41bdd
+          children:
+            - path: 1.13.1
+              level: 3
+              title: 13.1 Tauri v2 Plugin Compatibility
+              byte_offset: 24613
+              byte_count: 249
+              word_count: 35
+              content_hash: 5a83beab6f90f5cb2674bcc0ed69a0322b4048f11bb9bea85716ee8d0f838369
+            - path: 1.13.2
+              level: 3
+              title: 13.2 shadcn/ui Preset Availability
+              byte_offset: 24862
+              byte_count: 286
+              word_count: 38
+              content_hash: 0ea962ee36c7e4b445f76b865cbf13cd77a77bac8303a1aed907c339adc4449a
+            - path: 1.13.3
+              level: 3
+              title: 13.3 Tailwind CSS 4
+              byte_offset: 25148
+              byte_count: 242
+              word_count: 28
+              content_hash: f9cfb24b3cf932e9e5bb7691e5185001174ef04537e96a47fe54ca1ac05bd0a1
+            - path: 1.13.4
+              level: 3
+              title: 13.4 View Switcher Component Choice
+              byte_offset: 25390
+              byte_count: 347
+              word_count: 49
+              content_hash: b64603c1f457a28a90b465370fc8d185432568161f33b2acc43b8411b37238a3
+        - path: "1.14"
+          level: 2
+          title: 14. Open Items
+          byte_offset: 25737
+          byte_count: 739
+          word_count: 118
+          content_hash: bb90e8118c4137f5e6405af9841dd257c8a264e00a541e8306d3d820e63fabe7
+        - path: "1.15"
+          level: 2
+          title: References
+          byte_offset: 26476
+          byte_count: 472
+          word_count: 50
+          content_hash: 76045900e4722c11552ef880d6d4ba2708e842303413f7d957b693389d0cb464
+entity_refs:
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 68
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 127
+cross_doc_links:
+    - target_path: kbzv-architecture.md
+      link_text: KBZV Architecture Design
+      section_path: "1"
+    - target_path: kbzv-architecture.md
+      link_text: KBZV Architecture Design
+      section_path: "1.15"
+    - target_path: ../plan/kbzv-v1-dev-plan.md
+      link_text: KBZV v1.0 Development Plan
+      section_path: "1.15"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: "1.12"
+      role: requirement
+      confidence: high
+    - section_path: "1.13"
+      role: decision
+      confidence: high
+classified: false

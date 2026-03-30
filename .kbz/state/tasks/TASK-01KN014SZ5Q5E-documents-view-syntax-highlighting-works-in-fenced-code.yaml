@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ5Q5E
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-syntax-highlighting-works-in-fenced-code
+summary: Syntax highlighting works in fenced code blocks with a language identifier
+status: ready

@@ -1,0 +1,664 @@
+document_id: FEAT-01KMZA9GFB075/design-f3-workflows-view
+document_path: work/design/f3-workflows-view.md
+content_hash: 650a9828e9b553de4f4497f9484b3bd99de70fe36bb9f06a9c1e7310ca7aa74d
+indexed_at: 2026-03-30T12:19:34.11644Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'Feature 3: Workflows View — Design Document'
+      byte_offset: 0
+      byte_count: 53271
+      word_count: 6996
+      content_hash: 650a9828e9b553de4f4497f9484b3bd99de70fe36bb9f06a9c1e7310ca7aa74d
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. Overview
+          byte_offset: 468
+          byte_count: 1386
+          word_count: 214
+          content_hash: 15e214a50f6e797bbeaf0540fb7a280219487c4d2ec7f36fe641e46447f7adee
+          children:
+            - path: 1.1.1
+              level: 3
+              title: 1.1 What This Feature Delivers
+              byte_offset: 884
+              byte_count: 549
+              word_count: 81
+              content_hash: 3c5cf0882010e6685f13858f3b74dbd841ce4344a31e796da5ed95fc0529e8cd
+            - path: 1.1.2
+              level: 3
+              title: 1.2 What This Feature Does NOT Deliver
+              byte_offset: 1433
+              byte_count: 421
+              word_count: 64
+              content_hash: da475e66c496f40d9aa9953719cf438703881c662090db14f465de09511be883
+        - path: "1.2"
+          level: 2
+          title: 2. Layout
+          byte_offset: 1854
+          byte_count: 4021
+          word_count: 405
+          content_hash: 0de8507c3f989202b3f81823f4e533e4e8d856b384948fa9eb9f3915e94f66f1
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 Column Sizing
+              byte_offset: 5243
+              byte_count: 482
+              word_count: 70
+              content_hash: 74add3d255fbe26295a481cc060f7f9491138d0e7b06d2cbd44552908991ede2
+            - path: 1.2.2
+              level: 3
+              title: 2.2 Filter Bar Position
+              byte_offset: 5725
+              byte_count: 150
+              word_count: 26
+              content_hash: 88f8d0139f980454e76e62bbd0a1dd362fb641ed8c9c72f9dcd95086c12fb43f
+        - path: "1.3"
+          level: 2
+          title: 3. Entity Tree — Left Column
+          byte_offset: 5875
+          byte_count: 5783
+          word_count: 813
+          content_hash: adb0f26c00d34337586598572bebe176d53f72673dd09811567f1a18b9c2d86c
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 Component Structure
+              byte_offset: 5910
+              byte_count: 400
+              word_count: 40
+              content_hash: e8e5c8465053bff6b7281d43abec89415a93ca0ea95433870997687b8c3103b4
+            - path: 1.3.2
+              level: 3
+              title: 3.2 Tree Hierarchy
+              byte_offset: 6310
+              byte_count: 618
+              word_count: 87
+              content_hash: f56723bbfaa99cdd24a79ffbb0851f8d1f5b7cb155773643c982ef7f7736d89d
+            - path: 1.3.3
+              level: 3
+              title: 3.3 TreeNode Component
+              byte_offset: 6928
+              byte_count: 2107
+              word_count: 297
+              content_hash: db6d71dbc2fed4d11b37950c729bf73ee188c7543597a2dc6f142718dc236096
+            - path: 1.3.4
+              level: 3
+              title: 3.4 Sorting
+              byte_offset: 9035
+              byte_count: 395
+              word_count: 66
+              content_hash: ebbf3ba10726ee792d62da2042fa462913d5573f43c1ebb83dc49ff923bae5a8
+            - path: 1.3.5
+              level: 3
+              title: 3.5 Standalone Sections
+              byte_offset: 9430
+              byte_count: 1951
+              word_count: 271
+              content_hash: 8593a1df97178ac0438183e0205a417d8f1680932a7dbbfe7bff84141254df2c
+            - path: 1.3.6
+              level: 3
+              title: 3.6 Empty Tree State
+              byte_offset: 11381
+              byte_count: 277
+              word_count: 45
+              content_hash: 3664c5119a8721bbb28ac3d156629128e44cccc0c9770e33b9ef441800102625
+        - path: "1.4"
+          level: 2
+          title: 4. Entity Detail Panel — Right Column
+          byte_offset: 11658
+          byte_count: 18063
+          word_count: 2274
+          content_hash: af6823c5abe0756f8ec4bed1220807bbc76b7febe51fda67d100b3d37512ac64
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 Component Structure
+              byte_offset: 11702
+              byte_count: 407
+              word_count: 40
+              content_hash: 602fb1060fef85f283fc3385d0ae35fb89b8100d50e2a7bf4056ca6886205030
+            - path: 1.4.2
+              level: 3
+              title: 4.2 EntityDetail Router
+              byte_offset: 12109
+              byte_count: 974
+              word_count: 149
+              content_hash: 426a3a9bbce6b992f7a8ceb8d138a96196910167ffb32e0c4783a9d4d1ff3cb5
+            - path: 1.4.3
+              level: 3
+              title: 4.3 Detail Panel Layout
+              byte_offset: 13083
+              byte_count: 3359
+              word_count: 180
+              content_hash: e1471a48596269f245970da3b9177c24bdede7c785212e8d9819fa97b27db68f
+            - path: 1.4.4
+              level: 3
+              title: 4.4 Detail Header
+              byte_offset: 16442
+              byte_count: 647
+              word_count: 90
+              content_hash: b128b6100f63437e6116c9cc6591c61ff56d855451f8412e26988a2ae6cd8d6d
+            - path: 1.4.5
+              level: 3
+              title: 4.5 FieldValue Component
+              byte_offset: 17089
+              byte_count: 1654
+              word_count: 231
+              content_hash: d8238051b4dc80945dc4f6d9bacfce3bfe46cbbc553641d814fecac1c577f965
+            - path: 1.4.6
+              level: 3
+              title: 4.6 Per-Type Detail Components
+              byte_offset: 18743
+              byte_count: 6729
+              word_count: 1107
+              content_hash: d8ed811162a36248d7569bc422b6abde6cb8d7558ba8a8301402c55efe198260
+              children:
+                - path: 1.4.6.1
+                  level: 4
+                  title: PlanDetail
+                  byte_offset: 18779
+                  byte_count: 1011
+                  word_count: 157
+                  content_hash: 0c410d9a56b0d4ba01a8725a68f146f9cd4f2708b1efd0d679fe7f3f7a1bfd58
+                - path: 1.4.6.2
+                  level: 4
+                  title: FeatureDetail
+                  byte_offset: 19790
+                  byte_count: 1301
+                  word_count: 200
+                  content_hash: c5f0fb282c96c27c9a0791f953d90f04861d44792b05258f865133f6fd5eb214
+                - path: 1.4.6.3
+                  level: 4
+                  title: TaskDetail
+                  byte_offset: 21091
+                  byte_count: 1043
+                  word_count: 171
+                  content_hash: c4714265e3f8de42c41b263b091c9ba8b688e5509082fd8627e44947f2bb35d9
+                - path: 1.4.6.4
+                  level: 4
+                  title: BugDetail
+                  byte_offset: 22134
+                  byte_count: 883
+                  word_count: 159
+                  content_hash: f86e244437cc66d0cf8040dbea3bd9519c2247ab0242ea8da3c32e8f7b656ad2
+                - path: 1.4.6.5
+                  level: 4
+                  title: DecisionDetail
+                  byte_offset: 23017
+                  byte_count: 439
+                  word_count: 78
+                  content_hash: 5a61cba6c4922afe34d78b4fdd2dbfef4695e44d23c069b9db142e55e4ef2c4f
+                - path: 1.4.6.6
+                  level: 4
+                  title: CheckpointDetail
+                  byte_offset: 23456
+                  byte_count: 740
+                  word_count: 111
+                  content_hash: f8416a62e8c6482750ebd5796dcc4e2c83bb78afa60f8c12becc591e5b79cee8
+                - path: 1.4.6.7
+                  level: 4
+                  title: IncidentDetail
+                  byte_offset: 24196
+                  byte_count: 561
+                  word_count: 94
+                  content_hash: dc5d641dee534a725ff2bfed16d4ce672078a15b4bf11b1685ff59bc2ad5a1f9
+                - path: 1.4.6.8
+                  level: 4
+                  title: KnowledgeDetail
+                  byte_offset: 24757
+                  byte_count: 715
+                  word_count: 132
+                  content_hash: 1b577adfffc721149df1f72cf834b842f169a4e4e91230c9eb3433aa42d6e3ae
+            - path: 1.4.7
+              level: 3
+              title: 4.7 Empty / Default State
+              byte_offset: 25472
+              byte_count: 1795
+              word_count: 166
+              content_hash: 392502839649548f9d21d0bef14c609656e25ee6576e3c35183ca7dd2e975750
+            - path: 1.4.8
+              level: 3
+              title: 4.8 EntityLink Component
+              byte_offset: 27267
+              byte_count: 1170
+              word_count: 163
+              content_hash: 9b1a364910fb971e2c782e17d02e15b1a38bdcd351f3e9d1f266f66681654d0c
+            - path: 1.4.9
+              level: 3
+              title: 4.9 StatusBadge Component
+              byte_offset: 28437
+              byte_count: 1284
+              word_count: 140
+              content_hash: 7560c779161e1ad7aa961ae47e86e5e4755cfacf747ebe3b24a502d76542e3f7
+        - path: "1.5"
+          level: 2
+          title: 5. Status Colours
+          byte_offset: 29721
+          byte_count: 2520
+          word_count: 307
+          content_hash: d9cc6e5e73cc38e5daa4afe9f74196314d695beb6aa3e442ac08d3fa48bae9f0
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 Colour-to-Status Mapping
+              byte_offset: 29861
+              byte_count: 820
+              word_count: 103
+              content_hash: 4d8df274ebc632d20afadd4006bb506dab4d997968f54b7be8200e2005f971ed
+            - path: 1.5.2
+              level: 3
+              title: 5.2 Implementation
+              byte_offset: 30681
+              byte_count: 1168
+              word_count: 126
+              content_hash: 839d759c9f5992329ed1c967be706393fd8d6f7af8299d8ea0d6b675a82aba37
+            - path: 1.5.3
+              level: 3
+              title: 5.3 Status Dot
+              byte_offset: 31849
+              byte_count: 392
+              word_count: 56
+              content_hash: 034ba1feb1e4db53ecd2a6d9356218a2aed19672d2c60ece37723d5cb1bc95cf
+        - path: "1.6"
+          level: 2
+          title: 6. Filter Bar
+          byte_offset: 32241
+          byte_count: 5171
+          word_count: 759
+          content_hash: bb082aee2db04becbe24c3445561cee0e3335f8179fe3e69dea2ecd3115d4836
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 Layout
+              byte_offset: 32259
+              byte_count: 859
+              word_count: 72
+              content_hash: 4aab0ec83c24a8867c7371a87bd33adc59fd77f32eee4d9e045d12a65af396b1
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Type Toggles
+              byte_offset: 33118
+              byte_count: 759
+              word_count: 123
+              content_hash: d27d70d0abf92cf45608b85f86ae741fed969e6bdfffda0a65d36d9258811dd3
+            - path: 1.6.3
+              level: 3
+              title: 6.3 Status Colour Toggles
+              byte_offset: 33877
+              byte_count: 908
+              word_count: 148
+              content_hash: a361bf5db7bcd338d95a373ee30d230a5ce9c8314392be4fa1ab0a3c0f5d2912
+            - path: 1.6.4
+              level: 3
+              title: 6.4 Active Filter Badges
+              byte_offset: 34785
+              byte_count: 698
+              word_count: 119
+              content_hash: bdb12bcb674732a8864248d19407f7e2bbc7bc6a5f4feae04d297351df56c9fa
+            - path: 1.6.5
+              level: 3
+              title: 6.5 Filter Logic
+              byte_offset: 35483
+              byte_count: 1166
+              word_count: 190
+              content_hash: eda79d001a7dc939f604d628b24c0c91e8e75a4b1b84e5f294521bcc07000ea7
+            - path: 1.6.6
+              level: 3
+              title: 6.6 Filter State
+              byte_offset: 36649
+              byte_count: 763
+              word_count: 103
+              content_hash: d8f60f078ba6002518cca06ae4621fe5fce771f698de0f8b904e5fce0bf9a3c2
+        - path: "1.7"
+          level: 2
+          title: 7. Progress Metrics
+          byte_offset: 37412
+          byte_count: 3131
+          word_count: 369
+          content_hash: 31d3011d424224e6f60e7b82b959a3a9bbcbb299cc4124f277886eb83d11235b
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 Task Completion by Feature
+              byte_offset: 37436
+              byte_count: 772
+              word_count: 87
+              content_hash: e8f7cb08094a300a6b98cd2181911405f18b237b28c71aae3641df428e016ad2
+            - path: 1.7.2
+              level: 3
+              title: 7.2 Feature Completion by Plan
+              byte_offset: 38208
+              byte_count: 667
+              word_count: 75
+              content_hash: b9286810daf2e86408e1c55306a4764a81910d99b2a84589014cea253678c82f
+            - path: 1.7.3
+              level: 3
+              title: 7.3 Estimate Rollup
+              byte_offset: 38875
+              byte_count: 533
+              word_count: 73
+              content_hash: 47a79ac911b1f1043b720a43b02a4c20fc2eb646c251c325eb757ccbc4397634
+            - path: 1.7.4
+              level: 3
+              title: 7.4 ProgressBar Component
+              byte_offset: 39408
+              byte_count: 609
+              word_count: 72
+              content_hash: 6d6551440b6db0c4c554ffabee71240f47d43bfd8fcb12b97644ce3c09068572
+            - path: 1.7.5
+              level: 3
+              title: 7.5 EstimateDisplay Component
+              byte_offset: 40017
+              byte_count: 526
+              word_count: 58
+              content_hash: 9cf02330fdea8640017e80acc36ff3139a558e78e92ed10e9dbd8952c25a6d25
+        - path: "1.8"
+          level: 2
+          title: 8. Component File Manifest
+          byte_offset: 40543
+          byte_count: 2230
+          word_count: 274
+          content_hash: ba9a815b765d190236696f88b29118ee90bbe04cf2cb7be37a22cc7d8beb42f2
+        - path: "1.9"
+          level: 2
+          title: 9. Data Dependencies
+          byte_offset: 42773
+          byte_count: 1922
+          word_count: 246
+          content_hash: ff01eb1dcaa5040f8ba827b9ec25d1c7f0e06e4c76eceb228bffd3714d131cac
+          children:
+            - path: 1.9.1
+              level: 3
+              title: 9.1 Zustand Store Reads
+              byte_offset: 42966
+              byte_count: 707
+              word_count: 91
+              content_hash: 82a76fbe11f99787f4b14b3902095103151d50db2683bbf80f712f2a1a7eaf8c
+            - path: 1.9.2
+              level: 3
+              title: 9.2 Query Functions
+              byte_offset: 43673
+              byte_count: 501
+              word_count: 53
+              content_hash: 618b19ebf58b1214bd3d30bac4154d58a6ff8dabc838bba15370e4255e462193
+            - path: 1.9.3
+              level: 3
+              title: 9.3 UI Store (new state for F3)
+              byte_offset: 44174
+              byte_count: 521
+              word_count: 69
+              content_hash: 3243ac53c03270b46c69e28319a02129d35436dc655f5be9093ad27b510cb876
+        - path: "1.10"
+          level: 2
+          title: 10. Interaction Flows
+          byte_offset: 44695
+          byte_count: 2067
+          word_count: 299
+          content_hash: 0c4db1a55a7d6e3a6033562c9c79279fbe2e9fdb351990e5a35ba2ce0d8ac605
+          children:
+            - path: 1.10.1
+              level: 3
+              title: 10.1 Browse Entity Tree
+              byte_offset: 44721
+              byte_count: 443
+              word_count: 69
+              content_hash: 162fa8900a435cd740fab82ec1c24491dbdfdb7ddffd9299da80dd690f1f1b11
+            - path: 1.10.2
+              level: 3
+              title: 10.2 Inspect Entity Detail
+              byte_offset: 45164
+              byte_count: 543
+              word_count: 72
+              content_hash: d44720176ccbe4640d8467d1a6d402960693c7b8b3f811634f37b9d3d02116ba
+            - path: 1.10.3
+              level: 3
+              title: 10.3 Filter by Status
+              byte_offset: 45707
+              byte_count: 406
+              word_count: 57
+              content_hash: 7ed4002b0f89265e14d73fb9ae1ba86aab53010b87bdbb843c48700d8dbd3900
+            - path: 1.10.4
+              level: 3
+              title: 10.4 Filter from Detail Panel
+              byte_offset: 46113
+              byte_count: 350
+              word_count: 54
+              content_hash: 483cebe765febd20ff5f09155cf1b14e0de9b58a4a39d012a5ad39e4ea0b3556
+            - path: 1.10.5
+              level: 3
+              title: 10.5 Navigate to Broken Reference
+              byte_offset: 46463
+              byte_count: 299
+              word_count: 43
+              content_hash: 54791332c5ecdae8a697c07e2fdd590760826f8e4ee43dd5a316081ccfabe3a4
+        - path: "1.11"
+          level: 2
+          title: 11. Error Handling
+          byte_offset: 46762
+          byte_count: 1100
+          word_count: 178
+          content_hash: 8cab7d22c4b3f18b3e6c6db11f707de54e2778efcff5efcdf2de97635036b8e8
+        - path: "1.12"
+          level: 2
+          title: 12. Design Fundamentals Applied
+          byte_offset: 47862
+          byte_count: 1400
+          word_count: 217
+          content_hash: 78af5dc106604c8a1d84b41bcca8157752dbf160e08505763dae2672a882f69d
+        - path: "1.13"
+          level: 2
+          title: 13. shadcn/ui Components Required
+          byte_offset: 49262
+          byte_count: 999
+          word_count: 148
+          content_hash: 9e67e5134c2b4e92fcdb175b46dae5fb5eca4ba138b4232cef81c874b19b5e9a
+        - path: "1.14"
+          level: 2
+          title: 14. Acceptance Criteria
+          byte_offset: 50261
+          byte_count: 2421
+          word_count: 361
+          content_hash: f200c9419917b25de3ddd541280566817645bb275edfc7bb6a062dd67c34e826
+        - path: "1.15"
+          level: 2
+          title: References
+          byte_offset: 52682
+          byte_count: 589
+          word_count: 58
+          content_hash: 94ba7e9697b341edd7184aa42b1533c5705c02c5bb7f9cc88e84bfdd0da0ddeb
+entity_refs:
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 104
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 232
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 279
+    - entity_id: FEAT-003
+      entity_type: feature
+      section_path: "1.2"
+      byte_offset: 2758
+    - entity_id: FEAT-001
+      entity_type: feature
+      section_path: "1.2"
+      byte_offset: 2807
+    - entity_id: FEAT-002
+      entity_type: feature
+      section_path: "1.2"
+      byte_offset: 3060
+    - entity_id: FEAT-003
+      entity_type: feature
+      section_path: 1.3.3
+      byte_offset: 7310
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: 1.4.3
+      byte_offset: 13367
+    - entity_id: FEAT-003
+      entity_type: feature
+      section_path: 1.4.4
+      byte_offset: 16884
+    - entity_id: FEAT-003
+      entity_type: feature
+      section_path: 1.10.1
+      byte_offset: 45033
+    - entity_id: FEAT-003
+      entity_type: feature
+      section_path: 1.10.2
+      byte_offset: 45212
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: 1.10.2
+      byte_offset: 45258
+    - entity_id: FEAT-003
+      entity_type: feature
+      section_path: 1.10.5
+      byte_offset: 46526
+    - entity_id: FEAT-999
+      entity_type: feature
+      section_path: 1.10.5
+      byte_offset: 46556
+    - entity_id: TASK-01a
+      entity_type: task
+      section_path: "1.2"
+      byte_offset: 2894
+    - entity_id: TASK-01b
+      entity_type: task
+      section_path: "1.2"
+      byte_offset: 2978
+    - entity_id: TASK-03a
+      entity_type: task
+      section_path: "1.2"
+      byte_offset: 3232
+    - entity_id: TASK-03b
+      entity_type: task
+      section_path: "1.2"
+      byte_offset: 3316
+    - entity_id: TASK-03c
+      entity_type: task
+      section_path: "1.2"
+      byte_offset: 3400
+    - entity_id: TASK-001
+      entity_type: task
+      section_path: 1.4.3
+      byte_offset: 14783
+    - entity_id: TASK-002
+      entity_type: task
+      section_path: 1.4.3
+      byte_offset: 14846
+    - entity_id: TASK-003
+      entity_type: task
+      section_path: 1.4.3
+      byte_offset: 14909
+    - entity_id: TASK-004
+      entity_type: task
+      section_path: 1.4.3
+      byte_offset: 14972
+    - entity_id: TASK-005
+      entity_type: task
+      section_path: 1.4.3
+      byte_offset: 15035
+    - entity_id: TASK-03a
+      entity_type: task
+      section_path: 1.10.1
+      byte_offset: 45092
+    - entity_id: TASK-03a
+      entity_type: task
+      section_path: 1.10.4
+      byte_offset: 46168
+    - entity_id: BUG-001
+      entity_type: bug
+      section_path: "1.2"
+      byte_offset: 3785
+    - entity_id: BUG-002
+      entity_type: bug
+      section_path: "1.2"
+      byte_offset: 3869
+    - entity_id: BUG-001
+      entity_type: bug
+      section_path: 1.3.5
+      byte_offset: 9663
+    - entity_id: BUG-002
+      entity_type: bug
+      section_path: 1.3.5
+      byte_offset: 9691
+    - entity_id: BUG-003
+      entity_type: bug
+      section_path: 1.3.5
+      byte_offset: 9716
+    - entity_id: BUG-001
+      entity_type: bug
+      section_path: 1.4.3
+      byte_offset: 15620
+    - entity_id: DEC-001
+      entity_type: decision
+      section_path: "1.2"
+      byte_offset: 4138
+    - entity_id: DEC-001
+      entity_type: decision
+      section_path: 1.3.5
+      byte_offset: 9805
+    - entity_id: DEC-002
+      entity_type: decision
+      section_path: 1.3.5
+      byte_offset: 9825
+    - entity_id: DEC-001
+      entity_type: decision
+      section_path: 1.4.3
+      byte_offset: 15884
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 177
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1.2"
+      byte_offset: 2718
+    - entity_id: P2-other
+      entity_type: plan
+      section_path: "1.2"
+      byte_offset: 3480
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.4.3
+      byte_offset: 13830
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.10.1
+      byte_offset: 44961
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.10.2
+      byte_offset: 45495
+cross_doc_links:
+    - target_path: kbzv-architecture.md
+      link_text: KBZV Architecture Design
+      section_path: "1.15"
+    - target_path: ../plan/kbzv-v1-dev-plan.md
+      link_text: KBZV v1.0 Dev Plan
+      section_path: "1.15"
+    - target_path: ../plan/kbz-references/kanbanzai-guide-for-viewer-agents.md
+      link_text: Kanbanzai Viewer Guide
+      section_path: "1.15"
+    - target_path: ../plan/kbz-references/schema-reference.md
+      link_text: Schema Reference
+      section_path: "1.15"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: 1.4.6.5
+      role: decision
+      confidence: high
+    - section_path: "1.14"
+      role: requirement
+      confidence: high
+classified: false

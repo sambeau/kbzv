@@ -1,0 +1,5 @@
+id: TASK-01KN0134E4BTP
+parent_feature: FEAT-01KMZA96W1J98
+slug: app-scaffold-theme-header-bar-is-48px-tall-with-docs-and-wo
+summary: "Header bar is 48px tall with \"Docs\" and \"Workflows\" tab triggers and their icons"
+status: ready

@@ -1,0 +1,82 @@
+---
+name: kanbanzai-getting-started
+description: >
+  This repository is managed with Kanbanzai. Read this skill at the start of every
+  session, before writing any code or running any searches. Kanbanzai provides MCP
+  tools — next, entity, doc, status, and others — that replace manual grep and file
+  searching for project state and work queue management. The presence of a .kbz/
+  directory or kanbanzai tools in your tool list confirms you are in a
+  Kanbanzai-managed project and this skill applies.
+# kanbanzai-managed: do not edit. Regenerate with: kanbanzai init --update-skills
+# kanbanzai-version: dev
+---
+
+## Purpose
+
+This skill orients you at the start of any session in a Kanbanzai-managed project.
+Follow it before writing any code or making any changes.
+
+## Preflight Check
+
+Kanbanzai works through MCP tools. Before calling `next` or any other tool, confirm
+the kanbanzai server is connected — your editor should list tools such as `next`,
+`entity`, `doc`, and `status` as available.
+
+If those tools are not available, the kanbanzai MCP server is not running. The
+project's `.mcp.json` configures most editors automatically — check that the
+kanbanzai binary is on your PATH and that your editor has loaded the MCP
+configuration. See `docs/getting-started.md` for editor-specific setup instructions.
+
+Do not substitute `grep`, `find`, or direct file reading for kanbanzai tool calls.
+The workflow state in `.kbz/` is structured data — the MCP tools are the correct
+interface for reading and writing it.
+
+## Before Any Work
+
+Run `git status`. If there are uncommitted changes from a previous session:
+
+- If coherent and complete → commit them before starting new work.
+- If incomplete or risky → stash them and note this for the human.
+
+Never start new work on top of uncommitted changes from a different task.
+
+## Understand the Project
+
+Check for `AGENTS.md` in the repository root. If it exists, read it — it contains
+project-specific conventions, structure, decisions, and reading order that override
+generic guidance. If it does not exist, the Kanbanzai skills are your primary orientation.
+
+## Check the Work Queue
+
+Call `next` (without an ID) to see what tasks are ready. The work queue promotes eligible tasks
+and returns them sorted by estimate and age.
+
+If the queue is empty, call `status` or `entity` action: `list` to understand the current project
+state: active features, open bugs, and their statuses.
+
+## Assemble Context Before Starting a Task
+
+Before beginning work on any task, call `next` with a task ID to claim it and receive
+a context packet containing the task instructions, relevant knowledge entries, and
+design context.
+
+See `kanbanzai-agents` for the full dispatch-and-complete protocol.
+
+## Understand the Workflow
+
+Kanbanzai enforces stage gates that require human approval at specific points. Do not
+skip stages or create entities without meeting the gate conditions.
+
+See `kanbanzai-workflow` for:
+
+- The six stage gates and what each requires
+- What humans own vs. what agents own
+- When to stop and ask the human (the emergency brake)
+
+---
+
+## Related
+
+- `kanbanzai-workflow` — stage gates, entity lifecycle, human/agent boundary
+- `kanbanzai-documents` — document registration and approval
+- `kanbanzai-agents` — context assembly, task dispatch, commit format, knowledge contribution

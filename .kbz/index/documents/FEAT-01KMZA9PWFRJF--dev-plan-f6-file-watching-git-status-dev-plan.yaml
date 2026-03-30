@@ -1,0 +1,715 @@
+document_id: FEAT-01KMZA9PWFRJF/dev-plan-f6-file-watching-git-status-dev-plan
+document_path: work/dev/f6-file-watching-git-status-dev-plan.md
+content_hash: 6b727b1416bffa382ccff2c1632311d4b45d1d7d29abe07f90198cf1ddc81b7d
+indexed_at: 2026-03-30T18:41:33.731941Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F6: File Watching + Git Status — Development Plan'
+      byte_offset: 0
+      byte_count: 58566
+      word_count: 7673
+      content_hash: 6b727b1416bffa382ccff2c1632311d4b45d1d7d29abe07f90198cf1ddc81b7d
+      children:
+        - path: "1.1"
+          level: 2
+          title: Overview
+          byte_offset: 256
+          byte_count: 1049
+          word_count: 156
+          content_hash: 329067ed7807a537964c89db7722b443dab3148a504109f23af98a38704e5eab
+          children:
+            - path: 1.1.1
+              level: 3
+              title: File Manifest
+              byte_offset: 815
+              byte_count: 490
+              word_count: 74
+              content_hash: 192907c9a9ef4f83f786261969801bb70bd7520248fe950d5e0c64d2ecf91d0f
+        - path: "1.2"
+          level: 2
+          title: Task Dependency Graph
+          byte_offset: 1305
+          byte_count: 910
+          word_count: 143
+          content_hash: e32a494ff49c5da4a15ad02163aba6d610e134ffd487d6584358d31fc944432b
+        - path: "1.3"
+          level: 2
+          title: 'Task 1: Tauri Capability Updates'
+          byte_offset: 2215
+          byte_count: 2532
+          word_count: 306
+          content_hash: cce152d2bc22a206527962c5f16ea9fea68e5e0ff9b92cfaca2eee47ee9dfa7e
+          children:
+            - path: 1.3.1
+              level: 3
+              title: What to Do
+              byte_offset: 2283
+              byte_count: 312
+              word_count: 46
+              content_hash: b2d4051df2325572f98075edf7ee2a8ee97486a1e46fbdf46cb2912d5037afc1
+            - path: 1.3.2
+              level: 3
+              title: Implementation
+              byte_offset: 2595
+              byte_count: 1355
+              word_count: 144
+              content_hash: 73a5f711f4f8f1f10bf766a1ef42d81a042071c174ccd5cb85dfb21a3401363e
+            - path: 1.3.3
+              level: 3
+              title: Files Touched
+              byte_offset: 3950
+              byte_count: 305
+              word_count: 37
+              content_hash: 29cb97c143d82c3e1ee64eeb614a9d87e2bc720b85f464d23746c0b45c60a39f
+            - path: 1.3.4
+              level: 3
+              title: Dependencies
+              byte_offset: 4255
+              byte_count: 87
+              word_count: 13
+              content_hash: d1df37d038dfdb3a6d3130e2f63fbde2d102d66cc3acc98e6a0e31496b3db1f2
+            - path: 1.3.5
+              level: 3
+              title: Verification
+              byte_offset: 4342
+              byte_count: 336
+              word_count: 44
+              content_hash: f99d1ce3c833e51dab0fbf906066fdca9e182d8430032c629d8f3587079f64e7
+            - path: 1.3.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 4678
+              byte_count: 69
+              word_count: 12
+              content_hash: d3aaa2597937b5230bf2c7e753367e859193a7ec8fece55b876e4d136f0876ac
+        - path: "1.4"
+          level: 2
+          title: 'Task 2: File Watcher Core'
+          byte_offset: 4747
+          byte_count: 5874
+          word_count: 669
+          content_hash: 457421815beefe09a8b4987feda9667523ad538309e7d5d77ac1f8de6271e835
+          children:
+            - path: 1.4.1
+              level: 3
+              title: What to Do
+              byte_offset: 4809
+              byte_count: 309
+              word_count: 43
+              content_hash: e4469d453555559d2e03a38eb533c3ec41ec07f69d6f1046cb4c9936f9390cbf
+            - path: 1.4.2
+              level: 3
+              title: Implementation
+              byte_offset: 5118
+              byte_count: 4779
+              word_count: 515
+              content_hash: f1f108ba991b289ccc590c3064e1b0c8c1b437fbbef62e77077f69cfbae73973
+            - path: 1.4.3
+              level: 3
+              title: Files Touched
+              byte_offset: 9897
+              byte_count: 89
+              word_count: 14
+              content_hash: d438fa425e4b667b685ae9e43aeeb8c4e4ac6ea8fe77cc60f1231466c04dc1f2
+            - path: 1.4.4
+              level: 3
+              title: Dependencies
+              byte_offset: 9986
+              byte_count: 97
+              word_count: 12
+              content_hash: 443752b2c4727b212f476a48b65c72e9dc1033a77e8abe8282bacea9bcb0da81
+            - path: 1.4.5
+              level: 3
+              title: Verification
+              byte_offset: 10083
+              byte_count: 406
+              word_count: 56
+              content_hash: bdf28ed819eec506f4a8fe93be29d71aef0c2dba7a06b7bc4e9ce21b5f49928a
+            - path: 1.4.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 10489
+              byte_count: 132
+              word_count: 19
+              content_hash: c063188215c03934e4dca735de06c4e51adcd0df5d76446a334b831f11e9f5bd
+        - path: "1.5"
+          level: 2
+          title: 'Task 3: Debounce + Event Batching'
+          byte_offset: 10621
+          byte_count: 4571
+          word_count: 595
+          content_hash: bb9804da8c63c1a1e101d6a88b071a54fafb0ce280b74cc53730212144ed261c
+          children:
+            - path: 1.5.1
+              level: 3
+              title: What to Do
+              byte_offset: 10691
+              byte_count: 434
+              word_count: 63
+              content_hash: 5cc2828f2493310bb0c8162f583202589defd597752a9104338339378f062da0
+            - path: 1.5.2
+              level: 3
+              title: Implementation
+              byte_offset: 11125
+              byte_count: 3102
+              word_count: 373
+              content_hash: 967700d5b4c7e0279f53435f2d5f2982ed71b10232555786e8d10941ed7aebeb
+            - path: 1.5.3
+              level: 3
+              title: Files Touched
+              byte_offset: 14227
+              byte_count: 141
+              word_count: 21
+              content_hash: a5931b8b40a3925109c41873b89b4d7e16cbebb837d8dc519df64f1ebc1da220
+            - path: 1.5.4
+              level: 3
+              title: Dependencies
+              byte_offset: 14368
+              byte_count: 66
+              word_count: 11
+              content_hash: 3e94ce31430448ff3710e7c1d15b1091ec6e41303d9603ada076bf1ac21c2c29
+            - path: 1.5.5
+              level: 3
+              title: Verification
+              byte_offset: 14434
+              byte_count: 639
+              word_count: 99
+              content_hash: f38bdc080080f196e02300f01a50b6ff4745d902839afdbc78b0b28dee68dc87
+            - path: 1.5.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 15073
+              byte_count: 119
+              word_count: 17
+              content_hash: c920393377ce6822e80a1ce513be13dbaef8658773737e9f7f01645bc2705dd3
+        - path: "1.6"
+          level: 2
+          title: 'Task 4: File Path → Entity Resolution'
+          byte_offset: 15192
+          byte_count: 6730
+          word_count: 744
+          content_hash: 8ca5c709d362f7e25314239dccf47114999fa39f5f694f37c127d2768f446b15
+          children:
+            - path: 1.6.1
+              level: 3
+              title: What to Do
+              byte_offset: 15268
+              byte_count: 266
+              word_count: 35
+              content_hash: b014d4b0797a276b27d1a472302d3fad4aab4f8315ce680cc76d5664fe6386d4
+            - path: 1.6.2
+              level: 3
+              title: Implementation
+              byte_offset: 15534
+              byte_count: 5596
+              word_count: 584
+              content_hash: 15fced217a8f5d0662d51e0187a17ccbd45f4e4058e5d05ca9c48dd3e1876df2
+            - path: 1.6.3
+              level: 3
+              title: Files Touched
+              byte_offset: 21130
+              byte_count: 136
+              word_count: 20
+              content_hash: 3ff0372a23e9254ad54e1017cec74ea9fe26565134b97ae4f0e44e6ec20169cf
+            - path: 1.6.4
+              level: 3
+              title: Dependencies
+              byte_offset: 21266
+              byte_count: 62
+              word_count: 10
+              content_hash: 4013d93ac38b18e25c5d05a79a3db84b6614e8c419468e22e2d4a5ef6cb10c7c
+            - path: 1.6.5
+              level: 3
+              title: Verification
+              byte_offset: 21328
+              byte_count: 469
+              word_count: 66
+              content_hash: 7aed3cdd2b276cdf4b5e655858cab63acbf142bdd9f60e5f95aae50e43d07718
+            - path: 1.6.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 21797
+              byte_count: 125
+              word_count: 17
+              content_hash: 2ccc53b05dec13906b09a8fe9243eed5e750c539ed1eecb816c558f6f1f9410c
+        - path: "1.7"
+          level: 2
+          title: 'Task 5: Store Extensions'
+          byte_offset: 21922
+          byte_count: 6390
+          word_count: 775
+          content_hash: a68f8f401c5f01f16baf3ac042ba928a83ac3c9f7e9b0ddffe317ad42b6867a0
+          children:
+            - path: 1.7.1
+              level: 3
+              title: What to Do
+              byte_offset: 21983
+              byte_count: 296
+              word_count: 33
+              content_hash: 7247b0e6a3fcf9f0c15273ea71b8e60cc1701f2d667b0c4f475bbb92f91e8709
+            - path: 1.7.2
+              level: 3
+              title: Implementation
+              byte_offset: 22279
+              byte_count: 4610
+              word_count: 538
+              content_hash: 671d8f8eeaca283d25d918472ab7ec84726c25b02f0e3cb3b5a637dcb991c6c1
+            - path: 1.7.3
+              level: 3
+              title: Files Touched
+              byte_offset: 26889
+              byte_count: 252
+              word_count: 27
+              content_hash: f9e0068e649984572b7f64fda453c20222ac7baa90eaf0342d6c7c9879d67190
+            - path: 1.7.4
+              level: 3
+              title: Dependencies
+              byte_offset: 27141
+              byte_count: 186
+              word_count: 28
+              content_hash: 3bee424c1180d6f17c0681cf71a4bcebe0a7abf5775bc1e12b69aa218fa67ed8
+            - path: 1.7.5
+              level: 3
+              title: Verification
+              byte_offset: 27327
+              byte_count: 807
+              word_count: 112
+              content_hash: a24f8843160b5a9a2304a73d53ba748609253b0f115e9535ebf9e2514acecaa0
+            - path: 1.7.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 28134
+              byte_count: 178
+              word_count: 28
+              content_hash: 5a3e1332b8d28b9d0f97a9c7700c4515b61bbe3a046a24f5c687f41112aa3e95
+        - path: "1.8"
+          level: 2
+          title: 'Task 6: Watcher-Store Integration'
+          byte_offset: 28312
+          byte_count: 5736
+          word_count: 741
+          content_hash: c7cd7b73b5238695eb6ea649e587c92412a64425d66e505bd34fb4e6e66a644b
+          children:
+            - path: 1.8.1
+              level: 3
+              title: What to Do
+              byte_offset: 28382
+              byte_count: 282
+              word_count: 41
+              content_hash: b67d382f637932013941073e0ac3a33914d896d7d4ee25ce53a1b94818a3cb66
+            - path: 1.8.2
+              level: 3
+              title: Implementation
+              byte_offset: 28664
+              byte_count: 4050
+              word_count: 505
+              content_hash: c6be632b2f4a2c51235c68545e0e2ff65158aac0a145aa18c25dc69df3edb7ca
+            - path: 1.8.3
+              level: 3
+              title: Files Touched
+              byte_offset: 32714
+              byte_count: 232
+              word_count: 27
+              content_hash: c550a00dab61cf09e9413df28b78bb70a0a1f54989a816ade6a8f3f3f75b660c
+            - path: 1.8.4
+              level: 3
+              title: Dependencies
+              byte_offset: 32946
+              byte_count: 304
+              word_count: 32
+              content_hash: 76f5a768a837cfa9033ce03521fcd96d5522054b12a13cd0441976ee0c3a3475
+            - path: 1.8.5
+              level: 3
+              title: Verification
+              byte_offset: 33250
+              byte_count: 675
+              word_count: 110
+              content_hash: 74cbea4e01949c8984713b24de18e1f9c482c4efacde34b7555447c0c697d9e9
+            - path: 1.8.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 33925
+              byte_count: 123
+              word_count: 17
+              content_hash: 619e9c2e20d706cc6c9f81607706ccc8c30c5f84589471fc2a7b7bc9d3c80801
+        - path: "1.9"
+          level: 2
+          title: 'Task 7: Git Status Data Retrieval'
+          byte_offset: 34048
+          byte_count: 5912
+          word_count: 725
+          content_hash: 954b875bf983e19ee779e3349c15058fd4792d69f0cb21b799ffe940812c83ce
+          children:
+            - path: 1.9.1
+              level: 3
+              title: What to Do
+              byte_offset: 34118
+              byte_count: 256
+              word_count: 35
+              content_hash: 6df54885dae8e31826b05b5bda51bf6a767c39e566bc006d3110d83fe2443a6d
+            - path: 1.9.2
+              level: 3
+              title: Implementation
+              byte_offset: 34374
+              byte_count: 4740
+              word_count: 542
+              content_hash: 374d711ad8bb3ae6b3ee9604b13adb3ed61924df5c2a212eb17ec093c31a0637
+            - path: 1.9.3
+              level: 3
+              title: Files Touched
+              byte_offset: 39114
+              byte_count: 85
+              word_count: 14
+              content_hash: 207b5b22ec258279b918ee53e13240532fa3877938e7d984d955dc2c7539a04e
+            - path: 1.9.4
+              level: 3
+              title: Dependencies
+              byte_offset: 39199
+              byte_count: 75
+              word_count: 12
+              content_hash: 3d67af1cf556e3f2e7f8b175eab852d205f178bf4a0d306e0e54598d531e43b2
+            - path: 1.9.5
+              level: 3
+              title: Verification
+              byte_offset: 39274
+              byte_count: 554
+              word_count: 90
+              content_hash: 753f0f64790a57e16bcc4cfe3d16230cd26ccf06e680d147e683316c3fc099b6
+            - path: 1.9.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 39828
+              byte_count: 132
+              word_count: 21
+              content_hash: f64275244a0863886dae7c3abe48f2e2dad8476aecad9bbf76d8e292a13818b4
+        - path: "1.10"
+          level: 2
+          title: 'Task 8: GitInfo Component'
+          byte_offset: 39960
+          byte_count: 4249
+          word_count: 547
+          content_hash: b110e6fa300b94d67ae3e7267dc01f18cd7e94598963f79753ef1795a50d6539
+          children:
+            - path: 1.10.1
+              level: 3
+              title: What to Do
+              byte_offset: 40022
+              byte_count: 300
+              word_count: 46
+              content_hash: ce15a42404f9d4637473fee6c33c8a285fbb363e6bc30ac75d2536f331aed159
+            - path: 1.10.2
+              level: 3
+              title: Implementation
+              byte_offset: 40322
+              byte_count: 2911
+              word_count: 350
+              content_hash: 0d2a29b43aa807e68b2f91c99e93368b0b2a3c237ec48c9d2740aa2611d63b29
+            - path: 1.10.3
+              level: 3
+              title: Files Touched
+              byte_offset: 43233
+              byte_count: 184
+              word_count: 26
+              content_hash: 57afa1d15defc007c89a7169fb8104f37bd8a63bdb3356876821040634e46ad7
+            - path: 1.10.4
+              level: 3
+              title: Dependencies
+              byte_offset: 43417
+              byte_count: 149
+              word_count: 20
+              content_hash: 4c14322dfa6bc927e5e2a8d6702e33aeba3189226994b90ce5de737e70285db9
+            - path: 1.10.5
+              level: 3
+              title: Verification
+              byte_offset: 43566
+              byte_count: 521
+              word_count: 80
+              content_hash: c9900a74684d88a156b738964b01d1347e24c4588496ee581a2df3a42631da8b
+            - path: 1.10.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 44087
+              byte_count: 122
+              word_count: 16
+              content_hash: 099d0eedc709062ce2d297b69db9ff8fc03a16cd585560ac8d5280beaaf607ab
+        - path: "1.11"
+          level: 2
+          title: 'Task 9: Git Refresh Integration'
+          byte_offset: 44209
+          byte_count: 2437
+          word_count: 365
+          content_hash: 246261723d6482b3e0e27c8852367b5b66069fca565cad60d9b507a97fcc7601
+          children:
+            - path: 1.11.1
+              level: 3
+              title: What to Do
+              byte_offset: 44276
+              byte_count: 478
+              word_count: 80
+              content_hash: 0900caa6d41481a2f824f0aeedff54d0ed09f5f2bda47371dba0d0d77e4dec36
+            - path: 1.11.2
+              level: 3
+              title: Implementation
+              byte_offset: 44754
+              byte_count: 962
+              word_count: 143
+              content_hash: 24b0cdb977e038d48bac3b329f6c103ada5b158de28adbc57a73f639c3aae64b
+            - path: 1.11.3
+              level: 3
+              title: Files Touched
+              byte_offset: 45716
+              byte_count: 256
+              word_count: 31
+              content_hash: 1f360c8f4b93cf47bddcc2f5e7c62c9c6a57fc729794c01349acdea76598977e
+            - path: 1.11.4
+              level: 3
+              title: Dependencies
+              byte_offset: 45972
+              byte_count: 145
+              word_count: 17
+              content_hash: b53cefe45ba0b0e6ba7c17cc9ed3c5a5c5db30913d56f085d0aa6cd37b40a963
+            - path: 1.11.5
+              level: 3
+              title: Verification
+              byte_offset: 46117
+              byte_count: 434
+              word_count: 70
+              content_hash: 7e249877faa929a662095ed9727da8e9b4c45cc685397daa6404a7a41f990bb8
+            - path: 1.11.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 46551
+              byte_count: 95
+              word_count: 14
+              content_hash: e0f1ac91b1c66b80b7929c4724e2ed35c75eb3cf661509e5d71af56d2fecfb34
+        - path: "1.12"
+          level: 2
+          title: 'Task 10: Error Handling + Edge Cases'
+          byte_offset: 46646
+          byte_count: 5209
+          word_count: 756
+          content_hash: ae7df4381db32250ec4c83b676bf506c4e3f2207fb197a96279e1ecc67141ac4
+          children:
+            - path: 1.12.1
+              level: 3
+              title: What to Do
+              byte_offset: 46719
+              byte_count: 306
+              word_count: 46
+              content_hash: 77400baae05fc7521fbe46a91c1c0bea4e67f52753ec31139fbd5b2c4068bf73
+            - path: 1.12.2
+              level: 3
+              title: Implementation
+              byte_offset: 47025
+              byte_count: 3358
+              word_count: 483
+              content_hash: c26b0d74e20758a1c2d69143c854f2ff906e58baf8382207818f74f5986cf440
+            - path: 1.12.3
+              level: 3
+              title: Files Touched
+              byte_offset: 50383
+              byte_count: 312
+              word_count: 44
+              content_hash: e7b58c6c185c402593f046a0e95ed52a8d7d10d739aabeea0b18cb37408fbfa6
+            - path: 1.12.4
+              level: 3
+              title: Dependencies
+              byte_offset: 50695
+              byte_count: 50
+              word_count: 7
+              content_hash: 82841cfd4189318f3a79918fd41fc171c31775f378fcecb1470693dbb01f91e1
+            - path: 1.12.5
+              level: 3
+              title: Verification
+              byte_offset: 50745
+              byte_count: 968
+              word_count: 143
+              content_hash: 1917029e0afb8342585fa09980abb96820aadb7f681f476e0d25905bfdb14444
+            - path: 1.12.6
+              level: 3
+              title: Estimated Effort
+              byte_offset: 51713
+              byte_count: 142
+              word_count: 21
+              content_hash: a8c4b9c7c22d05f1bf9fdac01306683d16df5e3b079c7adc04847bf511d61ff7
+        - path: "1.13"
+          level: 2
+          title: Effort Summary
+          byte_offset: 51855
+          byte_count: 565
+          word_count: 141
+          content_hash: d8bd18db8e2c73d66eb5ce8b3b503b60b169eeb941713190a12987c5d5d266e5
+        - path: "1.14"
+          level: 2
+          title: Testing Strategy
+          byte_offset: 52420
+          byte_count: 3028
+          word_count: 538
+          content_hash: 2bb131c70afbb500ecefa502a675a11094d7361b8aedfa73ce7757311ee6387b
+          children:
+            - path: 1.14.1
+              level: 3
+              title: Unit Tests
+              byte_offset: 52441
+              byte_count: 902
+              word_count: 146
+              content_hash: 8bb5296c049023124f57bfa3719d083a10580e85f6be9aab72c3ab9890a7b044
+            - path: 1.14.2
+              level: 3
+              title: Integration Tests
+              byte_offset: 53343
+              byte_count: 893
+              word_count: 152
+              content_hash: 4a09d6c0918b93cfc10a0825a9e326745c4b041cc3a4a7461b241374a84c497c
+            - path: 1.14.3
+              level: 3
+              title: Component Tests
+              byte_offset: 54236
+              byte_count: 379
+              word_count: 64
+              content_hash: 3aaf63d2b38eb8442b8140b3cf0dc562c88f07c7317bf5123c043e0b57422be5
+            - path: 1.14.4
+              level: 3
+              title: Manual Testing Checklist
+              byte_offset: 54615
+              byte_count: 833
+              word_count: 173
+              content_hash: 8d012ae9a24216efd3231de8b21fe5034551c079fb5e5a42096259853ee4b509
+        - path: "1.15"
+          level: 2
+          title: Risk Areas
+          byte_offset: 55448
+          byte_count: 2462
+          word_count: 379
+          content_hash: 9bda9dcee18beea0b3f2aefd31fa1fc1cf0d32deb0ade68912d7a5e6c70e08f3
+          children:
+            - path: 1.15.1
+              level: 3
+              title: 1. Tauri FS Watch API Reliability
+              byte_offset: 55463
+              byte_count: 576
+              word_count: 84
+              content_hash: b8dfdc33039a896f8937781a00d0ed4c2d4db29bd4ea203223d093ac6892a1c5
+            - path: 1.15.2
+              level: 3
+              title: 2. Atomic Write Race Conditions
+              byte_offset: 56039
+              byte_count: 579
+              word_count: 94
+              content_hash: 89718cf98f84ccdc96fde7a1ac8585483f0a53d399aa44c3e68136bdc2d716de
+            - path: 1.15.3
+              level: 3
+              title: 3. Shell Plugin Security
+              byte_offset: 56618
+              byte_count: 424
+              word_count: 65
+              content_hash: b3eff6416f3a3060107c5bfaa190a23953d51358e2fe910c65cbd1d6dfaa4c9e
+            - path: 1.15.4
+              level: 3
+              title: 4. Git Command Performance
+              byte_offset: 57042
+              byte_count: 437
+              word_count: 68
+              content_hash: c6bf84569c630eea150311e1326fb7d2226f2ce9de600e300ee4aac9c0cf510b
+            - path: 1.15.5
+              level: 3
+              title: 5. Watcher Death Detection
+              byte_offset: 57479
+              byte_count: 431
+              word_count: 65
+              content_hash: 7f7c0d590e7435ad3c9d1a5591d45741499534ad53ccd4b06b618134824703fe
+        - path: "1.16"
+          level: 2
+          title: References
+          byte_offset: 57910
+          byte_count: 656
+          word_count: 63
+          content_hash: 9353e99c2df717d8dc69d8f72ac46ab40ee6534fde63226c0db2522fda5d13a8
+entity_refs:
+    - entity_id: FEAT-01KMZA9PWFRJF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 71
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 160
+    - entity_id: FEAT-01KMZA9PWFRJF
+      entity_type: feature
+      section_path: 1.6.2
+      byte_offset: 16751
+    - entity_id: FEAT-01KMZA
+      entity_type: feature
+      section_path: 1.6.2
+      byte_offset: 18029
+    - entity_id: TASK-01KMZA
+      entity_type: task
+      section_path: 1.6.2
+      byte_offset: 18105
+    - entity_id: TASK-01KMZA9Q1ABCD
+      entity_type: task
+      section_path: 1.6.2
+      byte_offset: 20006
+    - entity_id: TASK-01KMZA
+      entity_type: task
+      section_path: 1.7.5
+      byte_offset: 27753
+    - entity_id: BUG-01KMZA
+      entity_type: bug
+      section_path: 1.6.2
+      byte_offset: 18181
+    - entity_id: BUG-01KMZB1234567
+      entity_type: bug
+      section_path: 1.6.2
+      byte_offset: 20086
+    - entity_id: DEC-01KMZA
+      entity_type: decision
+      section_path: 1.6.2
+      byte_offset: 18256
+    - entity_id: DEC-01KMZA9123456
+      entity_type: decision
+      section_path: 1.6.2
+      byte_offset: 20164
+    - entity_id: DOC-01JX
+      entity_type: document
+      section_path: 1.6.2
+      byte_offset: 20304
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 136
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.6.2
+      byte_offset: 17738
+cross_doc_links:
+    - target_path: /projects/kbzv/work/design/doc.md
+      link_text: /projects/kbzv/work/design/doc.md
+      section_path: 1.6.2
+    - target_path: work/spec/f6-file-watching-git-status-spec.md
+      link_text: work/spec/f6-file-watching-git-status-spec.md
+      section_path: "1.16"
+    - target_path: work/design/f6-file-watching-git-status.md
+      link_text: work/design/f6-file-watching-git-status.md
+      section_path: "1.16"
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: "1.16"
+    - target_path: work/plan/kbzv-v1-dev-plan.md
+      link_text: work/plan/kbzv-v1-dev-plan.md
+      section_path: "1.16"
+    - target_path: work/spec/f2-data-layer-spec.md
+      link_text: work/spec/f2-data-layer-spec.md
+      section_path: "1.16"
+conventional_roles:
+    - section_path: "1.1"
+      role: narrative
+      confidence: high
+    - section_path: "1.13"
+      role: narrative
+      confidence: high
+    - section_path: "1.15"
+      role: risk
+      confidence: high
+classified: false

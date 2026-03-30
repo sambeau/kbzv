@@ -1,0 +1,5 @@
+id: TASK-01KN015G1832W
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-register-keyboard-shortcuts-in-app-tsx-f
+summary: "Register ⌘[ / ⌘] keyboard shortcuts in App.tsx for back/forward navigation"
+status: ready

@@ -1,0 +1,5 @@
+id: TASK-01KN015G165ME
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-implement-goback-goforward-history-navig
+summary: Implement goBack() / goForward() history navigation with scroll and filter state restoration
+status: ready

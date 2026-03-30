@@ -1,0 +1,5 @@
+id: TASK-01KN015G164GG
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-implement-activatefilter-view-field-valu
+summary: "Implement activateFilter(view, field, value) — activates the appropriate filter in the target view and switches to it"
+status: ready

@@ -1,0 +1,300 @@
+document_id: FEAT-01KMZA9JMZFNF/specification-f4-documents-view-spec
+document_path: work/spec/f4-documents-view-spec.md
+content_hash: 3d00244a812b439ce9a71e7dfb082e991228309f83ad673224116a3f1474798b
+indexed_at: 2026-03-30T18:17:47.051548Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F4: Documents View — Specification'
+      byte_offset: 0
+      byte_count: 49145
+      word_count: 5958
+      content_hash: 3d00244a812b439ce9a71e7dfb082e991228309f83ad673224116a3f1474798b
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. File Manifest
+          byte_offset: 618
+          byte_count: 1683
+          word_count: 233
+          content_hash: 81d2cb92228b80ea21b51515486f0bb5abae0844d0412484bd27b55a83c42c9d
+        - path: "1.2"
+          level: 2
+          title: 2. Document List
+          byte_offset: 2301
+          byte_count: 10882
+          word_count: 1150
+          content_hash: cc70f7ea7433530a4c0a4956453648201d1d90586add2acf39aa4821ef99b0b3
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 DocumentList.tsx — Props, State, Rendering
+              byte_offset: 2322
+              byte_count: 1417
+              word_count: 165
+              content_hash: b5427baba610805e7dfd89a18080db4678a967611c9b4ce1271b558ed1931fd4
+            - path: 1.2.2
+              level: 3
+              title: 2.2 List Row Anatomy — Exact Fields, Layout, Tailwind Classes
+              byte_offset: 3739
+              byte_count: 2194
+              word_count: 167
+              content_hash: 96ccb3b87797e7df009f32aeae9d6e6386aa99e878181b20910173cd3a59c859
+            - path: 1.2.3
+              level: 3
+              title: 2.3 Sort Control — Options, Comparators, Default
+              byte_offset: 5933
+              byte_count: 1446
+              word_count: 163
+              content_hash: b60620dfcb6bfaa19e7ad911a3425cff2909d7e0df768acacf3c938f5124e295
+            - path: 1.2.4
+              level: 3
+              title: 2.4 Filter Bar — Type Toggles, Status Toggles, AND Logic
+              byte_offset: 7379
+              byte_count: 3067
+              word_count: 319
+              content_hash: 303034bd04b2b0b361d3a545c86336613dde360ed716eab006f2292547e1bf4d
+            - path: 1.2.5
+              level: 3
+              title: 2.5 Type Colours — Hex Values for Each Document Type
+              byte_offset: 10446
+              byte_count: 2109
+              word_count: 258
+              content_hash: 1de3cda79f94e2cf1133c6609f71061d76d39621c6bd4832904700d510522669
+            - path: 1.2.6
+              level: 3
+              title: 2.6 Empty State
+              byte_offset: 12555
+              byte_count: 628
+              word_count: 74
+              content_hash: b616f4d8245be3ef809c9ecce44fd6c0532ed42c644671b0ec950f2606448552
+        - path: "1.3"
+          level: 2
+          title: 3. Document Viewer
+          byte_offset: 13183
+          byte_count: 4015
+          word_count: 460
+          content_hash: c51ad2b013b0d23443a8cdfd9690f1947d2dca90916cd3becd9c6eae9beab633
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 DocumentViewer.tsx — Props, State, Rendering
+              byte_offset: 13206
+              byte_count: 2194
+              word_count: 226
+              content_hash: 02c4229976cc976bb795f780103fc35686e9fb1958ac89a33e18f2a6c20ad593
+            - path: 1.3.2
+              level: 3
+              title: 3.2 Back Button Behaviour and State Preservation
+              byte_offset: 15400
+              byte_count: 1082
+              word_count: 137
+              content_hash: 456c143dd74626bef7d0166d2f0b7fbc01e2ed90324bcfe5f3c216c238c2689d
+            - path: 1.3.3
+              level: 3
+              title: 3.3 Content Area — MarkdownViewer Integration
+              byte_offset: 16482
+              byte_count: 456
+              word_count: 60
+              content_hash: 2aeae538bc187acb306764397a60665e72f7ce90185782b8757d7d436dd5511d
+            - path: 1.3.4
+              level: 3
+              title: 3.4 Metadata Panel — Exact Field List, Order, Rendering
+              byte_offset: 16938
+              byte_count: 260
+              word_count: 33
+              content_hash: 965eb187b0f391ec3000dc982e4edbb1760bf57205e72f7f294a05e98241c74b
+        - path: "1.4"
+          level: 2
+          title: 4. Markdown Rendering
+          byte_offset: 17198
+          byte_count: 9245
+          word_count: 1094
+          content_hash: 535d8d9e57634c6f12ed63f8a96f02215005733e1a3b3bd056ad1d2c776d6cf8
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 MarkdownViewer.tsx — Props, Configuration
+              byte_offset: 17224
+              byte_count: 312
+              word_count: 45
+              content_hash: 261b77d8f6aa2126d8595f7e8ac43679d0c27c25c5381cbf0c62f4bee52c6dbf
+            - path: 1.4.2
+              level: 3
+              title: 4.2 react-markdown Configuration — Exact Plugin List and Options
+              byte_offset: 17536
+              byte_count: 1375
+              word_count: 132
+              content_hash: cfe44b8e9526542adc1263d9d3daa6357a74691ff541590fd8f9eb2a643f9cce
+            - path: 1.4.3
+              level: 3
+              title: 4.3 Custom Component Overrides (Headings, Links, Code Blocks)
+              byte_offset: 18911
+              byte_count: 2328
+              word_count: 251
+              content_hash: 77518f49655dbf15574aaa38e2af942553949e5b3e983d4454021a97e4d6aa65
+            - path: 1.4.4
+              level: 3
+              title: 4.4 Paper-Width CSS — Exact Tailwind Classes
+              byte_offset: 21239
+              byte_count: 1085
+              word_count: 155
+              content_hash: e8e6ebff92bf405c1ffcb1b61c06ec2a9d34476d07b56cc1cfbc5996f48d58bc
+            - path: 1.4.5
+              level: 3
+              title: 4.5 GitHub-Style Theme — Typography, Spacing, Colours
+              byte_offset: 22324
+              byte_count: 2468
+              word_count: 282
+              content_hash: f527affafd12df6380f23f87e3cb70fc955b242103caf6a99caa624cdd79e613
+            - path: 1.4.6
+              level: 3
+              title: 4.6 Syntax Highlighting Configuration
+              byte_offset: 24792
+              byte_count: 707
+              word_count: 85
+              content_hash: b4bb480e94133be2dcf775cedd3f3a5c6368b3b99da730dc53e1abdf67466287
+            - path: 1.4.7
+              level: 3
+              title: 4.7 Heading Anchors — Generation Algorithm
+              byte_offset: 25499
+              byte_count: 944
+              word_count: 140
+              content_hash: 207f5c7dc994bc2acca6154bde311a0a99fcc2e60a40bb25ce8df943b845d7e3
+        - path: "1.5"
+          level: 2
+          title: 5. Drift Detection
+          byte_offset: 26443
+          byte_count: 5971
+          word_count: 692
+          content_hash: a3911a3ba7e74858f9cccba54d4824d1a4e7fbb4306db402b9a1a0f931556768
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 document.ts (reader) — readDocumentContent() Function
+              byte_offset: 26466
+              byte_count: 1623
+              word_count: 190
+              content_hash: 787f2c4cfabb8c8317257d530714e61198e3e01aee8b3a94a9662e1ee8f3a1e5
+            - path: 1.5.2
+              level: 3
+              title: 5.2 SHA-256 Computation — Exact Algorithm Using Web Crypto API
+              byte_offset: 28089
+              byte_count: 841
+              word_count: 90
+              content_hash: 111fb1ca3aae665b7df414b06eaeb5090219c7ad8529e3510adad0c1c387c6a4
+            - path: 1.5.3
+              level: 3
+              title: 5.3 DriftBadge.tsx — Props, State Resolution, Visual States
+              byte_offset: 28930
+              byte_count: 1303
+              word_count: 153
+              content_hash: 78ffd119bae4ad45516bb911a72b9b535921f77c160368c8979b076934d4f8ed
+            - path: 1.5.4
+              level: 3
+              title: 5.4 Four Drift States — Exact Badge Text, Colours, Icons
+              byte_offset: 30233
+              byte_count: 2181
+              word_count: 255
+              content_hash: 901e7a894d0a856fb83b2cf83ce977276c685ad25030c70a9d5fe8a54f4c4094
+        - path: "1.6"
+          level: 2
+          title: 6. Metadata Panel
+          byte_offset: 32414
+          byte_count: 6171
+          word_count: 736
+          content_hash: a2d4cac83067b215b41a7949da063f4c40b105a914e96fbecaa1a6478e58442b
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 MetadataPanel.tsx — Props, Field Order
+              byte_offset: 32436
+              byte_count: 3745
+              word_count: 436
+              content_hash: 8b40050bfded53d2de669b462b3939c7841ec6777db7621acd72d27269f3d2dc
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Related Entity Resolution — Reverse Lookup Algorithm
+              byte_offset: 36181
+              byte_count: 1126
+              word_count: 140
+              content_hash: 71e8c058f9d3992c56063071cc57dbe2459546d7228f81ffdb83c13876d73904
+            - path: 1.6.3
+              level: 3
+              title: 6.3 EntityLink Rendering (Navigation Stubbed for F5)
+              byte_offset: 37307
+              byte_count: 1278
+              word_count: 156
+              content_hash: 1ae35b8d93d0d1965098f2641aea781cca8bfdc3b868b9870eebae8d1d0eab36
+        - path: "1.7"
+          level: 2
+          title: 7. Documents View Container
+          byte_offset: 38585
+          byte_count: 2015
+          word_count: 213
+          content_hash: 4975baaab7e9f118307a82df0a6488b4ab453d444d7408f7670f6934f9905c11
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 DocumentsView.tsx — State Management, View Switching
+              byte_offset: 38617
+              byte_count: 923
+              word_count: 97
+              content_hash: a333c8112d24a5481007e76a58d597b358e58693fec6803df0309a1a36c8bbea
+            - path: 1.7.2
+              level: 3
+              title: 7.2 Scroll Position Preservation Strategy
+              byte_offset: 39540
+              byte_count: 1060
+              word_count: 111
+              content_hash: 70345ac7d510ea861c75b7a417c7076c0a352c2300280c5e1252d837b6c8bdb4
+        - path: "1.8"
+          level: 2
+          title: 8. Error Handling
+          byte_offset: 40600
+          byte_count: 2399
+          word_count: 369
+          content_hash: 520c69ef7bf870f3527ac04ddb476d70ce6f0acac988fd2fab71dec69a1af3bb
+        - path: "1.9"
+          level: 2
+          title: 9. Implementation Order
+          byte_offset: 42999
+          byte_count: 1461
+          word_count: 184
+          content_hash: 11b55d9689faa00b7809c9a996b23ec8d2888a9599d8913a634bb6dc8bcb21d0
+        - path: "1.10"
+          level: 2
+          title: 10. Acceptance Criteria
+          byte_offset: 44460
+          byte_count: 4685
+          word_count: 774
+          content_hash: 4ffaf68c4a3c30338842e3313e17ddc1646b6e480812a6a804f9990360b6e267
+entity_refs:
+    - entity_id: FEAT-01KMZA9JMZFNF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 178
+    - entity_id: FEAT-01KMZA96W1J98
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 299
+    - entity_id: FEAT-01KMZA9CP9XEX
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 324
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 238
+cross_doc_links:
+    - target_path: work/design/f4-documents-view.md
+      link_text: work/design/f4-documents-view.md
+      section_path: "1"
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: "1"
+conventional_roles:
+    - section_path: "1.10"
+      role: requirement
+      confidence: high
+classified: false

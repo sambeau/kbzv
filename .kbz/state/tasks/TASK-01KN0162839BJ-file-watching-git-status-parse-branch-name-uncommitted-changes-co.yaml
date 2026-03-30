@@ -1,0 +1,5 @@
+id: TASK-01KN0162839BJ
+parent_feature: FEAT-01KMZA9PWFRJF
+slug: file-watching-git-status-parse-branch-name-uncommitted-changes-co
+summary: "Parse branch name, uncommitted changes count, ahead/behind counts from command output"
+status: ready

@@ -1,0 +1,10 @@
+{
+  "context_servers": {
+    "kanbanzai": {
+      "command": "kanbanzai",
+      "args": [
+        "serve"
+      ]
+    }
+  }
+}

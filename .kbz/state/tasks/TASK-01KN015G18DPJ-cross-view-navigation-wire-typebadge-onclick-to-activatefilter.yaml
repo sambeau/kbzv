@@ -1,0 +1,5 @@
+id: TASK-01KN015G18DPJ
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-wire-typebadge-onclick-to-activatefilter
+summary: Wire TypeBadge onClick to activateFilter for document type filters
+status: ready

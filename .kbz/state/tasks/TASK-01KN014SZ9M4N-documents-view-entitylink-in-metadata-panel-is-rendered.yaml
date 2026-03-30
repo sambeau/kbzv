@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ9M4N
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-entitylink-in-metadata-panel-is-rendered
+summary: EntityLink in metadata panel is rendered but inert (no navigation) in F4
+status: ready

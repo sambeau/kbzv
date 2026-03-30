@@ -1,0 +1,5 @@
+id: TASK-01KN015G1BWVC
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-verify-tree-auto-expansion-and-auto-scro
+summary: Verify tree auto-expansion and auto-scroll when navigating to a nested entity
+status: ready

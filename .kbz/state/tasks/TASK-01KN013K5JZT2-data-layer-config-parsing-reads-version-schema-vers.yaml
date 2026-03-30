@@ -1,0 +1,5 @@
+id: TASK-01KN013K5JZT2
+parent_feature: FEAT-01KMZA9CP9XEX
+slug: data-layer-config-parsing-reads-version-schema-vers
+summary: "Config parsing reads version, schema_version, prefixes, and document roots"
+status: ready

@@ -1,0 +1,5 @@
+id: TASK-01KN014SZ212D
+parent_feature: FEAT-01KMZA9JMZFNF
+slug: documents-view-type-filter-toggles-correctly-include-ex
+summary: "Type filter toggles correctly include/exclude documents by type (OR within type, AND with status)"
+status: ready

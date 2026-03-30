@@ -1,0 +1,5 @@
+id: TASK-01KN015G17YC9
+parent_feature: FEAT-01KMZA9MWR7WK
+slug: cross-view-navigation-implement-expandtoentity-id-tree-expansi
+summary: Implement expandToEntity(id) tree expansion algorithm — walks plan→feature→task ancestry and expands nodes
+status: ready

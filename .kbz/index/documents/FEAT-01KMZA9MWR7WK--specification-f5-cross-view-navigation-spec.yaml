@@ -1,0 +1,422 @@
+document_id: FEAT-01KMZA9MWR7WK/specification-f5-cross-view-navigation-spec
+document_path: work/spec/f5-cross-view-navigation-spec.md
+content_hash: dfdfd5a6d5b759fca405f64b3cb6b0ea7db1425a9f6b76052ffc4d1db1119203
+indexed_at: 2026-03-30T18:17:47.088184Z
+sections:
+    - path: "1"
+      level: 1
+      title: 'F5: Cross-View Navigation — Specification'
+      byte_offset: 0
+      byte_count: 60448
+      word_count: 7455
+      content_hash: dfdfd5a6d5b759fca405f64b3cb6b0ea7db1425a9f6b76052ffc4d1db1119203
+      children:
+        - path: "1.1"
+          level: 2
+          title: 1. Files Modified
+          byte_offset: 252
+          byte_count: 1781
+          word_count: 215
+          content_hash: fb420546c09265899a8adac6156a1bd5a9ec88ee6aea2cbb5578a41f31fd0da2
+        - path: "1.2"
+          level: 2
+          title: 2. UI Store Updates
+          byte_offset: 2033
+          byte_count: 18065
+          word_count: 2025
+          content_hash: e72f1162489592c1ca76729750ae7c86c88ece10574ad3558e5d2ec9f2cb4b77
+          children:
+            - path: 1.2.1
+              level: 3
+              title: 2.1 Updated UIState Interface — Complete Definition
+              byte_offset: 2057
+              byte_count: 4397
+              word_count: 509
+              content_hash: 38ed48586f33048d3089acd810e7d62da1ed64ad332fcf53ed234983d9b4b77c
+            - path: 1.2.2
+              level: 3
+              title: 2.2 `navigateToEntity(id)` — Exact Implementation
+              byte_offset: 6454
+              byte_count: 2662
+              word_count: 294
+              content_hash: a3ade7134d0a3c0e8efd26cd9e270b66c93f9d14667e461c29ae252138ed992c
+            - path: 1.2.3
+              level: 3
+              title: 2.3 `navigateToDocument(id)` — Exact Implementation
+              byte_offset: 9116
+              byte_count: 1885
+              word_count: 209
+              content_hash: d8c6a40d3e186bd05b95ced3daf53a25f7de7dadc191080a7a121621d56bf442
+            - path: 1.2.4
+              level: 3
+              title: 2.4 `activateFilter(view, field, value)` — Exact Implementation
+              byte_offset: 11001
+              byte_count: 2288
+              word_count: 280
+              content_hash: fd42b2a2f846bdffc12caba7b772745e2f125d0f31c85f48d4d570288342a81e
+            - path: 1.2.5
+              level: 3
+              title: 2.5 `goBack()` / `goForward()` — History Navigation
+              byte_offset: 13289
+              byte_count: 6187
+              word_count: 658
+              content_hash: ac62ec72b6cd61f3d415043abe2f173a4206a2f69e6f00ea391f9bcb51d24814
+            - path: 1.2.6
+              level: 3
+              title: 2.6 Initial State
+              byte_offset: 19476
+              byte_count: 622
+              word_count: 70
+              content_hash: f8bc6e143fa9aceb0379a70f9e760faae6cbf9a360c15d247ec771b9447a55dd
+        - path: "1.3"
+          level: 2
+          title: 3. EntityLink Wiring
+          byte_offset: 20098
+          byte_count: 5185
+          word_count: 625
+          content_hash: 538dfb071a188ea6c7d3f5ded10dc59a4498046dcc9169675b8d709a88c445f5
+          children:
+            - path: 1.3.1
+              level: 3
+              title: 3.1 Updated `EntityLink.tsx` — onClick Handler Implementation
+              byte_offset: 20123
+              byte_count: 3209
+              word_count: 344
+              content_hash: 9b585cef3849dc422e5d2a349ab9149085da2abdadbdcbf629f4f03798fcbcd8
+            - path: 1.3.2
+              level: 3
+              title: 3.2 Entity Type Resolution from ID Prefix — Exact Matching
+              byte_offset: 23332
+              byte_count: 1168
+              word_count: 172
+              content_hash: bbcaac5b7b23d175e838ce99bde9aa816078fd87c223ba6c909b7167dc59821e
+            - path: 1.3.3
+              level: 3
+              title: 3.3 Rendering States
+              byte_offset: 24500
+              byte_count: 783
+              word_count: 105
+              content_hash: 0ae41f235245da8177912d5dc419d5d484a136a196b53e186c917b1bff8b9d4c
+        - path: "1.4"
+          level: 2
+          title: 4. Tree Selection Sync
+          byte_offset: 25283
+          byte_count: 6051
+          word_count: 720
+          content_hash: e1904b2e5dffd691a10e0bdb2992de332821617aed3b72defaebec4c73d0755a
+          children:
+            - path: 1.4.1
+              level: 3
+              title: 4.1 `expandToEntity(id)` — Exact Algorithm
+              byte_offset: 25310
+              byte_count: 3003
+              word_count: 337
+              content_hash: 8a48cd0b4c5c34d7cbc99810d016e88f9a05eac2bc29e319cae06b1f231bd00c
+            - path: 1.4.2
+              level: 3
+              title: 4.2 `scrollToSelected()` — DOM Interaction
+              byte_offset: 28313
+              byte_count: 1584
+              word_count: 212
+              content_hash: c5b2a398802e72aa647aa170e09513ffaf55a2d748ecd0c49e5fa65362b6b9ac
+            - path: 1.4.3
+              level: 3
+              title: 4.3 Integration with TreeContext
+              byte_offset: 29897
+              byte_count: 1437
+              word_count: 166
+              content_hash: 5dbfc8b0ba503c905f89037fdfc07384a0e62e94a7f6d44b584d0e10c0e1dcbf
+        - path: "1.5"
+          level: 2
+          title: 5. Keyboard Shortcuts
+          byte_offset: 31334
+          byte_count: 2599
+          word_count: 335
+          content_hash: a9591de65cd3c56f041005a93e2988539e8c8daf11fdb7b34a234b15caf859c9
+          children:
+            - path: 1.5.1
+              level: 3
+              title: 5.1 Event Listener Registration — `useEffect` Hook
+              byte_offset: 31360
+              byte_count: 1240
+              word_count: 141
+              content_hash: 260e690350b3d878525c6ba6fdda66b44fb91671b511a9a8ee89cbfa2e060122
+            - path: 1.5.2
+              level: 3
+              title: 5.2 ⌘[ / ⌘] — Back/Forward Implementation
+              byte_offset: 32600
+              byte_count: 805
+              word_count: 121
+              content_hash: 26064d8a791438e4b206046f1495d2bd2740bc7f6841115d2863f83f5fccea0d
+            - path: 1.5.3
+              level: 3
+              title: 5.3 Key Event Handling — `preventDefault`, `stopPropagation`
+              byte_offset: 33405
+              byte_count: 528
+              word_count: 69
+              content_hash: 59d7c85a0f465ec82d70f096a7593759d4879ed4295cacb6382274e6a1a8b6f4
+        - path: "1.6"
+          level: 2
+          title: 6. Lozenge Click Handlers
+          byte_offset: 33933
+          byte_count: 4036
+          word_count: 440
+          content_hash: 03f6f5f41faea2d71a47373d68b902a73a442844b09ce4b46bf5d88a4ada763c
+          children:
+            - path: 1.6.1
+              level: 3
+              title: 6.1 StatusBadge `onClick` — Filter Activation
+              byte_offset: 33963
+              byte_count: 1174
+              word_count: 119
+              content_hash: 0fbed79e5418549ca4d17cd0713993783dff0fc46138b633f36828d13f565725
+            - path: 1.6.2
+              level: 3
+              title: 6.2 Type Badge `onClick` — Filter Activation
+              byte_offset: 35137
+              byte_count: 1074
+              word_count: 113
+              content_hash: 636c41e1c73d6aade58115cf2f64dd742b6be84207aca80757a55aec896d57ab
+            - path: 1.6.3
+              level: 3
+              title: 6.3 Cross-View Filter Activation Flow
+              byte_offset: 36211
+              byte_count: 1758
+              word_count: 203
+              content_hash: d4f2d306b7057c1629ec9894e0a30e815cc176305f5408567229bc971160002d
+        - path: "1.7"
+          level: 2
+          title: 7. Component Modifications Summary
+          byte_offset: 37969
+          byte_count: 10108
+          word_count: 1191
+          content_hash: 0e119f58595ed9f55f80981bafe20ec368088d143f7f025d05333188c6455099
+          children:
+            - path: 1.7.1
+              level: 3
+              title: 7.1 `EntityLink.tsx` Changes
+              byte_offset: 38008
+              byte_count: 709
+              word_count: 90
+              content_hash: 8a083a578c03534759078bb582a8078110b6b3b97fe842ed0aa9e55a08105c12
+            - path: 1.7.2
+              level: 3
+              title: 7.2 `EntityTree.tsx` Changes
+              byte_offset: 38717
+              byte_count: 666
+              word_count: 90
+              content_hash: cc3838a348b801c2ddfd19120263232e62111fbdceaedffa6d30d71b7a8a111d
+            - path: 1.7.3
+              level: 3
+              title: 7.3 `TreeNode.tsx` Changes
+              byte_offset: 39383
+              byte_count: 889
+              word_count: 111
+              content_hash: 7a3384beca6ea5659e5e29e64239be6431722dffd6b398f7ffd4a839bfe4e0f1
+            - path: 1.7.4
+              level: 3
+              title: 7.4 `DocumentViewer.tsx` Changes
+              byte_offset: 40272
+              byte_count: 1292
+              word_count: 166
+              content_hash: fd1f160e329d81c29badc1478fd3c6de645f93e0d53487042a72c863c0e2d72d
+            - path: 1.7.5
+              level: 3
+              title: 7.5 `MetadataPanel.tsx` Changes
+              byte_offset: 41564
+              byte_count: 1362
+              word_count: 167
+              content_hash: 3eb7368be90187eb7cfc864025d5f9dea0395a5f18e8a8b521616bc1dfc24e14
+            - path: 1.7.6
+              level: 3
+              title: 7.6 `DocumentList.tsx` Changes
+              byte_offset: 42926
+              byte_count: 1725
+              word_count: 185
+              content_hash: 423861917484174582c9f4b9b2cd3c8bca4e2f70fd720e7662a871e6701b4ff3
+            - path: 1.7.7
+              level: 3
+              title: 7.7 All Detail Panel Changes
+              byte_offset: 44651
+              byte_count: 2054
+              word_count: 197
+              content_hash: 092f0f8e3e93dfce83e3330eb0311058e34066e49b2dabaea4a9251b2a924d5f
+            - path: 1.7.8
+              level: 3
+              title: 7.8 `App.tsx` Changes
+              byte_offset: 46705
+              byte_count: 1372
+              word_count: 180
+              content_hash: a60d50aaac2ff07190274504de63e8c767408b426c7ea8dd5436470e5a06cea0
+        - path: "1.8"
+          level: 2
+          title: 8. Edge Cases
+          byte_offset: 48077
+          byte_count: 5359
+          word_count: 782
+          content_hash: 78f278a2f309ebd68a96e27fa863e6bee5f775b9edfc14d376631631fd6ced82
+          children:
+            - path: 1.8.1
+              level: 3
+              title: 8.1 Broken References
+              byte_offset: 48095
+              byte_count: 700
+              word_count: 99
+              content_hash: 17551763576f03e0872c86b2076d607a4f30f20c861f177844330a297c417090
+            - path: 1.8.2
+              level: 3
+              title: 8.2 Circular Supersession
+              byte_offset: 48795
+              byte_count: 618
+              word_count: 92
+              content_hash: 5aaf534be4516e414af03d55ec0f6204a6b02da28410a46a111132c0b17dbac0
+            - path: 1.8.3
+              level: 3
+              title: 8.3 Deep Tree Expansion (Plan → Feature → Task)
+              byte_offset: 49413
+              byte_count: 584
+              word_count: 86
+              content_hash: c69f988b14ce532afacff612bc608d06374b96c03d3d4fd116f66b1d6cec8041
+            - path: 1.8.4
+              level: 3
+              title: 8.4 Navigation During Loading
+              byte_offset: 49997
+              byte_count: 761
+              word_count: 117
+              content_hash: b09ac0e9cbff83521a8cc54122d2630bf205e2561d5f411fb8f4b929c7bba6f5
+            - path: 1.8.5
+              level: 3
+              title: 8.5 View Switch Preserves State
+              byte_offset: 50758
+              byte_count: 727
+              word_count: 102
+              content_hash: 85440a389513bc6917cd1e37e44fa46537d1977afa1b1871d386d6406e474160
+            - path: 1.8.6
+              level: 3
+              title: 8.6 Rapid Navigation
+              byte_offset: 51485
+              byte_count: 657
+              word_count: 93
+              content_hash: 9fc37250d1f079ded3e87e3fd0af2584233385d43d48776a78376f83e3c50dde
+            - path: 1.8.7
+              level: 3
+              title: 8.7 Entity Exists But Parent Chain Is Broken
+              byte_offset: 52142
+              byte_count: 766
+              word_count: 115
+              content_hash: 82e6c67e7bf40d70e94f40e2b29df290ee3ce8677f32b20dbdc191ae6c04411d
+            - path: 1.8.8
+              level: 3
+              title: 8.8 Document File Missing on Disk
+              byte_offset: 52908
+              byte_count: 528
+              word_count: 74
+              content_hash: 0f603196441656f7e41cf2c4379361a6064804f7cec4e68ef212972dabbd7829
+        - path: "1.9"
+          level: 2
+          title: 9. Implementation Order
+          byte_offset: 53436
+          byte_count: 2238
+          word_count: 340
+          content_hash: cc88fb90b2e68f7aa30a6a6fb301774b73b2f1b237bf97fb2be4f121c41166f9
+        - path: "1.10"
+          level: 2
+          title: 10. Acceptance Criteria
+          byte_offset: 55674
+          byte_count: 4774
+          word_count: 755
+          content_hash: bc85e4efcc07f16c6fde57830469245bbebc9c845dd9094743962e3fdf53ad3a
+          children:
+            - path: 1.10.1
+              level: 3
+              title: Functional Criteria
+              byte_offset: 55702
+              byte_count: 4022
+              word_count: 635
+              content_hash: 78c8b9e6f4bd03388d776f93a92568e158b1ccc4305435e824a57a4cc43412e1
+            - path: 1.10.2
+              level: 3
+              title: Non-Functional Criteria
+              byte_offset: 59724
+              byte_count: 724
+              word_count: 116
+              content_hash: 5a6e30f91afb1d0671369a57713a1fc43d81c5cefc7fa2e1eabf1144a2c3428e
+entity_refs:
+    - entity_id: FEAT-01KMZA9MWR7WK
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 63
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 123
+    - entity_id: FEAT-01KMZA9JMZFNF
+      entity_type: feature
+      section_path: "1"
+      byte_offset: 164
+    - entity_id: FEAT-01KMZA9GFB075
+      entity_type: feature
+      section_path: 1.3.2
+      byte_offset: 24255
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.3.2
+      byte_offset: 24401
+    - entity_id: FEAT-DELETED
+      entity_type: feature
+      section_path: 1.8.1
+      byte_offset: 48188
+    - entity_id: FEAT-01ABC
+      entity_type: feature
+      section_path: 1.10.1
+      byte_offset: 55871
+    - entity_id: FEAT-002
+      entity_type: feature
+      section_path: 1.10.1
+      byte_offset: 57131
+    - entity_id: TASK-01ABC
+      entity_type: task
+      section_path: 1.3.2
+      byte_offset: 24294
+    - entity_id: TASK-01ABC
+      entity_type: task
+      section_path: 1.8.3
+      byte_offset: 49503
+    - entity_id: TASK-01ABC
+      entity_type: task
+      section_path: 1.10.1
+      byte_offset: 57104
+    - entity_id: TASK-OTHER
+      entity_type: task
+      section_path: 1.10.1
+      byte_offset: 59615
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: "1"
+      byte_offset: 99
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.3.2
+      byte_offset: 24322
+    - entity_id: P1-kbzv
+      entity_type: plan
+      section_path: 1.10.1
+      byte_offset: 57148
+cross_doc_links:
+    - target_path: work/design/kbzv-architecture.md
+      link_text: work/design/kbzv-architecture.md
+      section_path: 1.3.2
+conventional_roles:
+    - section_path: 1.2.1
+      role: definition
+      confidence: high
+    - section_path: 1.4.3
+      role: narrative
+      confidence: high
+    - section_path: "1.7"
+      role: narrative
+      confidence: high
+    - section_path: "1.10"
+      role: requirement
+      confidence: high
+classified: false

@@ -1,0 +1,14 @@
+id: FEAT-01KMZA9GFB075
+slug: workflows-view
+parent: P1-kbzv
+status: developing
+summary: "Workflows view with nested collapsible entity tree (Plan→Feature→Task) in left column, entity detail panel in right column. Status badges with colour palette, filter bar with type/status toggles, progress bars, estimate display, and standalone sections for Bugs, Decisions, Incidents, and pending Checkpoints."
+design: FEAT-01KMZA9GFB075/design-f3-workflows-view
+spec: FEAT-01KMZA9GFB075/specification-f3-workflows-view-spec
+dev_plan: FEAT-01KMZA9GFB075/dev-plan-f3-workflows-view-dev-plan
+tags:
+  - ui
+  - tree
+  - entity-detail
+created: "2026-03-30T12:07:58Z"
+created_by: sambeau
