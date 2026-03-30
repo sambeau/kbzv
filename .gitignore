@@ -21,3 +21,4 @@ node_modules/
 # TypeScript build info
 *.tsbuildinfo
 node_modules/.tmp/
+.worktrees/
