@@ -37,5 +37,6 @@ export default defineConfig(async () => ({
   test: {
     globals: true,
     environment: "jsdom",
+    exclude: ["**/node_modules/**", "**/dist/**", "**/.worktrees/**"],
   },
 }));
