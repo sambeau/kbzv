@@ -1,6 +1,6 @@
 // src/lib/types/index.ts
 
-// ── Entity type imports (needed for local union types) ──────────────
+// ── Entity type imports (needed for union expressions below) ────────
 import type { Plan } from "./plan";
 import type { Feature } from "./feature";
 import type { Task } from "./task";

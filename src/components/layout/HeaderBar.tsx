@@ -1,4 +1,5 @@
 import { FileText, GitBranch } from "lucide-react";
+import { GitInfo } from "@/components/layout/GitInfo";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useUIStore } from "@/lib/store/ui-store";
 import type { ActiveView } from "@/lib/store/ui-store";
@@ -27,10 +28,8 @@ function HeaderBar() {
         </TabsList>
       </Tabs>
 
-      {/* Right: Git info placeholder (Feature 6) */}
-      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-        {/* Reserved for Feature 6 git status display */}
-      </div>
+      {/* Right: Git info */}
+      <GitInfo />
     </header>
   );
 }
