@@ -1,11 +1,14 @@
-import { FileText, FolderOpen, GitBranch } from "lucide-react";
+import { FileText, FolderOpen } from "lucide-react";
 import { EmptyState } from "@/components/common/EmptyState";
+import { WorkflowsView } from "@/views/WorkflowsView";
 import { useUIStore } from "@/lib/store/ui-store";
 import { open } from "@tauri-apps/plugin-dialog";
 import { exists } from "@tauri-apps/plugin-fs";
 import { message } from "@tauri-apps/plugin-dialog";
 
-async function handleOpenProject(setProjectPath: (path: string | null) => void) {
+async function handleOpenProject(
+  setProjectPath: (path: string | null) => void,
+) {
   // 1. Open native folder picker
   const selected = await open({
     directory: true,
@@ -32,7 +35,7 @@ async function handleOpenProject(setProjectPath: (path: string | null) => void) 
       {
         title: "Not a Kanbanzai Project",
         kind: "error",
-      }
+      },
     );
   }
 }
@@ -59,9 +62,9 @@ function MainPanel() {
     );
   }
 
-  // Project open — show view-specific placeholder
+  // Project open — show view-specific content
   return (
-    <main className="flex-1 overflow-auto">
+    <main className="flex-1 overflow-hidden flex flex-col">
       {activeView === "documents" ? (
         <EmptyState
           icon={FileText}
@@ -69,11 +72,7 @@ function MainPanel() {
           description="Document list coming in a future update"
         />
       ) : (
-        <EmptyState
-          icon={GitBranch}
-          title="Workflows"
-          description="Workflow tree coming in a future update"
-        />
+        <WorkflowsView />
       )}
     </main>
   );
