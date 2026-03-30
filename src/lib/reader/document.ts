@@ -1,20 +1,65 @@
 // src/lib/reader/document.ts
 
-/**
- * Reads the content of a document file referenced by a DocumentRecord.
- *
- * STUB: This function is a placeholder for F4 (Documents View).
- * In F2, it returns null for all calls. F4 will implement the full
- * logic including Markdown reading and content hash verification.
- *
- * @param _projectPath - Absolute path to the project root
- * @param _documentPath - Relative path from DocumentRecord.path
- * @returns null (stub). F4 will return the file content as a string, or null on error.
- */
+import { readTextFile } from "@tauri-apps/plugin-fs";
+import type { DocumentRecord } from "../types";
+
+// ── Public Types ────────────────────────────────────────────────────
+
+export interface DocumentContent {
+  markdown: string;
+  contentHash: string;
+  hashMatches: boolean;
+  fileMissing: false;
+}
+
+export interface DocumentMissing {
+  markdown: null;
+  contentHash: null;
+  hashMatches: false;
+  fileMissing: true;
+}
+
+export type DocumentReadResult = DocumentContent | DocumentMissing;
+
+// ── Internal ────────────────────────────────────────────────────────
+
+async function computeSHA256(content: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(content);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+// ── Public API ──────────────────────────────────────────────────────
+
 export async function readDocumentContent(
-  _projectPath: string,
-  _documentPath: string,
-): Promise<string | null> {
-  // F4 will implement: read file at `${_projectPath}/${_documentPath}`, return content string
-  return null;
+  projectPath: string,
+  record: DocumentRecord,
+): Promise<DocumentReadResult> {
+  const fullPath = `${projectPath}/${record.path}`;
+
+  let content: string;
+  try {
+    content = await readTextFile(fullPath);
+  } catch {
+    return {
+      markdown: null,
+      contentHash: null,
+      hashMatches: false,
+      fileMissing: true,
+    };
+  }
+
+  const contentHash = await computeSHA256(content);
+
+  const hashMatches =
+    !record.content_hash || contentHash === record.content_hash;
+
+  return {
+    markdown: content,
+    contentHash,
+    hashMatches,
+    fileMissing: false,
+  };
 }
