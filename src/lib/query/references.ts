@@ -3,6 +3,39 @@
 import type { EntityTypeName } from "../types";
 import type { ProjectState } from "../store/project-store";
 
+// ── getRelatedEntities ──────────────────────────────────────────────
+
+export interface RelatedEntity {
+  id: string;
+  type: "plan" | "feature";
+  summary: string;
+}
+
+/**
+ * Reverse lookup: find all plans and features that reference the given document ID
+ * via their `design` field.
+ */
+export function getRelatedEntities(
+  documentId: string,
+  state: ProjectState,
+): RelatedEntity[] {
+  const related: RelatedEntity[] = [];
+
+  for (const [id, plan] of state.plans) {
+    if (plan.design === documentId) {
+      related.push({ id, type: "plan", summary: plan.title });
+    }
+  }
+
+  for (const [id, feature] of state.features) {
+    if (feature.design === documentId) {
+      related.push({ id, type: "feature", summary: feature.summary });
+    }
+  }
+
+  return related;
+}
+
 // ── resolveEntityType ───────────────────────────────────────────────
 
 /**

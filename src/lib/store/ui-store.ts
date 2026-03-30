@@ -8,6 +8,28 @@ import { getStatusColour } from "@/lib/constants/status-colours";
  */
 type ActiveView = "documents" | "workflows";
 
+type SortOption =
+  | "newest"
+  | "oldest"
+  | "title-asc"
+  | "title-desc"
+  | "type"
+  | "status";
+
+interface DocumentListFilters {
+  activeTypes: string[];
+  activeStatuses: string[];
+  sortOption: SortOption;
+  scrollTop: number;
+}
+
+const DEFAULT_DOCUMENT_LIST_FILTERS: DocumentListFilters = {
+  activeTypes: [],
+  activeStatuses: [],
+  sortOption: "newest",
+  scrollTop: 0,
+};
+
 /**
  * UI state for the application shell.
  */
@@ -18,13 +40,19 @@ interface UIState {
   /** Currently active top-level view */
   activeView: ActiveView;
 
+  /** Persisted document list filter/sort/scroll state for back-navigation preservation */
+  documentListFilters: DocumentListFilters;
+
   /** Set the project path. Pass null to close the project. */
   setProjectPath: (path: string | null) => void;
 
   /** Switch the active top-level view */
   setActiveView: (view: ActiveView) => void;
 
-  // --- Selection state ---
+  /** Persist document list filter/sort/scroll state */
+  setDocumentListFilters: (filters: DocumentListFilters) => void;
+
+  // --- Selection state (F3) ---
   /** Currently selected entity ID, or null */
   selectedEntityId: string | null;
 
@@ -34,7 +62,7 @@ interface UIState {
   /** Select an entity (or clear with null, null) */
   selectEntity: (id: string | null, type: string | null) => void;
 
-  // --- Filter state ---
+  // --- Filter state (F3) ---
   /** Entity types currently visible in the tree */
   activeTypes: Set<string>;
 
@@ -81,18 +109,20 @@ const useUIStore = create<UIState>((set) => ({
   // --- App shell state ---
   projectPath: null,
   activeView: "workflows",
+  documentListFilters: DEFAULT_DOCUMENT_LIST_FILTERS,
 
   setProjectPath: (path) => set({ projectPath: path }),
   setActiveView: (view) => set({ activeView: view }),
+  setDocumentListFilters: (filters) => set({ documentListFilters: filters }),
 
-  // --- Selection state ---
+  // --- Selection state (F3) ---
   selectedEntityId: null,
   selectedEntityType: null,
 
   selectEntity: (id, type) =>
     set({ selectedEntityId: id, selectedEntityType: type }),
 
-  // --- Filter state ---
+  // --- Filter state (F3) ---
   activeTypes: new Set(DEFAULT_ACTIVE_TYPES),
   activeStatusColours: new Set(DEFAULT_ACTIVE_STATUS_COLOURS),
 
@@ -131,4 +161,4 @@ const useUIStore = create<UIState>((set) => ({
 }));
 
 export { useUIStore };
-export type { ActiveView, UIState };
+export type { ActiveView, UIState, DocumentListFilters, SortOption };

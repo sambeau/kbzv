@@ -1,4 +1,5 @@
-import { FileText, FolderOpen } from "lucide-react";
+import { FolderOpen } from "lucide-react";
+import { DocumentsView } from "@/components/document/DocumentsView";
 import { EmptyState } from "@/components/common/EmptyState";
 import { WorkflowsView } from "@/views/WorkflowsView";
 import { useUIStore } from "@/lib/store/ui-store";
@@ -66,11 +67,7 @@ function MainPanel() {
   return (
     <main className="flex-1 overflow-hidden flex flex-col">
       {activeView === "documents" ? (
-        <EmptyState
-          icon={FileText}
-          title="Documents"
-          description="Document list coming in a future update"
-        />
+        <DocumentsView />
       ) : (
         <WorkflowsView />
       )}
