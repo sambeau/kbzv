@@ -5,6 +5,16 @@
   "permissions": [
     "core:default",
     "fs:default",
-    "dialog:default"
+    "dialog:default",
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "name": "git",
+          "cmd": "git",
+          "args": true
+        }
+      ]
+    }
   ]
 }
