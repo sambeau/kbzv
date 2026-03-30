@@ -2,4 +2,8 @@ id: TASK-01KN016284A34
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-call-refreshgitstatus-after-each-debounc
 summary: "Call `refreshGitStatus()` after each debounce flush"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "processBatch() step 6 calls await callbacks.refreshGitStatus() after every batch, wrapped in try/catch so failures are logged without crash."

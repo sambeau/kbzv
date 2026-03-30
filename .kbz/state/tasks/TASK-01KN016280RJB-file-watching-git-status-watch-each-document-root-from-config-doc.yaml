@@ -2,4 +2,8 @@ id: TASK-01KN016280RJB
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-watch-each-document-root-from-config-doc
 summary: "Watch each document root from `config.documents.roots` recursively"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "startWatching() iterates config.documents?.roots and creates a recursive watcher per root. Errors (missing dir) caught, logged as info, and skipped without stopping other watchers."

@@ -2,4 +2,9 @@ id: TASK-01KN0134E9DZ4
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-tests
 summary: Write tests for app-scaffold-theme
-status: ready
+status: done
+files_planned:
+  - src/lib/store/__tests__/ui-store.test.ts
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "Created src/lib/store/__tests__/ui-store.test.ts with 4 Vitest unit tests covering: default state, setProjectPath, setProjectPath(null), setActiveView. All 4 tests pass"
+verification: "pnpm test --run: 4/4 tests passed"

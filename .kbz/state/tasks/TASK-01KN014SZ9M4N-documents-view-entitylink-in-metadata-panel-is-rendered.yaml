@@ -2,4 +2,9 @@ id: TASK-01KN014SZ9M4N
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-entitylink-in-metadata-panel-is-rendered
 summary: EntityLink in metadata panel is rendered but inert (no navigation) in F4
-status: ready
+status: done
+files_planned:
+  - src/components/document/MetadataPanel.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "EntityLink in MetadataPanel is rendered as a <span> (not <button>) — inert in F4, no onClick handler. Shows entity ID with lookup result; '(not found)' if entity not in store."
+verification: "EntityLink uses span elements, no navigation wired"

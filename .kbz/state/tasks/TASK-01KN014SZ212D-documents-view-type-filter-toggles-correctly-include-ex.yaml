@@ -2,4 +2,10 @@ id: TASK-01KN014SZ212D
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-type-filter-toggles-correctly-include-ex
 summary: "Type filter toggles correctly include/exclude documents by type (OR within type, AND with status)"
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentFilterBar.tsx
+  - src/components/document/DocumentList.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Type filter toggles (design, specification, dev-plan, research, report, policy) in DocumentFilterBar — OR within type, AND with status via filterDocuments()"
+verification: filterDocuments tests verify OR-within-type and AND-with-status logic

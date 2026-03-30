@@ -2,4 +2,11 @@ id: TASK-01KN014SZBFPW
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-tests
 summary: Write tests for documents-view
-status: ready
+status: done
+files_planned:
+  - src/lib/__tests__/document-reader.test.ts
+  - src/lib/__tests__/drift-badge.test.ts
+  - src/lib/__tests__/type-colours.test.ts
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Tests written: document-reader.test.ts (19 tests), drift-badge.test.ts (29 tests), type-colours.test.ts (57 tests). All 208 tests pass."
+verification: "pnpm test --run: 8 test files, 208 tests, all passing"

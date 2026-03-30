@@ -2,4 +2,8 @@ id: TASK-01KN016281CFH
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-call-reloadentity-on-create-modify-remov
 summary: "Call `reloadEntity()` on create/modify, `removeEntity()` on delete, then `rebuildDerivedData()`"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "processBatch() calls reloadEntity/removeEntity per state event, rebuildDerivedData() once at the end if any entities changed."

@@ -2,4 +2,7 @@ id: TASK-01KN015G1CXX9
 parent_feature: FEAT-01KMZA9MWR7WK
 slug: cross-view-navigation-verify-back-navigation-restores-scroll-p
 summary: "Verify ⌘[ back navigation restores scroll position and filters"
-status: ready
+status: done
+completed: "2026-03-30T20:27:07Z"
+completion_summary: "Verified: navigateBack restores documentViewMode, viewingDocumentId, and documentFilters from history entry. DocumentList restores scroll via useLayoutEffect reading documentListFilters.scrollTop. Tests cover filter restoration."
+verification: "f5-navigation.test.ts: 'restores document filters on navigateBack' test verifies filter state. DocumentList useLayoutEffect restores scroll."

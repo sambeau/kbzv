@@ -2,4 +2,10 @@ id: TASK-01KN0134E7BB6
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-clicking-workflows-tab-changes-activevie
 summary: "Clicking \"Workflows\" tab changes `activeView` to `\"workflows\"`; clicking \"Docs\" changes it back"
-status: ready
+status: done
+files_planned:
+  - src/components/layout/HeaderBar.tsx
+  - src/components/layout/MainPanel.tsx
+  - src/lib/store/ui-store.ts
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "HeaderBar uses Tabs with onValueChange calling setActiveView. MainPanel reads activeView from useUIStore to show Documents or Workflows empty state. UIStore tracks activeView as 'documents' | 'workflows'"

@@ -2,4 +2,9 @@ id: TASK-01KN0141XF6YJ
 parent_feature: FEAT-01KMZA9GFB075
 slug: workflows-view-chevrons-expand-and-collapse-children-at
 summary: Chevrons expand and collapse children at all tree levels
-status: ready
+status: done
+files_planned:
+  - src/components/tree/TreeNode.tsx
+  - src/components/tree/TreeContext.tsx
+completed: "2026-03-30T19:48:09Z"
+completion_summary: Chevrons expand/collapse children at all tree levels via TreeContext.toggleExpand

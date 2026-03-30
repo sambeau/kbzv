@@ -2,4 +2,9 @@ id: TASK-01KN014SZ644D
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-metadata-panel-shows-all-seven-fields-in
 summary: "Metadata panel shows all seven fields in specified order: Status, Filename, Type, Owner, Related Entities, Superseded By, Content Hash Status"
-status: ready
+status: done
+files_planned:
+  - src/components/document/MetadataPanel.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "MetadataPanel renders 7 fields in order: Status (DriftBadge), Filename (monospace), Type (TypeBadge), Owner (EntityLink), Related Entities (EntityLink list), Superseded By (EntityLink), Content Hash Status"
+verification: "All 7 fields implemented with correct labels, components, and fallback '(none)' text"

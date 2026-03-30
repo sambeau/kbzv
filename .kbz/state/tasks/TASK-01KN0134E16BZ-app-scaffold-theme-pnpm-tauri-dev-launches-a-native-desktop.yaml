@@ -2,4 +2,13 @@ id: TASK-01KN0134E16BZ
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-pnpm-tauri-dev-launches-a-native-desktop
 summary: "`pnpm tauri dev` launches a native desktop window titled \"KBZV\" at 1200×800"
-status: ready
+status: done
+files_planned:
+  - src-tauri/Cargo.toml
+  - src-tauri/src/lib.rs
+  - src-tauri/src/main.rs
+  - src-tauri/build.rs
+  - src-tauri/tauri.conf.json
+  - src-tauri/capabilities/default.json
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "Created Tauri v2 scaffold with Cargo.toml (tauri 2, tauri-plugin-fs, tauri-plugin-dialog), lib.rs, main.rs, build.rs, tauri.conf.json (productName: KBZV, 1200x800 window), and capabilities/default.json"

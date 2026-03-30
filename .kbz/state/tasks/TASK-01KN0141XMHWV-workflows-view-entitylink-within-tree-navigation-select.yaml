@@ -2,4 +2,9 @@ id: TASK-01KN0141XMHWV
 parent_feature: FEAT-01KMZA9GFB075
 slug: workflows-view-entitylink-within-tree-navigation-select
 summary: EntityLink within-tree navigation selects the target and expands its ancestors
-status: ready
+status: done
+files_planned:
+  - src/components/common/EntityLink.tsx
+  - src/components/tree/TreeContext.tsx
+completed: "2026-03-30T19:48:09Z"
+completion_summary: "EntityLink within-tree navigation: calls expandTo(id) + select(id, type) via useOptionalTreeContext"

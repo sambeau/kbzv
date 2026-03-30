@@ -2,4 +2,10 @@ id: TASK-01KN014SZ7DZK
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-back-button-returns-to-document-list-wit
 summary: Back button returns to document list with scroll position and filter state preserved
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentViewer.tsx
+  - src/components/document/DocumentList.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: Back button in DocumentViewer calls onBack() → sets selectedDocId null → DocumentList remounts with initialFilters from UIStore. Scroll restored via useLayoutEffect.
+verification: useLayoutEffect restores scrollTop on mount; filter state preserved via UIStore

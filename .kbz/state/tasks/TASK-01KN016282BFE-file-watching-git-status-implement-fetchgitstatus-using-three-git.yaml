@@ -2,4 +2,8 @@ id: TASK-01KN016282BFE
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-implement-fetchgitstatus-using-three-git
 summary: "Implement `fetchGitStatus()` using three `git` shell commands (branch, status, rev-list)"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/git.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "Implemented src/lib/reader/git.ts with fetchGitStatus() running 3 git commands via @tauri-apps/plugin-shell Command.create('git', ...)."

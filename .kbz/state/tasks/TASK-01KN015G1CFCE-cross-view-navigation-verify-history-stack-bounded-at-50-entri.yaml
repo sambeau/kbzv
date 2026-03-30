@@ -2,4 +2,7 @@ id: TASK-01KN015G1CFCE
 parent_feature: FEAT-01KMZA9MWR7WK
 slug: cross-view-navigation-verify-history-stack-bounded-at-50-entri
 summary: Verify history stack bounded at 50 entries
-status: ready
+status: done
+completed: "2026-03-30T20:27:07Z"
+completion_summary: "Verified: navigateToDocument enforces MAX_HISTORY=50 via const MAX_HISTORY=50, overflow check, and slice(1) when exceeded. History stack cannot grow beyond 50+1 entries."
+verification: ui-store.ts L360-362 implements MAX_HISTORY bound. f5-navigation.test.ts covers history stack behavior.

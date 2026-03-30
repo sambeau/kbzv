@@ -2,4 +2,11 @@ id: TASK-01KN015G1D1KW
 parent_feature: FEAT-01KMZA9MWR7WK
 slug: cross-view-navigation-tests
 summary: Write tests for cross-view-navigation
-status: ready
+status: done
+files_planned:
+  - src/lib/__tests__/f5-navigation.test.ts
+  - src/lib/__tests__/f3-components.test.tsx
+  - src/lib/__tests__/type-colours.test.ts
+completed: "2026-03-30T20:27:07Z"
+completion_summary: "Wrote 45 unit tests in f5-navigation.test.ts covering: resolveEntityType (11), navigateToEntity (3), navigateToDocument (1), activateFilter (13), navigateBack/Forward (7), history invariants (2), expandedNodeIds (4), scroll save (2), setDocumentFilters (1). Updated f3-components.test.tsx for StatusBadge activateFilter API. All 294 tests pass."
+verification: "pnpm test: 11 test files, 294 tests, all passed"

@@ -2,4 +2,10 @@ id: TASK-01KN014SZ4V0G
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-clicking-a-document-row-opens-the-docume
 summary: Clicking a document row opens the Document Viewer showing Markdown content and metadata
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentList.tsx
+  - src/components/document/DocumentsView.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Row <button> onClick calls onSelect(doc.id) which sets selectedDocId in DocumentsView, swapping the list for DocumentViewer"
+verification: DocumentsView conditionally renders DocumentViewer when selectedDocId is non-null

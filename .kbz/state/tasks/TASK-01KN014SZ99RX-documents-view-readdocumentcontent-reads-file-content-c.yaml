@@ -2,4 +2,9 @@ id: TASK-01KN014SZ99RX
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-readdocumentcontent-reads-file-content-c
 summary: "readDocumentContent() reads file content, computes SHA-256, and returns DocumentContent or DocumentMissing"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/document.ts
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Implemented readDocumentContent() in src/lib/reader/document.ts — reads file via Tauri readTextFile, computes SHA-256 with Web Crypto API, compares against record.content_hash, returns DocumentContent or DocumentMissing union type"
+verification: "19 unit tests covering file missing, content returned, hash match/mismatch, no-hash case, path construction"

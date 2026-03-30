@@ -2,4 +2,11 @@ id: TASK-01KN014SZ8RX3
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-unknown-status-type-values-render-as-gre
 summary: Unknown status/type values render as grey badges without crashing
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentList.tsx
+  - src/components/document/DriftBadge.tsx
+  - src/lib/constants/type-colours.ts
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Unknown type → getTypeColour() returns grey fallback; unknown status → DriftBadge shows grey 'draft' visual with raw status string as label. No crashes."
+verification: Type colour fallback tests verify grey for unknown types; drift-badge tests verify unknown status → draft state

@@ -2,4 +2,10 @@ id: TASK-01KN014SZ5Q5E
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-syntax-highlighting-works-in-fenced-code
 summary: Syntax highlighting works in fenced code blocks with a language identifier
-status: ready
+status: done
+files_planned:
+  - src/components/document/MarkdownViewer.tsx
+  - src/styles/markdown.css
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Syntax highlighting via rehype-highlight + highlight.js GitHub theme. rehypeHighlight runs before rehypeSanitize so hljs-* classes survive sanitization. sanitizeSchema allows hljs-* on code/pre/span."
+verification: "Plugin order correct: [rehypeHighlight, [rehypeSanitize, sanitizeSchema]]"

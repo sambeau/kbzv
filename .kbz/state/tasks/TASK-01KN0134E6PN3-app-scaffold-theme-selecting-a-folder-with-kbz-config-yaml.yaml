@@ -2,4 +2,9 @@ id: TASK-01KN0134E6PN3
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-selecting-a-folder-with-kbz-config-yaml
 summary: "Selecting a folder with `.kbz/config.yaml` accepts the project and updates `useUIStore.projectPath`"
-status: ready
+status: done
+files_planned:
+  - src/components/layout/MainPanel.tsx
+  - src/lib/store/ui-store.ts
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "handleOpenProject validates .kbz/config.yaml existence via exists() from @tauri-apps/plugin-fs. On success calls setProjectPath(selected) to store the path in useUIStore"

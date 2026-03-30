@@ -2,4 +2,8 @@ id: TASK-01KN013K5HV6A
 parent_feature: FEAT-01KMZA9CP9XEX
 slug: data-layer-estimaterollupforplan-returns-correct-ro
 summary: "`estimateRollupForPlan()` returns correct rollup over features"
-status: ready
+status: done
+files_planned:
+  - src/lib/query/metrics.ts
+completed: "2026-03-30T19:22:14Z"
+completion_summary: "estimateRollupForPlan() implemented: sums feature.estimate for non-excluded features belonging to the plan, counts estimated vs unestimated."

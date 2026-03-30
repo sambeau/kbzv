@@ -2,4 +2,9 @@ id: TASK-01KN014SZ69H9
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-drift-detection-approved-matching-hash-s
 summary: "Drift detection: approved + matching hash shows green \"Approved\" badge"
-status: ready
+status: done
+files_planned:
+  - src/components/document/DriftBadge.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Approved + matching hash → DriftBadge shows green 'Approved' (approved-clean state). When content_hash absent → also approved-clean (no false positive)."
+verification: "Tests verify: matching hash → approved-clean, missing hash → approved-clean"

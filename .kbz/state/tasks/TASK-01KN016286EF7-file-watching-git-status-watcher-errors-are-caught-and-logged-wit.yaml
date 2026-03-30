@@ -2,4 +2,8 @@ id: TASK-01KN016286EF7
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-watcher-errors-are-caught-and-logged-wit
 summary: Watcher errors are caught and logged without crashing or showing blocking dialogs
-status: ready
+status: done
+files_planned:
+  - src/lib/store/project-store.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: openProject stops previous watcher with stopWatching(handle); handle=null before starting new project. Opening a second project always replaces the first watcher.

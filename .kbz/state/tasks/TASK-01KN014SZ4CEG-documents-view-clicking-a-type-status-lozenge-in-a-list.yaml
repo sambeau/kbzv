@@ -2,4 +2,9 @@ id: TASK-01KN014SZ4CEG
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-clicking-a-type-status-lozenge-in-a-list
 summary: Clicking a type/status lozenge in a list row activates the corresponding filter
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentList.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: Badge onClick in DocumentListRow calls e.stopPropagation() and toggles the type/status in the filter set — lozenge click activates filter without navigating
+verification: handleTypeBadgeClick and handleStatusBadgeClick both call e.stopPropagation()

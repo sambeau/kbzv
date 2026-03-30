@@ -2,4 +2,8 @@ id: TASK-01KN016280P7A
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-classify-events-as-create-modify-delete
 summary: "Classify events as create / modify / delete using `getEventKind()`"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "getEventKind() classifies events: string type → null (access/other), {create:...} → 'create', {modify:...} → 'modify', {remove:...} → 'delete'. Non-.yaml state and non-.md doc files are filtered out in onWatchEvent."

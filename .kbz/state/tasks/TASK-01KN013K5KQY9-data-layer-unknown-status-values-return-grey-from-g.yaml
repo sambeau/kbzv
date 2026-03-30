@@ -2,4 +2,8 @@ id: TASK-01KN013K5KQY9
 parent_feature: FEAT-01KMZA9CP9XEX
 slug: data-layer-unknown-status-values-return-grey-from-g
 summary: "Unknown status values return `'grey'` from `getStatusColour()` without crashing"
-status: ready
+status: done
+files_planned:
+  - src/lib/constants/status-colours.ts
+completed: "2026-03-30T19:22:14Z"
+completion_summary: "getStatusColour() uses STATUS_TO_COLOUR[status] ?? 'grey' — unknown statuses fall back to 'grey'. getStatusHex() also falls back to '#9CA3AF'. No crash."

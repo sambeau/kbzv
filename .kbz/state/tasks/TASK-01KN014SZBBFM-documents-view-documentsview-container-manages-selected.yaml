@@ -2,4 +2,10 @@ id: TASK-01KN014SZBBFM
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-documentsview-container-manages-selected
 summary: DocumentsView container manages selected document and filter state
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentsView.tsx
+  - src/lib/store/ui-store.ts
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "DocumentsView manages selectedDocId (string|null) state and reads documentListFilters from UIStore. Conditionally renders DocumentList or DocumentViewer."
+verification: DocumentsView container wired in MainPanel; UIStore extended with documentListFilters + setDocumentListFilters

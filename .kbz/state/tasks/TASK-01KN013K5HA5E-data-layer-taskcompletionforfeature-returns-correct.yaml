@@ -2,4 +2,8 @@ id: TASK-01KN013K5HA5E
 parent_feature: FEAT-01KMZA9CP9XEX
 slug: data-layer-taskcompletionforfeature-returns-correct
 summary: "`taskCompletionForFeature()` returns correct done/total/percentage metrics"
-status: ready
+status: done
+files_planned:
+  - src/lib/query/metrics.ts
+completed: "2026-03-30T19:22:14Z"
+completion_summary: "taskCompletionForFeature() implemented: iterates tasks, filters by featureId, excludes not-planned and duplicate, counts done/total, returns percentage (NaN when total=0)."

@@ -2,4 +2,9 @@ id: TASK-01KN014SZBM04
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-scroll-position-is-preserved-when-return
 summary: Scroll position is preserved when returning from viewer to list
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentList.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Scroll position saved via RAF-debounced 'scroll' event listener on scrollContainerRef; stored in UIStore documentListFilters.scrollTop; restored via useLayoutEffect on remount."
+verification: Scroll event listener + cancelAnimationFrame debounce + useLayoutEffect restore implemented

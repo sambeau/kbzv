@@ -2,4 +2,8 @@ id: TASK-01KN016286HXE
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-tests
 summary: Write tests for file-watching-git-status
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "Watcher errors: watch() failures → logged + skipped per root. YAML parse/read errors → caught in processBatch, stale data kept. flushBatch wraps processBatch in try/catch. stopWatching wraps unsub calls in try/catch."

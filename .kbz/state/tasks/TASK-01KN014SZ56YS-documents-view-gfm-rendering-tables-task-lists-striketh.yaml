@@ -2,4 +2,9 @@ id: TASK-01KN014SZ56YS
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-gfm-rendering-tables-task-lists-striketh
 summary: "GFM rendering: tables, task lists, strikethrough, and autolinks render correctly"
-status: ready
+status: done
+files_planned:
+  - src/components/document/MarkdownViewer.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "MarkdownViewer uses react-markdown + remark-gfm for GFM rendering — tables, task lists, strikethrough, autolinks all supported via remarkGfm plugin"
+verification: remark-gfm installed and configured in remarkPlugins

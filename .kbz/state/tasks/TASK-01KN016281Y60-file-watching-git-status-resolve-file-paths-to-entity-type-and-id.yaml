@@ -2,4 +2,8 @@ id: TASK-01KN016281Y60
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-resolve-file-paths-to-entity-type-and-id
 summary: Resolve file paths to entity type and ID using directory-to-entity mapping
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "resolveEntityFromPath() maps state file paths to {entityType, entityId}. extractEntityId() handles all 9 entity types: simple IDs for plans/knowledge/checkpoints, document path restoration, slug-stripped ULID extraction for slug-bearing types."

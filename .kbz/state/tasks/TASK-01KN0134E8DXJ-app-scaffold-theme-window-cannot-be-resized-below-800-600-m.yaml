@@ -2,4 +2,8 @@ id: TASK-01KN0134E8DXJ
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-window-cannot-be-resized-below-800-600-m
 summary: Window cannot be resized below 800×600 minimum
-status: ready
+status: done
+files_planned:
+  - src-tauri/tauri.conf.json
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "tauri.conf.json sets minWidth: 800, minHeight: 600 in the windows configuration"

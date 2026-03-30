@@ -2,4 +2,8 @@ id: TASK-01KN0134E65AB
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-selecting-a-folder-without-kbz-config-ya
 summary: "Selecting a folder without `.kbz/config.yaml` shows a native error dialog with the correct title and message"
-status: ready
+status: done
+files_planned:
+  - src/components/layout/MainPanel.tsx
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "handleOpenProject calls message() with kind: 'error', title: 'Not a Kanbanzai Project' when exists() returns false for the selected folder's .kbz/config.yaml"

@@ -2,4 +2,9 @@ id: TASK-01KN014SZ73QV
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-drift-detection-approved-different-hash
 summary: "Drift detection: approved + different hash shows orange \"Modified since approval\" badge"
-status: ready
+status: done
+files_planned:
+  - src/components/document/DriftBadge.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Approved + different hash → DriftBadge shows orange 'Modified since approval' (approved-modified). File missing on an approved doc also → approved-modified."
+verification: "Tests verify: differing hash → approved-modified, fileMissing → approved-modified, fileMissing overrides hash match"

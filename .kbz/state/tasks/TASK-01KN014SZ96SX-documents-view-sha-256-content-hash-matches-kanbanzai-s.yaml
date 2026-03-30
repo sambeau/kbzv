@@ -2,4 +2,9 @@ id: TASK-01KN014SZ96SX
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-sha-256-content-hash-matches-kanbanzai-s
 summary: "SHA-256 content hash matches Kanbanzai's recorded hash for approved documents"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/document.ts
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "SHA-256 implementation uses TextEncoder + crypto.subtle.digest('SHA-256') producing lowercase hex — same algorithm as Go's crypto/sha256 over UTF-8 bytes"
+verification: "Test verifies 64-char lowercase hex output, determinism, and self-consistent hash matching"

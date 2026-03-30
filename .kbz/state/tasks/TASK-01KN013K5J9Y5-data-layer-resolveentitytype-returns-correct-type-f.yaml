@@ -2,4 +2,8 @@ id: TASK-01KN013K5J9Y5
 parent_feature: FEAT-01KMZA9CP9XEX
 slug: data-layer-resolveentitytype-returns-correct-type-f
 summary: "`resolveEntityType()` returns correct type for all ID prefix patterns"
-status: ready
+status: done
+files_planned:
+  - src/lib/query/references.ts
+completed: "2026-03-30T19:22:14Z"
+completion_summary: "resolveEntityType() checks for '/' first (documents), then FEAT-/TASK-/BUG-/DEC-/KE-/INC-/CHK- prefixes, then plan pattern /^[A-Z]\\d+-/. Returns null for no match."

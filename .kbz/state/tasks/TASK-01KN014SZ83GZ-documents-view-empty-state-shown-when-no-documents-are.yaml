@@ -2,4 +2,9 @@ id: TASK-01KN014SZ83GZ
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-empty-state-shown-when-no-documents-are
 summary: Empty state shown when no documents are registered
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentList.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Empty state when allDocs.length === 0: FileText icon, 'No documents' title, 'This project has no registered documents.' description"
+verification: Conditional EmptyState rendering for empty document store

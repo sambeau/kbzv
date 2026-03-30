@@ -2,4 +2,9 @@ id: TASK-01KN0134E4BTP
 parent_feature: FEAT-01KMZA96W1J98
 slug: app-scaffold-theme-header-bar-is-48px-tall-with-docs-and-wo
 summary: "Header bar is 48px tall with \"Docs\" and \"Workflows\" tab triggers and their icons"
-status: ready
+status: done
+files_planned:
+  - src/components/layout/HeaderBar.tsx
+  - src/components/ui/tabs.tsx
+completed: "2026-03-30T19:01:45Z"
+completion_summary: "HeaderBar.tsx implements h-12 (48px) header with Tabs/TabsList/TabsTrigger from shadcn. Docs tab uses FileText icon, Workflows tab uses GitBranch icon, both with gap-2 and h-4 w-4 icons"

@@ -2,4 +2,8 @@ id: TASK-01KN01628503P
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-scope-tauri-shell-capability-to-git-bina
 summary: "Scope Tauri shell capability to `git` binary only"
-status: ready
+status: done
+files_planned:
+  - src-tauri/capabilities/default.json
+completed: "2026-03-30T20:28:50Z"
+completion_summary: Tauri shell capability scoped to git binary only in capabilities/default.json — implemented by F6 agent alongside the other shell plugin work.

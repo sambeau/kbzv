@@ -2,4 +2,8 @@ id: TASK-01KN0162839BJ
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-parse-branch-name-uncommitted-changes-co
 summary: "Parse branch name, uncommitted changes count, ahead/behind counts from command output"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/git.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "Branch: stdout.trim(); changesCount: split+filter+length on porcelain output; ahead/behind: trim+split on tab+parseInt from rev-list output."

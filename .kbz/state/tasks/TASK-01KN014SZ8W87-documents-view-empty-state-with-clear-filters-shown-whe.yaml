@@ -2,4 +2,9 @@ id: TASK-01KN014SZ8W87
 parent_feature: FEAT-01KMZA9JMZFNF
 slug: documents-view-empty-state-with-clear-filters-shown-whe
 summary: "Empty state with \"Clear filters\" shown when all documents are filtered out"
-status: ready
+status: done
+files_planned:
+  - src/components/document/DocumentList.tsx
+completed: "2026-03-30T19:50:18Z"
+completion_summary: "Empty state when allDocs.length > 0 but sorted.length === 0: Filter icon, 'No matches', action button 'Clear filters' that resets both filter sets to empty"
+verification: clearAllFilters() resets activeTypes and activeStatuses to new Set()

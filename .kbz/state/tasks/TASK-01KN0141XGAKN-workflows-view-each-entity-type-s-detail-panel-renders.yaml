@@ -2,4 +2,17 @@ id: TASK-01KN0141XGAKN
 parent_feature: FEAT-01KMZA9GFB075
 slug: workflows-view-each-entity-type-s-detail-panel-renders
 summary: "Each entity type's detail panel renders all populated fields correctly"
-status: ready
+status: done
+files_planned:
+  - src/components/entity/EntityDetail.tsx
+  - src/components/entity/PlanDetail.tsx
+  - src/components/entity/FeatureDetail.tsx
+  - src/components/entity/TaskDetail.tsx
+  - src/components/entity/BugDetail.tsx
+  - src/components/entity/DecisionDetail.tsx
+  - src/components/entity/CheckpointDetail.tsx
+  - src/components/entity/IncidentDetail.tsx
+  - src/components/entity/KnowledgeDetail.tsx
+  - src/components/entity/FieldValue.tsx
+completed: "2026-03-30T19:48:09Z"
+completion_summary: "All 9 detail panels render populated fields: PlanDetail, FeatureDetail, TaskDetail, BugDetail, DecisionDetail, CheckpointDetail, IncidentDetail, KnowledgeDetail + FieldValue polymorphic renderer"

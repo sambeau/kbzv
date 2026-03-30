@@ -2,4 +2,10 @@ id: TASK-01KN0141XHR24
 parent_feature: FEAT-01KMZA9GFB075
 slug: workflows-view-type-filter-toggles-hide-show-entities-o
 summary: Type filter toggles hide/show entities of the toggled type
-status: ready
+status: done
+files_planned:
+  - src/components/filter/FilterBar.tsx
+  - src/components/tree/EntityTree.tsx
+  - src/components/tree/treeFilters.ts
+completed: "2026-03-30T19:48:09Z"
+completion_summary: Type filter toggles hide/show entities of the toggled type via FilterBar + EntityTree activeTypes check

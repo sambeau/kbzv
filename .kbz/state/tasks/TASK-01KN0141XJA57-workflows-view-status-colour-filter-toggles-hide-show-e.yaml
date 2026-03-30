@@ -2,4 +2,9 @@ id: TASK-01KN0141XJA57
 parent_feature: FEAT-01KMZA9GFB075
 slug: workflows-view-status-colour-filter-toggles-hide-show-e
 summary: Status colour filter toggles hide/show entities of the toggled colour group
-status: ready
+status: done
+files_planned:
+  - src/components/filter/FilterBar.tsx
+  - src/components/tree/treeFilters.ts
+completed: "2026-03-30T19:48:09Z"
+completion_summary: Status colour filter toggles hide/show entities of the toggled colour group via FilterBar + isVisible()

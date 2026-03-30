@@ -2,4 +2,8 @@ id: TASK-01KN01627ZZXX
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-watch-kbz-state-recursively-using-tauri
 summary: "Watch `.kbz/state/` recursively using `@tauri-apps/plugin-fs` watch API"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "startWatching() watches {projectPath}/.kbz/state recursively using @tauri-apps/plugin-fs watch API with recursive:true."

@@ -2,4 +2,9 @@ id: TASK-01KN016282PK5
 parent_feature: FEAT-01KMZA9PWFRJF
 slug: file-watching-git-status-call-invalidatecontenthash-for-document
 summary: "Call `invalidateContentHash()` for document root file changes to trigger drift re-check"
-status: ready
+status: done
+files_planned:
+  - src/lib/reader/watcher.ts
+  - src/lib/store/project-store.ts
+completed: "2026-03-30T20:09:29Z"
+completion_summary: "processBatch() collects document event paths and calls callbacks.invalidateContentHash(paths) once for the batch, which increments contentHashVersion in the store."
