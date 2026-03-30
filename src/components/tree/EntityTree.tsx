@@ -1,9 +1,19 @@
+import { useEffect } from "react";
 import { useProjectStore } from "@/lib/store/project-store";
-import { useUIStore } from "@/lib/store/ui-store";
+import { useUIStore, resolveEntityType } from "@/lib/store/ui-store";
 import { getStatusColour } from "@/lib/constants/status-colours";
 import { applyTreeFilters } from "./treeFilters";
 import { TreeNode as TreeNodeComponent } from "./TreeNode";
 import { StandaloneSection } from "./StandaloneSection";
+
+// Synthetic section header IDs for standalone sections
+const SECTION_HEADERS: Record<string, string> = {
+  bug: "__bugs__",
+  decision: "__decisions__",
+  incident: "__incidents__",
+  checkpoint: "__checkpoints__",
+  knowledge: "__knowledge__",
+};
 
 function EntityTree() {
   const tree = useProjectStore((s) => s.tree);
@@ -11,9 +21,81 @@ function EntityTree() {
   const decisions = useProjectStore((s) => s.decisions);
   const incidents = useProjectStore((s) => s.incidents);
   const pendingCheckpoints = useProjectStore((s) => s.pendingCheckpoints);
+  const features = useProjectStore((s) => s.features);
+  const tasks = useProjectStore((s) => s.tasks);
 
   const activeTypes = useUIStore((s) => s.activeTypes);
   const activeStatusColours = useUIStore((s) => s.activeStatusColours);
+  const selectedEntityId = useUIStore((s) => s.selectedEntityId);
+  const expandedNodeIds = useUIStore((s) => s.expandedNodeIds);
+  const expandNodes = useUIStore((s) => s.expandNodes);
+
+  // ── Auto-expansion: expand ancestor nodes when selectedEntityId changes ──
+  useEffect(() => {
+    if (!selectedEntityId) return;
+
+    const type = resolveEntityType(selectedEntityId);
+    if (!type) return;
+
+    const pathIds: string[] = [];
+
+    switch (type) {
+      case "task": {
+        const task = tasks.get(selectedEntityId);
+        if (task?.parent_feature) {
+          pathIds.push(task.parent_feature);
+          const feature = features.get(task.parent_feature);
+          if (feature?.parent) {
+            pathIds.push(feature.parent);
+          }
+        }
+        break;
+      }
+      case "feature": {
+        const feature = features.get(selectedEntityId);
+        if (feature?.parent) {
+          pathIds.push(feature.parent);
+        }
+        break;
+      }
+      case "plan":
+        // Top-level node — no ancestors to expand
+        break;
+      case "bug":
+      case "decision":
+      case "incident":
+      case "checkpoint":
+      case "knowledge": {
+        const sectionId = SECTION_HEADERS[type];
+        if (sectionId) {
+          pathIds.push(sectionId);
+        }
+        break;
+      }
+      default:
+        // "document" type should never reach here
+        break;
+    }
+
+    if (pathIds.length > 0) {
+      const needsExpansion = pathIds.some((id) => !expandedNodeIds.has(id));
+      if (needsExpansion) {
+        expandNodes(pathIds);
+      }
+    }
+  }, [selectedEntityId, tasks, features, expandNodes, expandedNodeIds]);
+
+  // ── Scroll-to-selected: scroll selected node into view after expansion ──
+  useEffect(() => {
+    if (!selectedEntityId) return;
+
+    // Defer until after React has painted the newly-expanded nodes into the DOM
+    requestAnimationFrame(() => {
+      const node = document.getElementById(`tree-node-${selectedEntityId}`);
+      if (!node) return;
+      node.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }, [selectedEntityId, expandedNodeIds]);
 
   const filteredTree = applyTreeFilters(tree, activeTypes, activeStatusColours);
 
@@ -84,6 +166,7 @@ function EntityTree() {
         <StandaloneSection
           title="Bugs"
           entityType="bug"
+          sectionId={SECTION_HEADERS.bug}
           entities={filteredBugs}
           showStatusDot={true}
         />
@@ -93,6 +176,7 @@ function EntityTree() {
         <StandaloneSection
           title="Decisions"
           entityType="decision"
+          sectionId={SECTION_HEADERS.decision}
           entities={filteredDecisions}
           showStatusDot={false}
         />
@@ -102,6 +186,7 @@ function EntityTree() {
         <StandaloneSection
           title="Incidents"
           entityType="incident"
+          sectionId={SECTION_HEADERS.incident}
           entities={filteredIncidents}
           showStatusDot={true}
         />
@@ -112,6 +197,7 @@ function EntityTree() {
           <StandaloneSection
             title="Pending Checkpoints"
             entityType="checkpoint"
+            sectionId={SECTION_HEADERS.checkpoint}
             entities={filteredPendingCheckpoints}
             showStatusDot={false}
             variant="pending-checkpoint"

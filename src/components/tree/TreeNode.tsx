@@ -42,6 +42,7 @@ function TreeNode({ node, depth }: TreeNodeProps) {
     <div>
       {/* Row */}
       <button
+        id={`tree-node-${node.id}`}
         data-entity-id={node.id}
         className={cn(
           "flex items-center gap-1.5 w-full text-left py-1 px-2 rounded-md text-sm",

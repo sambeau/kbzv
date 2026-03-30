@@ -220,7 +220,6 @@ function makeDoc(
   overrides: Partial<DocumentRecord> & { id: string },
 ): DocumentRecord {
   return {
-    id: overrides.id,
     path: `work/design/${overrides.id}.md`,
     type: "design",
     title: overrides.id,

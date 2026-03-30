@@ -7,15 +7,9 @@ import { MarkdownViewer } from "./MarkdownViewer";
 import { MetadataPanel } from "./MetadataPanel";
 import { EmptyState } from "@/components/common/EmptyState";
 import { useProjectStore } from "@/lib/store/project-store";
+import { useUIStore } from "@/lib/store/ui-store";
 import { readDocumentContent } from "@/lib/reader/document";
 import type { DocumentReadResult } from "@/lib/reader/document";
-
-// ── Props ───────────────────────────────────────────────────────────
-
-interface DocumentViewerProps {
-  documentId: string;
-  onBack: () => void;
-}
 
 // ── Loading State ───────────────────────────────────────────────────
 
@@ -29,14 +23,21 @@ function LoadingState({ message }: { message: string }) {
 
 // ── Component ───────────────────────────────────────────────────────
 
-function DocumentViewer({ documentId, onBack }: DocumentViewerProps) {
+function DocumentViewer() {
+  const viewingDocumentId = useUIStore((s) => s.viewingDocumentId);
+  const navigateBack = useUIStore((s) => s.navigateBack);
+
   const [readResult, setReadResult] = useState<DocumentReadResult | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const record = useProjectStore((s) => s.documents.get(documentId));
+  const record = useProjectStore((s) =>
+    viewingDocumentId ? s.documents.get(viewingDocumentId) : undefined,
+  );
   const projectPath = useProjectStore((s) => s.projectPath);
 
   useEffect(() => {
+    if (!viewingDocumentId) return;
+
     let cancelled = false;
     setIsLoading(true);
     setReadResult(null);
@@ -62,15 +63,18 @@ function DocumentViewer({ documentId, onBack }: DocumentViewerProps) {
     return () => {
       cancelled = true;
     };
-  }, [documentId, record, projectPath]);
+  }, [viewingDocumentId, record, projectPath]);
 
-  const displayTitle = record?.title || record?.path.split("/").pop() || documentId;
+  if (!viewingDocumentId) return null;
+
+  const displayTitle =
+    record?.title || record?.path.split("/").pop() || viewingDocumentId;
 
   return (
     <div className="flex flex-col h-full">
       {/* Viewer header */}
       <div className="flex items-center gap-2 px-4 py-3 border-b border-border shrink-0">
-        <Button variant="ghost" size="sm" onClick={onBack}>
+        <Button variant="ghost" size="sm" onClick={navigateBack}>
           <ChevronLeft className="h-4 w-4 mr-1" />
           Back
         </Button>
@@ -87,7 +91,7 @@ function DocumentViewer({ documentId, onBack }: DocumentViewerProps) {
             <EmptyState
               icon={FileX}
               title="File not found"
-              description={`The file ${record?.path ?? documentId} could not be found.`}
+              description={`The file ${record?.path ?? viewingDocumentId} could not be found.`}
             />
           ) : (
             <MarkdownViewer content={readResult!.markdown!} />
@@ -96,9 +100,7 @@ function DocumentViewer({ documentId, onBack }: DocumentViewerProps) {
 
         {/* Metadata sidebar */}
         <div className="w-[260px] shrink-0 border-l border-border overflow-y-auto">
-          {record && (
-            <MetadataPanel record={record} readResult={readResult} />
-          )}
+          {record && <MetadataPanel record={record} readResult={readResult} />}
         </div>
       </div>
     </div>
@@ -106,4 +108,3 @@ function DocumentViewer({ documentId, onBack }: DocumentViewerProps) {
 }
 
 export { DocumentViewer };
-export type { DocumentViewerProps };

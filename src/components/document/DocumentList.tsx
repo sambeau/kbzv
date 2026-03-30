@@ -9,9 +9,10 @@ import { Badge } from "@/components/ui/badge";
 import { EmptyState } from "@/components/common/EmptyState";
 import { DocumentFilterBar } from "./DocumentFilterBar";
 import { useProjectStore } from "@/lib/store/project-store";
+import { useUIStore } from "@/lib/store/ui-store";
 import { getTypeColour } from "@/lib/constants/type-colours";
 import type { DocumentRecord } from "@/lib/types";
-import type { DocumentListFilters, SortOption } from "@/lib/store/ui-store";
+import type { SortOption } from "@/lib/store/ui-store";
 
 // ── Sort / Filter Helpers ───────────────────────────────────────────
 
@@ -86,45 +87,46 @@ function formatRelativeDate(dateStr: string): string {
   }
 }
 
-// ── Props ───────────────────────────────────────────────────────────
-
-interface DocumentListProps {
-  onSelect: (documentId: string) => void;
-  initialFilters?: DocumentListFilters;
-  onFiltersChange?: (filters: DocumentListFilters) => void;
-}
-
 // ── Component ───────────────────────────────────────────────────────
 
-function DocumentList({
-  onSelect,
-  initialFilters,
-  onFiltersChange,
-}: DocumentListProps) {
+function DocumentList() {
   const documents = useProjectStore((s) => s.documents);
 
-  const [activeTypes, setActiveTypes] = useState<Set<string>>(
-    () => new Set(initialFilters?.activeTypes ?? []),
+  // Filter state — driven by the store so cross-view activateFilter() is reactive
+  const documentFilters = useUIStore((s) => s.documentFilters);
+  const setDocumentFilters = useUIStore((s) => s.setDocumentFilters);
+  const activateFilter = useUIStore((s) => s.activateFilter);
+  const navigateToDocument = useUIStore((s) => s.navigateToDocument);
+  const saveDocumentListScrollTop = useUIStore(
+    (s) => s.saveDocumentListScrollTop,
   );
-  const [activeStatuses, setActiveStatuses] = useState<Set<string>>(
-    () => new Set(initialFilters?.activeStatuses ?? []),
-  );
-  const [sortOption, setSortOption] = useState<SortOptionValue>(
-    initialFilters?.sortOption ?? DEFAULT_SORT,
-  );
+  const storedScrollTop = useUIStore((s) => s.documentListFilters.scrollTop);
+
+  // Sort option stays local (not worth cross-view activation)
+  const [sortOption, setSortOption] = useState<SortOptionValue>(DEFAULT_SORT);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Derive Set views of the store arrays for O(1) lookup
+  const activeTypes = useMemo(
+    () => new Set(documentFilters.types),
+    [documentFilters.types],
+  );
+  const activeStatuses = useMemo(
+    () => new Set(documentFilters.statuses),
+    [documentFilters.statuses],
+  );
 
   // ── Restore scroll position on mount ─────────────────────────────
   useLayoutEffect(() => {
     const el = scrollContainerRef.current;
-    if (el && initialFilters?.scrollTop) {
-      el.scrollTop = initialFilters.scrollTop;
+    if (el && storedScrollTop > 0) {
+      el.scrollTop = storedScrollTop;
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // ── Save scroll + filter state on change ─────────────────────────
+  // ── Save scroll position during normal scrolling ──────────────────
   useEffect(() => {
     const el = scrollContainerRef.current;
     if (!el) return;
@@ -133,12 +135,7 @@ function DocumentList({
     const handler = () => {
       cancelAnimationFrame(rafId);
       rafId = requestAnimationFrame(() => {
-        onFiltersChange?.({
-          activeTypes: [...activeTypes],
-          activeStatuses: [...activeStatuses],
-          sortOption,
-          scrollTop: el.scrollTop,
-        });
+        saveDocumentListScrollTop(el.scrollTop);
       });
     };
 
@@ -147,19 +144,7 @@ function DocumentList({
       el.removeEventListener("scroll", handler);
       cancelAnimationFrame(rafId);
     };
-  }, [activeTypes, activeStatuses, sortOption, onFiltersChange]);
-
-  // ── Notify parent when filters change (non-scroll) ────────────────
-  useEffect(() => {
-    const el = scrollContainerRef.current;
-    onFiltersChange?.({
-      activeTypes: [...activeTypes],
-      activeStatuses: [...activeStatuses],
-      sortOption,
-      scrollTop: el?.scrollTop ?? 0,
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeTypes, activeStatuses, sortOption]);
+  }, [saveDocumentListScrollTop]);
 
   // ── Derived lists ─────────────────────────────────────────────────
   const allDocs = useMemo(() => Array.from(documents.values()), [documents]);
@@ -174,30 +159,42 @@ function DocumentList({
     [filtered, sortOption],
   );
 
-  // ── Badge click handlers ──────────────────────────────────────────
+  // ── Handlers ─────────────────────────────────────────────────────
+
+  function handleRowClick(docId: string) {
+    // Save current scroll position before navigating away
+    if (scrollContainerRef.current) {
+      saveDocumentListScrollTop(scrollContainerRef.current.scrollTop);
+    }
+    navigateToDocument(docId);
+  }
+
   function handleTypeBadgeClick(e: React.MouseEvent, type: string) {
     e.stopPropagation();
-    setActiveTypes((prev) => {
-      const next = new Set(prev);
-      if (next.has(type)) next.delete(type);
-      else next.add(type);
-      return next;
-    });
+    activateFilter("documents", "type", type);
   }
 
   function handleStatusBadgeClick(e: React.MouseEvent, status: string) {
     e.stopPropagation();
-    setActiveStatuses((prev) => {
-      const next = new Set(prev);
-      if (next.has(status)) next.delete(status);
-      else next.add(status);
-      return next;
+    activateFilter("documents", "status", status);
+  }
+
+  function handleTypesChange(types: Set<string>) {
+    setDocumentFilters({
+      ...documentFilters,
+      types: [...types],
+    });
+  }
+
+  function handleStatusesChange(statuses: Set<string>) {
+    setDocumentFilters({
+      ...documentFilters,
+      statuses: [...statuses],
     });
   }
 
   function clearAllFilters() {
-    setActiveTypes(new Set());
-    setActiveStatuses(new Set());
+    setDocumentFilters({ types: [], statuses: [] });
   }
 
   // ── Render ────────────────────────────────────────────────────────
@@ -208,8 +205,8 @@ function DocumentList({
         activeTypes={activeTypes}
         activeStatuses={activeStatuses}
         sortOption={sortOption}
-        onTypesChange={setActiveTypes}
-        onStatusesChange={setActiveStatuses}
+        onTypesChange={handleTypesChange}
+        onStatusesChange={handleStatusesChange}
         onSortChange={setSortOption}
       />
 
@@ -243,7 +240,7 @@ function DocumentList({
                 <button
                   key={doc.id}
                   type="button"
-                  onClick={() => onSelect(doc.id)}
+                  onClick={() => handleRowClick(doc.id)}
                   className={cn(
                     "flex items-start justify-between w-full rounded-lg border",
                     "border-border bg-card px-4 py-3 text-left transition-colors",
@@ -272,7 +269,9 @@ function DocumentList({
                       className={cn(
                         typeColour.bg,
                         typeColour.text,
-                        "border-0 font-normal",
+                        "border-0 font-normal cursor-pointer hover:brightness-90 transition-colors",
+                        activeTypes.has(doc.type) &&
+                          "ring-2 ring-offset-1 ring-primary",
                       )}
                       onClick={(e) => handleTypeBadgeClick(e, doc.type)}
                     >
@@ -283,7 +282,9 @@ function DocumentList({
                       className={cn(
                         statusColour.bg,
                         statusColour.text,
-                        "border-0 font-normal",
+                        "border-0 font-normal cursor-pointer hover:brightness-90 transition-colors",
+                        activeStatuses.has(doc.status) &&
+                          "ring-2 ring-offset-1 ring-primary",
                       )}
                       onClick={(e) => handleStatusBadgeClick(e, doc.status)}
                     >
@@ -301,4 +302,3 @@ function DocumentList({
 }
 
 export { DocumentList };
-export type { DocumentListProps };
