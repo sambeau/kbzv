@@ -1,9 +1,14 @@
 // src/components/document/DocumentViewer.tsx
 
-import { useEffect, useState } from "react";
-import { ChevronLeft, FileX } from "lucide-react";
-import { Button } from "@radix-ui/themes";
-import { AlertCircle } from "lucide-react";
+import { useEffect, useState, useRef, useCallback } from "react";
+import {
+  ChevronLeft,
+  FileX,
+  AlertCircle,
+  AlignHorizontalSpaceAround,
+  AlignStartVertical,
+} from "lucide-react";
+import { Button, IconButton, Tooltip } from "@radix-ui/themes";
 import { MarkdownViewer } from "./MarkdownViewer";
 import { MetadataPanel } from "./MetadataPanel";
 import { EmptyState } from "@/components/common/EmptyState";
@@ -11,6 +16,12 @@ import { useProjectStore } from "@/lib/store/project-store";
 import { useUIStore } from "@/lib/store/ui-store";
 import { readDocumentContent } from "@/lib/reader/document";
 import type { DocumentReadResult } from "@/lib/reader/document";
+
+// ── Resize constants ────────────────────────────────────────────────
+
+const MIN_SIDEBAR_WIDTH = 200;
+const MAX_SIDEBAR_WIDTH = 480;
+const DEFAULT_SIDEBAR_WIDTH = 260;
 
 // ── Loading State ───────────────────────────────────────────────────
 
@@ -43,6 +54,52 @@ function DocumentViewer() {
   const [readResult, setReadResult] = useState<DocumentReadResult | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [centered, setCentered] = useState(false);
+
+  // ── Resizable sidebar state ─────────────────────────────────────
+  const [sidebarWidth, setSidebarWidth] = useState(DEFAULT_SIDEBAR_WIDTH);
+  const isDraggingRef = useRef(false);
+  const startXRef = useRef(0);
+  const startWidthRef = useRef(DEFAULT_SIDEBAR_WIDTH);
+
+  const handleDividerMouseDown = useCallback(
+    (e: React.MouseEvent) => {
+      e.preventDefault();
+      isDraggingRef.current = true;
+      startXRef.current = e.clientX;
+      startWidthRef.current = sidebarWidth;
+      document.body.style.cursor = "col-resize";
+      document.body.style.userSelect = "none";
+    },
+    [sidebarWidth],
+  );
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDraggingRef.current) return;
+      // Dragging left increases sidebar width (sidebar is on the right)
+      const delta = startXRef.current - e.clientX;
+      const next = Math.max(
+        MIN_SIDEBAR_WIDTH,
+        Math.min(MAX_SIDEBAR_WIDTH, startWidthRef.current + delta),
+      );
+      setSidebarWidth(next);
+    };
+
+    const handleMouseUp = () => {
+      if (!isDraggingRef.current) return;
+      isDraggingRef.current = false;
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, []);
 
   const record = useProjectStore((s) =>
     viewingDocumentId ? s.documents.get(viewingDocumentId) : undefined,
@@ -62,6 +119,7 @@ function DocumentViewer() {
         markdown: null,
         contentHash: null,
         hashMatches: false,
+        frontMatter: null,
         fileMissing: true,
       });
       setIsLoading(false);
@@ -95,20 +153,66 @@ function DocumentViewer() {
 
   return (
     <div className="flex flex-col h-full">
-      {/* Viewer header */}
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-border shrink-0">
-        <Button variant="soft" size="1" onClick={navigateBack}>
+      {/* Viewer header — h-10 matches filter bars for consistent height */}
+      <div className="flex items-center gap-2 px-4 h-10 border-b border-border shrink-0">
+        <Button
+          variant="soft"
+          size="1"
+          onClick={navigateBack}
+          style={{ cursor: "pointer" }}
+        >
           <ChevronLeft size={14} />
           Back
         </Button>
-        <h1 className="text-lg font-semibold truncate">{displayTitle}</h1>
+        <h1 className="text-sm font-semibold truncate flex-1">
+          {displayTitle}
+        </h1>
+
+        {/* Document alignment toggle */}
+        <Tooltip content={centered ? "Align left" : "Centre document"}>
+          <IconButton
+            variant="ghost"
+            size="1"
+            color="gray"
+            onClick={() => setCentered((v) => !v)}
+            aria-label={centered ? "Align left" : "Centre document"}
+          >
+            {centered ? (
+              <AlignStartVertical size={14} />
+            ) : (
+              <AlignHorizontalSpaceAround size={14} />
+            )}
+          </IconButton>
+        </Tooltip>
       </div>
 
-      {/* Content + sidebar */}
+      {/* Content + resizable sidebar */}
       <div className="flex flex-1 min-h-0 overflow-hidden">
         {/* Content area — scrolls independently */}
-        <div className="flex-1 overflow-y-auto px-8 py-6">
-          {isLoading ? (
+        <div
+          className={
+            centered
+              ? "flex-1 overflow-y-auto px-8 py-6 flex justify-center"
+              : "flex-1 overflow-y-auto px-8 py-6"
+          }
+        >
+          {centered ? (
+            <div className="w-full max-w-prose">
+              {isLoading ? (
+                <LoadingState message="Loading document…" />
+              ) : loadError ? (
+                <ErrorState message={loadError} />
+              ) : readResult?.fileMissing ? (
+                <EmptyState
+                  icon={FileX}
+                  title="File not found"
+                  description={`The file ${record?.path ?? viewingDocumentId} could not be found.`}
+                />
+              ) : (
+                <MarkdownViewer content={readResult!.markdown!} />
+              )}
+            </div>
+          ) : isLoading ? (
             <LoadingState message="Loading document…" />
           ) : loadError ? (
             <ErrorState message={loadError} />
@@ -123,8 +227,19 @@ function DocumentViewer() {
           )}
         </div>
 
-        {/* Metadata sidebar */}
-        <div className="w-[260px] shrink-0 border-l border-border overflow-y-auto">
+        {/* Drag handle for resizable sidebar */}
+        <div
+          className="shrink-0 w-1 relative cursor-col-resize hover:bg-[var(--accent-6)] transition-colors"
+          onMouseDown={handleDividerMouseDown}
+        >
+          <div className="absolute inset-y-0 -left-1.5 -right-1.5" />
+        </div>
+
+        {/* Metadata sidebar — resizable */}
+        <div
+          className="shrink-0 overflow-y-auto"
+          style={{ width: sidebarWidth }}
+        >
           {record && <MetadataPanel record={record} readResult={readResult} />}
         </div>
       </div>

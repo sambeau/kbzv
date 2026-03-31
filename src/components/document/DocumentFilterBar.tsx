@@ -106,7 +106,7 @@ function DocumentFilterBar({
 
   return (
     <div>
-      <div className="flex items-center gap-1 px-3 py-1.5 flex-wrap">
+      <div className="flex items-center gap-1 px-3 h-10 flex-wrap">
         {/* Type filters */}
         {KNOWN_DOC_TYPES.map((t) => (
           <FilterCheckbox

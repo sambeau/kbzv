@@ -19,16 +19,18 @@ function ProgressBar({ done, total, percentage, label }: ProgressBarProps) {
   }
 
   return (
-    <div className="space-y-1">
-      <p className="text-sm text-muted-foreground">
+    <div className="flex items-center gap-2">
+      <span className="text-xs text-muted-foreground whitespace-nowrap">
         {label && <span>{label} </span>}
-        {done}/{total} done ({Math.round(percentage)}%)
-      </p>
-      <Progress
-        value={percentage}
-        color={percentage === 100 ? "green" : "blue"}
-        size="1"
-      />
+        {done}/{total} ({Math.round(percentage)}%)
+      </span>
+      <div style={{ width: "8rem" }} className="shrink-0">
+        <Progress
+          value={percentage}
+          color={percentage === 100 ? "green" : "blue"}
+          size="1"
+        />
+      </div>
     </div>
   );
 }

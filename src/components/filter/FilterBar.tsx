@@ -60,7 +60,7 @@ function FilterBar() {
 
   return (
     <div>
-      <div className="flex items-center gap-0.5 px-3 py-1.5 flex-wrap">
+      <div className="flex items-center gap-0.5 px-3 h-10 flex-wrap">
         {WORKFLOW_ENTITY_TYPES.map((info) => (
           <TypeCheckbox
             key={info.type}

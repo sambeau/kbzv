@@ -1,7 +1,7 @@
 // src/components/document/MetadataPanel.tsx
 
 import { useMemo } from "react";
-import { Badge } from "@radix-ui/themes";
+import { Badge, Separator } from "@radix-ui/themes";
 import { useProjectStore } from "@/lib/store/project-store";
 import { useUIStore } from "@/lib/store/ui-store";
 import { getRelatedEntities } from "@/lib/query/references";
@@ -219,20 +219,23 @@ function MetadataPanel({ record, readResult }: MetadataPanelProps) {
         );
         if (entries.length === 0) return null;
         return (
-          <MetadataField label="Front Matter">
-            <div className="space-y-2">
-              {entries.map(([key, value]) => (
-                <div key={key}>
-                  <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-                    {key}
+          <>
+            <Separator size="4" />
+            <MetadataField label="Front Matter">
+              <div className="space-y-2 mt-2">
+                {entries.map(([key, value]) => (
+                  <div key={key}>
+                    <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
+                      {key}
+                    </div>
+                    <span className="text-xs text-muted-foreground break-all">
+                      {formatFrontMatterValue(value)}
+                    </span>
                   </div>
-                  <span className="text-xs text-muted-foreground break-all">
-                    {formatFrontMatterValue(value)}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </MetadataField>
+                ))}
+              </div>
+            </MetadataField>
+          </>
         );
       })()}
     </div>

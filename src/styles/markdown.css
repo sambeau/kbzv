@@ -14,20 +14,30 @@
     color: var(--gray-12);
 }
 
+/* Headings — explicit colour to prevent highlight.js/browser overrides */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+    color: var(--gray-12);
+}
+
 /* Heading bottom borders for h1 and h2 */
 .markdown-content h1 {
     padding-bottom: 0.3em;
-    border-bottom: 1px solid var(--gray-6);
+    border-bottom: 1px solid var(--gray-5);
 }
 .markdown-content h2 {
     padding-bottom: 0.25em;
-    border-bottom: 1px solid var(--gray-6);
+    border-bottom: 1px solid var(--gray-5);
 }
 
 /* Code blocks */
 .markdown-content pre {
     background-color: var(--gray-2);
-    border: 1px solid var(--gray-5);
+    border: 1px solid var(--gray-4);
     border-radius: var(--radius-2);
     padding: 1rem;
     overflow-x: auto;
@@ -68,9 +78,10 @@
 }
 .markdown-content th,
 .markdown-content td {
-    border: 1px solid var(--gray-6);
+    border: 1px solid var(--gray-5);
     padding: 0.5em 0.75em;
     text-align: left;
+    color: var(--gray-12);
 }
 .markdown-content th {
     font-weight: 600;
@@ -92,7 +103,7 @@
 /* Horizontal rules */
 .markdown-content hr {
     border: none;
-    border-top: 1px solid var(--gray-6);
+    border-top: 1px solid var(--gray-5);
     margin: 2em 0;
 }
 

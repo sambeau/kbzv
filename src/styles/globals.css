@@ -92,4 +92,23 @@
     label[for] {
         cursor: pointer;
     }
+
+    /* Ensure pointer cursor on Radix Themes interactive elements */
+    .rt-TabsTrigger,
+    .rt-SelectTrigger,
+    .rt-DropdownMenuTrigger,
+    .rt-DialogTrigger,
+    .rt-PopoverTrigger,
+    .rt-CheckboxRoot,
+    .rt-SwitchRoot,
+    .rt-SliderRoot,
+    .rt-IconButton,
+    .rt-Button,
+    [role="tab"],
+    [role="option"],
+    [role="menuitem"],
+    [role="menuitemradio"],
+    [role="menuitemcheckbox"] {
+        cursor: pointer;
+    }
 }

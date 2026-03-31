@@ -5,14 +5,28 @@ import {
   estimateRollupForPlan,
 } from "@/lib/query/metrics";
 import type { Plan } from "@/lib/types";
-import { FieldValue } from "./FieldValue";
-import { DetailHeader } from "./DetailHelpers";
-import { RelatedEntitiesSection, RelatedEntityRow } from "./DetailHelpers";
+import {
+  DetailHeader,
+  MetadataList,
+  RelatedEntitiesSection,
+  RelatedEntityRow,
+} from "./DetailHelpers";
 import { ProgressBar } from "@/components/metrics/ProgressBar";
 import { EstimateDisplay } from "@/components/metrics/EstimateDisplay";
+import { EntityLink } from "@/components/common/EntityLink";
+import { Badge } from "@radix-ui/themes";
+import { formatDistanceToNow } from "date-fns";
 
 interface PlanDetailProps {
   entity: Plan;
+}
+
+function formatTimestamp(ts: string): string {
+  try {
+    return formatDistanceToNow(new Date(ts), { addSuffix: true });
+  } catch {
+    return ts;
+  }
 }
 
 function PlanDetail({ entity }: PlanDetailProps) {
@@ -31,6 +45,75 @@ function PlanDetail({ entity }: PlanDetailProps) {
 
   const planEstimate = estimateRollupForPlan(entity.id, features);
 
+  // Build metadata items for the DataList
+  const metadataItems = [
+    entity.slug
+      ? {
+          label: "Slug",
+          value: (
+            <span className="text-xs text-muted-foreground font-mono">
+              {entity.slug}
+            </span>
+          ),
+        }
+      : null,
+    entity.design
+      ? { label: "Design", value: <EntityLink entityId={entity.design} /> }
+      : null,
+    entity.tags && entity.tags.length > 0
+      ? {
+          label: "Tags",
+          value: (
+            <div className="flex flex-wrap gap-1">
+              {entity.tags.map((tag) => (
+                <Badge key={tag} variant="soft" color="gray" radius="full">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          ),
+        }
+      : null,
+    entity.created
+      ? {
+          label: "Created",
+          value: (
+            <span className="text-xs text-muted-foreground">
+              {formatTimestamp(entity.created)}
+            </span>
+          ),
+        }
+      : null,
+    entity.created_by
+      ? {
+          label: "Created By",
+          value: <span className="text-sm">{entity.created_by}</span>,
+        }
+      : null,
+    entity.updated
+      ? {
+          label: "Updated",
+          value: (
+            <span className="text-xs text-muted-foreground">
+              {formatTimestamp(entity.updated)}
+            </span>
+          ),
+        }
+      : null,
+    entity.supersedes
+      ? {
+          label: "Supersedes",
+          value: <EntityLink entityId={entity.supersedes} />,
+        }
+      : null,
+    entity.superseded_by
+      ? {
+          label: "Superseded By",
+          value: <EntityLink entityId={entity.superseded_by} />,
+        }
+      : null,
+  ].filter(Boolean) as { label: string; value: React.ReactNode }[];
+
   return (
     <div className="space-y-6">
       <DetailHeader
@@ -40,28 +123,13 @@ function PlanDetail({ entity }: PlanDetailProps) {
         status={entity.status}
       />
 
-      <FieldValue label="Summary" value={entity.summary} type="long-text" />
-      <FieldValue
-        label="Slug"
-        value={entity.slug}
-        type="text"
-        className="text-xs text-muted-foreground"
-      />
-      <FieldValue label="Design" value={entity.design} type="entity-ref" />
-      <FieldValue label="Tags" value={entity.tags} type="tag-list" />
-      <FieldValue label="Created" value={entity.created} type="timestamp" />
-      <FieldValue label="Created By" value={entity.created_by} type="text" />
-      <FieldValue label="Updated" value={entity.updated} type="timestamp" />
-      <FieldValue
-        label="Supersedes"
-        value={entity.supersedes}
-        type="entity-ref"
-      />
-      <FieldValue
-        label="Superseded By"
-        value={entity.superseded_by}
-        type="entity-ref"
-      />
+      {/* Summary text — no label, just the text */}
+      {entity.summary && (
+        <p className="text-sm text-muted-foreground">{entity.summary}</p>
+      )}
+
+      {/* Compact metadata via DataList */}
+      <MetadataList items={metadataItems} />
 
       <RelatedEntitiesSection
         title="Features"

@@ -4,8 +4,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { FileText, Filter } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 import React from "react";
-import { cn } from "@/lib/utils";
-import { Badge } from "@radix-ui/themes";
+import { Badge, Table } from "@radix-ui/themes";
 
 import { EmptyState } from "@/components/common/EmptyState";
 import { DocumentFilterBar } from "./DocumentFilterBar";
@@ -234,66 +233,77 @@ function DocumentList() {
             }}
           />
         ) : (
-          <div className="space-y-2">
-            {sorted.map((doc) => {
-              const typeColor = (DOC_TYPE_COLOUR[doc.type] ??
-                "gray") as React.ComponentProps<typeof Badge>["color"];
-              const statusColor = (STATUS_COLOUR[doc.status] ??
-                "gray") as React.ComponentProps<typeof Badge>["color"];
-              const displayTitle =
-                doc.title || doc.path.split("/").pop() || doc.id;
+          <Table.Root variant="surface" size="2">
+            <Table.Header>
+              <Table.Row>
+                <Table.ColumnHeaderCell>Title</Table.ColumnHeaderCell>
+                <Table.ColumnHeaderCell style={{ width: "6rem" }}>
+                  Type
+                </Table.ColumnHeaderCell>
+                <Table.ColumnHeaderCell style={{ width: "6rem" }}>
+                  Status
+                </Table.ColumnHeaderCell>
+                <Table.ColumnHeaderCell style={{ width: "8rem" }}>
+                  Updated
+                </Table.ColumnHeaderCell>
+              </Table.Row>
+            </Table.Header>
+            <Table.Body>
+              {sorted.map((doc) => {
+                const typeColor = (DOC_TYPE_COLOUR[doc.type] ??
+                  "gray") as React.ComponentProps<typeof Badge>["color"];
+                const statusColor = (STATUS_COLOUR[doc.status] ??
+                  "gray") as React.ComponentProps<typeof Badge>["color"];
+                const displayTitle =
+                  doc.title || doc.path.split("/").pop() || doc.id;
 
-              return (
-                <button
-                  key={doc.id}
-                  type="button"
-                  onClick={() => handleRowClick(doc.id)}
-                  className={cn(
-                    "flex items-start justify-between w-full rounded-lg border",
-                    "border-border bg-card px-4 py-3 text-left transition-colors",
-                    "hover:bg-accent hover:text-accent-foreground cursor-pointer",
-                    "focus-visible:outline-none focus-visible:ring-2",
-                    "focus-visible:ring-ring focus-visible:ring-offset-2",
-                  )}
-                >
-                  {/* Left column */}
-                  <div className="flex flex-col gap-0.5 min-w-0 flex-1 mr-3">
-                    <span className="text-sm font-medium leading-tight truncate">
-                      {displayTitle}
-                    </span>
-                    <span
-                      className="text-xs text-muted-foreground"
-                      title={doc.updated}
-                    >
-                      {formatRelativeDate(doc.updated)}
-                    </span>
-                  </div>
-
-                  {/* Right column — badges */}
-                  <div className="flex items-center gap-1.5 shrink-0 pt-0.5">
-                    <Badge
-                      color={typeColor}
-                      variant={activeTypes.has(doc.type) ? "solid" : "soft"}
-                      style={{ cursor: "pointer" }}
-                      onClick={(e) => handleTypeBadgeClick(e, doc.type)}
-                    >
-                      {doc.type}
-                    </Badge>
-                    <Badge
-                      color={statusColor}
-                      variant={
-                        activeStatuses.has(doc.status) ? "solid" : "soft"
-                      }
-                      style={{ cursor: "pointer" }}
-                      onClick={(e) => handleStatusBadgeClick(e, doc.status)}
-                    >
-                      {doc.status}
-                    </Badge>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
+                return (
+                  <Table.Row
+                    key={doc.id}
+                    onClick={() => handleRowClick(doc.id)}
+                    style={{ cursor: "pointer" }}
+                    className="hover:bg-[var(--gray-3)]"
+                  >
+                    <Table.Cell>
+                      <span className="text-sm font-medium">
+                        {displayTitle}
+                      </span>
+                    </Table.Cell>
+                    <Table.Cell>
+                      <Badge
+                        color={typeColor}
+                        variant={activeTypes.has(doc.type) ? "solid" : "soft"}
+                        style={{ cursor: "pointer" }}
+                        onClick={(e) => handleTypeBadgeClick(e, doc.type)}
+                      >
+                        {doc.type}
+                      </Badge>
+                    </Table.Cell>
+                    <Table.Cell>
+                      <Badge
+                        color={statusColor}
+                        variant={
+                          activeStatuses.has(doc.status) ? "solid" : "soft"
+                        }
+                        style={{ cursor: "pointer" }}
+                        onClick={(e) => handleStatusBadgeClick(e, doc.status)}
+                      >
+                        {doc.status}
+                      </Badge>
+                    </Table.Cell>
+                    <Table.Cell>
+                      <span
+                        className="text-xs text-muted-foreground whitespace-nowrap"
+                        title={doc.updated}
+                      >
+                        {formatRelativeDate(doc.updated)}
+                      </span>
+                    </Table.Cell>
+                  </Table.Row>
+                );
+              })}
+            </Table.Body>
+          </Table.Root>
         )}
       </div>
     </div>

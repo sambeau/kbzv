@@ -1,21 +1,32 @@
 import { Puzzle } from "lucide-react";
+import { Badge } from "@radix-ui/themes";
+import { formatDistanceToNow } from "date-fns";
 import { useProjectStore } from "@/lib/store/project-store";
 import {
   taskCompletionForFeature,
   estimateRollupForFeature,
 } from "@/lib/query/metrics";
 import type { Feature } from "@/lib/types";
-import { FieldValue } from "./FieldValue";
 import {
   DetailHeader,
+  MetadataList,
   RelatedEntitiesSection,
   RelatedEntityRow,
 } from "./DetailHelpers";
 import { ProgressBar } from "@/components/metrics/ProgressBar";
 import { EstimateDisplay } from "@/components/metrics/EstimateDisplay";
+import { EntityLink } from "@/components/common/EntityLink";
 
 interface FeatureDetailProps {
   entity: Feature;
+}
+
+function formatTimestamp(ts: string): string {
+  try {
+    return formatDistanceToNow(new Date(ts), { addSuffix: true });
+  } catch {
+    return ts;
+  }
 }
 
 function FeatureDetail({ entity }: FeatureDetailProps) {
@@ -44,6 +55,94 @@ function FeatureDetail({ entity }: FeatureDetailProps) {
 
   const estimateRollup = estimateRollupForFeature(entity.id, tasks);
 
+  // Build metadata items for the DataList
+  const metadataItems = [
+    entity.parent
+      ? { label: "Parent Plan", value: <EntityLink entityId={entity.parent} /> }
+      : null,
+    entity.slug
+      ? {
+          label: "Slug",
+          value: (
+            <span className="text-xs text-muted-foreground font-mono">
+              {entity.slug}
+            </span>
+          ),
+        }
+      : null,
+    entity.design
+      ? { label: "Design", value: <EntityLink entityId={entity.design} /> }
+      : null,
+    entity.spec
+      ? { label: "Spec", value: <EntityLink entityId={entity.spec} /> }
+      : null,
+    entity.dev_plan
+      ? { label: "Dev Plan", value: <EntityLink entityId={entity.dev_plan} /> }
+      : null,
+    entity.tags && entity.tags.length > 0
+      ? {
+          label: "Tags",
+          value: (
+            <div className="flex flex-wrap gap-1">
+              {entity.tags.map((tag) => (
+                <Badge key={tag} variant="soft" color="gray" radius="full">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          ),
+        }
+      : null,
+    entity.branch
+      ? {
+          label: "Branch",
+          value: (
+            <span className="text-xs font-mono text-muted-foreground">
+              {entity.branch}
+            </span>
+          ),
+        }
+      : null,
+    entity.supersedes
+      ? {
+          label: "Supersedes",
+          value: <EntityLink entityId={entity.supersedes} />,
+        }
+      : null,
+    entity.superseded_by
+      ? {
+          label: "Superseded By",
+          value: <EntityLink entityId={entity.superseded_by} />,
+        }
+      : null,
+    entity.created
+      ? {
+          label: "Created",
+          value: (
+            <span className="text-xs text-muted-foreground">
+              {formatTimestamp(entity.created)}
+            </span>
+          ),
+        }
+      : null,
+    entity.created_by
+      ? {
+          label: "Created By",
+          value: <span className="text-sm">{entity.created_by}</span>,
+        }
+      : null,
+    entity.updated
+      ? {
+          label: "Updated",
+          value: (
+            <span className="text-xs text-muted-foreground">
+              {formatTimestamp(entity.updated)}
+            </span>
+          ),
+        }
+      : null,
+  ].filter(Boolean) as { label: string; value: React.ReactNode }[];
+
   return (
     <div className="space-y-6">
       <DetailHeader
@@ -53,31 +152,13 @@ function FeatureDetail({ entity }: FeatureDetailProps) {
         status={entity.status}
       />
 
-      <FieldValue label="Parent Plan" value={entity.parent} type="entity-ref" />
-      <FieldValue label="Slug" value={entity.slug} type="text" />
-      <FieldValue label="Design" value={entity.design} type="entity-ref" />
-      <FieldValue label="Spec" value={entity.spec} type="entity-ref" />
-      <FieldValue label="Dev Plan" value={entity.dev_plan} type="entity-ref" />
-      <FieldValue label="Tags" value={entity.tags} type="tag-list" />
-      <FieldValue
-        label="Branch"
-        value={entity.branch}
-        type="text"
-        className="font-mono"
-      />
-      <FieldValue
-        label="Supersedes"
-        value={entity.supersedes}
-        type="entity-ref"
-      />
-      <FieldValue
-        label="Superseded By"
-        value={entity.superseded_by}
-        type="entity-ref"
-      />
-      <FieldValue label="Created" value={entity.created} type="timestamp" />
-      <FieldValue label="Created By" value={entity.created_by} type="text" />
-      <FieldValue label="Updated" value={entity.updated} type="timestamp" />
+      {/* Summary text — no label, just the text */}
+      {entity.summary && (
+        <p className="text-sm text-muted-foreground">{entity.summary}</p>
+      )}
+
+      {/* Compact metadata via DataList */}
+      <MetadataList items={metadataItems} />
 
       <EstimateDisplay
         rollup={estimateRollup}

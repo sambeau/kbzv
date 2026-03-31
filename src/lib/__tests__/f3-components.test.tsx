@@ -14,7 +14,7 @@ import type { EstimateRollup } from "../query/metrics";
 describe("ProgressBar", () => {
   it("renders done/total/percentage text", () => {
     render(<ProgressBar done={3} total={10} percentage={30} label="Tasks" />);
-    expect(screen.getByText(/3\/10 done \(30%\)/)).toBeTruthy();
+    expect(screen.getByText(/3\/10 \(30%\)/)).toBeTruthy();
   });
 
   it("renders the label", () => {

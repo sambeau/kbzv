@@ -101,7 +101,7 @@ function BugsFilterBar({
 }) {
   return (
     <div>
-      <div className="flex items-center gap-0.5 px-3 py-1.5 flex-wrap">
+      <div className="flex items-center gap-0.5 px-3 h-10 flex-wrap">
         {SEVERITY_OPTIONS.map((sev) => (
           <FilterCheckbox
             key={sev}
@@ -280,7 +280,7 @@ function BugsView() {
                     type="button"
                     onClick={() => selectEntity(bug.id, "bug")}
                     className={cn(
-                      "w-full text-left rounded-md px-3 py-2.5 transition-colors",
+                      "w-full text-left rounded-md px-3 py-2.5 transition-colors cursor-pointer",
                       "hover:bg-[var(--gray-3)]",
                       isSelected && "bg-[var(--accent-3)]",
                     )}
