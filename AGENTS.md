@@ -151,3 +151,52 @@ During the current design/planning phase, most work produces document changes. C
 - Multiple unrelated document changes in one session → split into separate commits by topic.
 
 Do not let document changes accumulate uncommitted across long sessions.
+
+## UI Development & Visual Verification
+
+### Tech stack
+
+KBZV is a **Tauri v2** desktop app with a **React/TypeScript** frontend:
+
+- **UI framework:** Radix Themes (not shadcn/ui — that was replaced)
+- **Styling:** Tailwind CSS 4 with CSS variables bridged to Radix Themes tokens (see `globals.css`)
+- **Icons:** Lucide React
+- **State:** Zustand (stores in `src/lib/store/`)
+- **Build:** Vite + `@tailwindcss/vite`
+
+### Dev server
+
+Run `pnpm dev` to start the Vite dev server on `http://localhost:1420`. Leave it running during UI work sessions.
+
+### Browser-based project loading (`?project=`)
+
+The app can be fully exercised in a plain browser — no Tauri runtime needed — by appending a `?project=` query string:
+
+```
+http://localhost:1420?project=/Users/samphillips/Dev/kbzv
+```
+
+This works because:
+
+1. `vite.config.ts` includes a `devFsPlugin` that exposes `/__dev/fs/{read,dir,exists}` middleware (dev-only, never ships to production).
+2. `src/lib/reader/fs.ts` detects `window.__TAURI__` and falls back to `fetch` against the dev middleware when running in a plain browser.
+3. `MainPanel.tsx` reads the `?project=` query param on mount and auto-loads the project.
+
+### Visual verification workflow
+
+When making UI changes (layout, styling, components), **always verify visually**:
+
+1. Ensure `pnpm dev` is running.
+2. Use browser tools (`browser_navigate`, `browser_take_screenshot`, `browser_snapshot`) to load the app at `http://localhost:1420?project=/Users/samphillips/Dev/kbzv`.
+3. Navigate to the views affected by your changes and screenshot them.
+4. Compare against the feedback or spec before committing.
+
+TypeScript compilation and unit tests confirm correctness but cannot catch visual regressions — spacing, alignment, colour, overflow, and cursor behaviour all require visual inspection.
+
+### Limitations in browser mode
+
+- **File dialogs:** The "Open Project" button uses Tauri's native dialog and won't work in a plain browser. Use the `?project=` query string instead.
+- **Native menus:** macOS menu bar items (File → Open, etc.) are Tauri-only.
+- **File watching:** The watcher uses `@tauri-apps/plugin-fs` events, which are not available in browser mode. Data loads once but won't auto-refresh.
+
+Everything else — entity display, navigation, document viewing, filtering, markdown rendering — works identically in the browser and the Tauri webview.
