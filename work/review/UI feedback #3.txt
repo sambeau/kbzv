@@ -1,0 +1,66 @@
+# UI feedback #3
+
+Here’s the third round of feedback of the App UI. 
+
+Most of the major and medium issues have been fixed, so lets start honing on on the smaller-sized issues.
+
+There’s still lots of clickable things that don’t have `cursor:pointer`. Is this a Radix issue? While macOS itself uses the Arrow pointer for widgets, once in Safari the standard is to put `cursor:pointer` onto anything clickable. This is my opinion too—`cursor:pointer`is much clearer when the UI is ‘flat’.
+
+[Apple guidelines for Pointers in macOS](https://support.apple.com/en-gb/guide/mac-help/mh35695/mac)
+
+I think it’s heightened by Radix’s subtle mouseover which really benefits from a pointer cursor.
+
+
+## Header / Tabs
+
+- There’s not enough space between the tab icons and the tab titles
+- Can you add a vertical separator (<Separator>) between the git info and the theme selector
+- Tabs should have `cursor:pointer`
+- Theme button should have `cursor:pointer`
+- Tab Highlight should be indigo
+
+
+## Docs
+
+- Back button should have `cursor:pointer`
+- Lines are black should be the same light colour as other views 
+- vertical separator between markdown document and metadata should be resizable
+- Subheader (back button, title) is taller than filter bars so there is a jarring jump. I suggest we make the filter bars the same height to they all match.
+- Docs should have option on toggle icon to centre document so it is more comfortable to read on a large screen.
+	- suggest icons:
+		- `align-horizontal-space-around` to centre
+		- `align-start-vertical` to align left
+- Metadata front-matter
+	- Put horizontal separator (<Separator>) between metadata and front matter
+	- FRONT MATTER label needs vertical space between it and STATUS
+
+## Docs List
+- Can we restyle this as a table, without the black borders. 
+- Put the dates in a column so we can see them line up
+- Put the labels into type, status columns
+
+## Workflow 
+
+It’s hard to differentiate labels from data. 
+
+- Keep icon + title (e.g. P2-phase-1-kernel) as is
+- Keep title? (e.g. “Phase 1 Workflow Kernel”) as is
+- Make status bigger (e.g. active / done)
+- Remove summary label, just have text as is
+- All other metadata use Radix [Data List](https://www.radix-ui.com/themes/docs/components/data-list) for more compact, aligned view
+- progress bars shouldn’t be 100% wide
+	- Place on same line ~20 chars wide
+- Features, tasks, documents lists
+	- Need a heading rather than a metadata label
+	- tables have formatting issues, appear broken
+		- tables are spilling off page, not matching page width
+		- Task-IDs are breaking in two, even on table that has little data
+		- tables should only be as wide as they need to be
+		- status dot should be far left
+		- Titles should be to the left of the IDs
+		- see FEAT-01KM8JTF0MK91 for an example of too wide table
+		- see P5-workflow-retrospective for table scrolling off page
+	
+## Bugs
+
+- Bug list needs `cursor:pointer`

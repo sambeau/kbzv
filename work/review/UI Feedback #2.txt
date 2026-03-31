@@ -1,0 +1,78 @@
+# UI feedback #2
+
+Here’s the second round os feedback of the App UI. 
+Most of the major issues have been fixed, so lets Strat honing on on the medium-sized issues.
+
+## Filters
+- The filters on Docs work in the opposite way to the filters on Work.
+- Docs is better—nothing ticked means *‘all’*. 
+- Can you apply the same pattern to Work
+	- nothing ticked means *‘all’*
+	- A tick means only
+	- Multiple ticks means only(A and B and C)
+
+## Dark mode.
+
+Could we have a standard Radix dark mode icon/switch top right (to the right of the git info)
+
+- https://www.radix-ui.com/themes/docs/theme/dark-mode
+
+## Dark lines
+
+- The line below the filters is inconsistent between Docs and Work modes.
+- The line between panes in BUGs mode is light blue
+	- I like that it gets fat when over / dragged
+- The Tabs should have a full-page blue line but it is is short
+	- Can we make it extend across the width?
+
+Can I suggest we use these instead:
+- https://www.radix-ui.com/themes/docs/components/separator
+
+## Tabs
+
+Are we using a ‘full’ Tab implementation, or just using tab styling for the three modes?
+
+- The Tabs should have a full-page blue line but it is is short
+	- Can we make it extend across the width?
+	- If we can’t we could change to using a segmented control?
+	- If we keep these tabs can we go for a darker highlight, e.g. color="indigo" (or whatever is the standard darker bluish color they use is)
+
+## Bugs’ Filters
+
+- Bugs have no filters
+
+## Menus
+
+- There is no ‘File’ menu
+- There is no Quit menu item
+
+A standard macOS app has an app menu with the name of the app which normally has “about”, “Settings…”, … “Quit Appname”.
+
+We used to have Quit but we’ve lost it at some point.
+
+Can we have:
+
+- **App** menu called **KBZV**
+	- “About KBZV”
+	- ---
+	- “Settings…” (greyed out for now)
+	- ---
+	- *possibly the standard ‘hide’ actions?*
+	- ---
+	- “Quit KBZV”
+
+- **File** menu called “File”
+	- “Open Project…”
+	- ---
+	- “Close”
+
+## Document View
+
+Can we pull the front matter out and merge it into the metadata on the right. Clearly there’s some overlap, so we need to err on whatever data is more reliable (the kbz state).
+
+## Work View
+
+### Entity details view
+
+- can you let the view fill available space
+- can you put entity lists within view (FEATs, TASKs) into a table (`<Table>`) so they line up nicely, and get standard padding etc.

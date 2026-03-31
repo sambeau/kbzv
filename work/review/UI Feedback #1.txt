@@ -1,0 +1,105 @@
+# UI feedback #1
+
+Here’s the first feedback of the App UI. I will stick to the big things in this round, and we can hone in on individual elements/move things around gradually.
+
+## Main issues
+
+### ~~Document Viewer doesn’t show~~ ✅ fixed
+
+~~When you click on a document in the document list, or as a link in an entity’s info, the document viewer shows a blank page. You cannot navigate out from it (no menu, no back button, no keyboard shortcut)—you have to quit and restart.~~
+
+### It doesn’t look like we’re using the correct theme
+
+The app seems to be very custom. Are you using the correct theme and its components?
+
+It looks like we are either using an old version of the theme or we are making our own components as the styling is wrong: black lines/borders, inconsistent borders, buttons so faint it’s hard to tell they are buttons, drop-down menu without background, clickable things that point have “cursor:pointer”.
+
+Can you check that first. I can go through the individual components once we’ve established the overall theme.
+
+[Using CSS variables and theme tokens.](https://ui.shadcn.com/docs/theming)
+
+#### UI/shadcn
+
+Theme `--preset b7BFemPwm`:
+
+- **Style**: Nova
+- **Base** Color: Mist
+- **Theme**: Sky
+- **Heading**: Inter
+- **Font**: Inter
+
+On macOS I would like to use the system font, but Inter can suffice for now.
+
+#### Components
+Are we using standard UI/shadcn [components](https://ui.shadcn.com/docs/components)?
+- `<Tab>`
+- `<Sidebar>`
+- `<Popover>`
+- `<Table>`
+- `<Progress>`
+- `<DropdownMenu>`
+- `<Empty>`
+- Etc.
+
+## Other important issues 
+
+### Menu
+
+The File menu has one item “Close Window”.
+
+There should be two at the moment.
+1. “Open…”
+2. “Close”
+
+#### “Open…”
+
+This should open the dialog box to load a project folder.
+
+#### “Close”
+
+This should close the window, but not quit. The user should still be able to open a new window (or manually quit).
+
+The close button on the window should mimic this behaviour.
+
+### Main layout
+
+Main view selector should be `<Tabs>` with three tabs:
+- Docs
+- Work
+- Bugs
+
+### Workflows
+
+#### Can we rename the view “Work”
+- Icon is the same as Git, we should change to `list-checks`
+
+#### Two columns should be resizable
+
+The line between should have a resized on mouseover and drag to resize.
+
+#### Workflow list shows “Incidents”, “Decisions”, “Bugs”
+
+1. I don’t know what “Incidents” are. Please remove.
+2. “Decisions” are an internal thing, remove for now as humans care about documents.
+3. We should move bugs to be a separate list, as there don’t really fit in this hierarchy
+
+#### Filters show “Incident” and “Checkpoint”
+
+I don’t know what these are. Are these entities? I’ve never heard of them. If they are internal we shouldn’t show them. If they don’t exist we need to find out where they came from, e.g. if they’re in the documentation we should remove them.
+
+#### Selecting a filter
+- filters should be standard checkboxes
+	- When you select a filter the bar grows vertically causing everything to jump
+	- When selected a new line of text appears with the colour name with an x next to it. Why not just use a toggle?
+
+#### Colour filters
+
+These are just ‘odd’.
+- They are just small coloured circles
+- They have no labels
+- On mouseover text appears but has no background so it’s hard to understand as it has no background.
+- I think we should get rid the color filters for now; keep the colour dots in the list for now
+
+### BUGS
+
+Can we add bugs as a third view, i.e. Docs, Work, Bugs 
