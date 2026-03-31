@@ -138,24 +138,30 @@ describe("StatusBadge", () => {
     expect(customFn).toHaveBeenCalledTimes(1);
   });
 
-  it('renders "done" with green colour classes', () => {
+  it('renders "done" with green colour (data-accent-color)', () => {
     render(<StatusBadge status="done" />);
-    const badge =
-      screen.getByText("done").closest("div") ?? screen.getByText("done");
-    expect(badge.className).toMatch(/green/);
+    const el = screen.getByText("done");
+    const badge = el.closest("[data-accent-color]") ?? el;
+    expect(badge.getAttribute("data-accent-color") ?? badge.className).toMatch(
+      /green/,
+    );
   });
 
-  it('renders "active" with yellow colour classes', () => {
+  it('renders "active" with yellow colour (data-accent-color)', () => {
     render(<StatusBadge status="active" />);
-    const badge =
-      screen.getByText("active").closest("div") ?? screen.getByText("active");
-    expect(badge.className).toMatch(/yellow/);
+    const el = screen.getByText("active");
+    const badge = el.closest("[data-accent-color]") ?? el;
+    expect(badge.getAttribute("data-accent-color") ?? badge.className).toMatch(
+      /yellow/,
+    );
   });
 
-  it('renders "blocked" with orange colour classes', () => {
+  it('renders "blocked" with orange colour (data-accent-color)', () => {
     render(<StatusBadge status="blocked" />);
-    const badge =
-      screen.getByText("blocked").closest("div") ?? screen.getByText("blocked");
-    expect(badge.className).toMatch(/orange/);
+    const el = screen.getByText("blocked");
+    const badge = el.closest("[data-accent-color]") ?? el;
+    expect(badge.getAttribute("data-accent-color") ?? badge.className).toMatch(
+      /orange/,
+    );
   });
 });

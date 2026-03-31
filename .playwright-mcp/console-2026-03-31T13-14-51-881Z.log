@@ -1,0 +1,499 @@
+[     236ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[     274ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[     274ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[    4106ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[    4138ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[    4138ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[  498823ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:1420/@vite/client:963
+[  498898ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  499906ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  500912ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  501915ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  502919ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  503928ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  504943ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  505957ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  506988ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  508048ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  509134ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  510285ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  511909ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  513352ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  516375ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  521692ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  526098ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  531618ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  535992ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  541253ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  544175ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  547466ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  553446ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  557850ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  563345ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  568447ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  572135ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  575235ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  579985ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  583570ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  587610ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  591386ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  595398ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  601313ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  604353ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  608001ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  612618ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  614803ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  617979ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  618984ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  619988ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  620992ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  621997ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  623002ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  624008ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  625019ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  626038ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  627053ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  628096ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  629231ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  630462ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  632072ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  634122ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  635718ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  640957ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  644771ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  650390ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  654726ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  657436ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  662937ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  668258ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  672415ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  675505ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  678673ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  681015ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  686174ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  689609ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  695487ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  699344ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  703726ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  709066ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  711670ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  715866ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  718037ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  722965ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  727407ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  731049ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  733783ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  739472ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  744760ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  750229ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  752494ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  758331ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  761102ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  767087ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  771646ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  776856ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  780505ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  784653ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  789718ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  793754ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  796282ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  798537ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  804204ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  807038ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  811539ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  816740ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  819274ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  821978ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  824299ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  827665ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  832338ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  837432ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  841944ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  846923ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  851567ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  856661ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  859199ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  864040ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  866940ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  869532ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  872408ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  877027ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  881080ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  886515ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  891153ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  896875ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  901353ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  904495ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  908854ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[  915361ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[  915529ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[  915529ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 2795611ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:1420/@vite/client:963
+[ 2795685ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2796690ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2797697ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2798703ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2799708ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2800714ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2801724ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2802743ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2803758ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2804785ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2805871ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2807161ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2808722ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2810785ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2814203ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2816718ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2819277ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2823771ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2829141ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2831288ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2833463ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2837848ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2841231ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2844667ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2846915ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2849567ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2854510ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2856732ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2861410ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2866881ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2871167ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2876566ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2882074ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2886360ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2889658ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2892633ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2896817ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2902143ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2907631ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2913136ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2917937ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 2923905ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 2924125ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 2924126ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 6181651ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969073356:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 6181654ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 6214194ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969089820:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at commitRootImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19469:13)
+[ 6214195ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969073356:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 6214195ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969089820:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 6463540ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 6463784ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969332161:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 6463784ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969332161:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 6508515ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 6508586ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969332161:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 6508586ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774969332161:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 6653251ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:1420/@vite/client:963
+[ 6653339ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 6654345ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 6655349ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 6656351ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 6658517ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 6658606ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 6658606ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 7358668ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:1420/@vite/client:963
+[ 7358756ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 7359765ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 7360768ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 7361771ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[ 7364241ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 7364655ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 7364656ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[11399287ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:1420/@vite/client:963
+[11399386ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11400394ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11401397ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11402402ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11403408ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11404415ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11405429ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11406449ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11407466ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11408508ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11409615ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11410851ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11412057ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11413859ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11416668ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11420660ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11424384ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11426393ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11430842ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11435185ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11437925ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11443342ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11446230ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11448776ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11450800ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11454290ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11458540ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11463593ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11468706ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11474202ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11476730ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11482379ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11485790ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11491169ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11493962ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11496636ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11502122ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11507803ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11510981ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11513852ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11517956ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11523548ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11527374ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11532199ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11534906ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11536940ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11540715ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11542768ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11546849ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11551836ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11555567ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11558606ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11561358ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11564154ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11567892ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11571818ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11574241ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11576267ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11578959ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11581133ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11586344ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11591688ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11594392ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11598726ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11601909ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11606728ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11609474ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11614574ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11618270ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11620863ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11623746ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11626544ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11632516ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11635128ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11638054ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11642585ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11645963ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11651886ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11655986ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11660572ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11665948ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11670546ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11676037ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11678111ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11684007ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034
+[11686099ms] [ERROR] WebSocket connection to 'ws://localhost:1420/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:1420/@vite/client:1034

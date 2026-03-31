@@ -1,0 +1,22 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - tablist [ref=e7]:
+      - tab "Docs" [ref=e8]:
+        - generic [ref=e9]:
+          - img [ref=e10]
+          - text: Docs
+      - tab "Work" [selected] [ref=e13]:
+        - generic [ref=e14]:
+          - img [ref=e15]
+          - text: Work
+      - tab "Bugs" [ref=e18]:
+        - generic [ref=e19]:
+          - img [ref=e20]
+          - text: Bugs
+  - main [ref=e29]:
+    - generic [ref=e31]:
+      - img [ref=e32]
+      - generic [ref=e34]:
+        - heading "No project open" [level=2] [ref=e35]
+        - paragraph [ref=e36]: Select a Kanbanzai project folder to get started
+      - button "Open Project" [ref=e37]

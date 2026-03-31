@@ -1,0 +1,62 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - tablist [ref=e6]:
+      - tab "Docs" [selected] [ref=e7]:
+        - img
+        - text: Docs
+      - tab "Workflows" [ref=e8]:
+        - img
+        - text: Workflows
+  - main [ref=e9]:
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - button "Back" [ref=e119]:
+          - img
+          - text: Back
+        - heading "Project Overview" [level=1] [ref=e120]
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - heading "Project Overview" [level=1] [ref=e124]
+          - paragraph [ref=e125]:
+            - text: This is a
+            - strong [ref=e126]: test document
+            - text: to verify the document viewer works.
+          - heading "Section 1" [level=2] [ref=e127]
+          - paragraph [ref=e128]:
+            - text: Some content with
+            - emphasis [ref=e129]: italic
+            - text: text and a
+            - link "link" [ref=e130] [cursor=pointer]:
+              - /url: https://example.com
+            - text: .
+          - code [ref=e132]: const hello = "world"; console.log(hello);
+          - list [ref=e133]:
+            - listitem [ref=e134]: Item one
+            - listitem [ref=e135]: Item two
+            - listitem [ref=e136]: Item three
+          - blockquote [ref=e137]:
+            - paragraph [ref=e138]: A blockquote paragraph.
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]: Status
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - text: Approved
+          - generic [ref=e148]:
+            - generic [ref=e149]: Filename
+            - generic [ref=e150]: docs/readme.md
+          - generic [ref=e151]:
+            - generic [ref=e152]: Type
+            - generic [ref=e154] [cursor=pointer]: design
+          - generic [ref=e155]:
+            - generic [ref=e156]: Owner
+            - generic [ref=e157]: (none)
+          - generic [ref=e158]:
+            - generic [ref=e159]: Related Entities
+            - generic [ref=e160]: (none)
+          - generic [ref=e161]:
+            - generic [ref=e162]: Superseded By
+            - generic [ref=e163]: (none)
+          - generic [ref=e164]:
+            - generic [ref=e165]: Content Hash
+            - generic [ref=e166]: — No hash recorded

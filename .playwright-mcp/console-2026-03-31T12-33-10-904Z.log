@@ -1,0 +1,262 @@
+[   96985ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:21608
+[   97100ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19381:17
+[   97101ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+[  535211ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:21608
+[  535433ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19381:17
+[  535434ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+[ 1827180ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:21608
+[ 1827257ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19381:17
+[ 1827257ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+[ 1852047ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:21608
+[ 1852084ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19381:17
+[ 1852084ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+[ 1857383ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 1857411ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:135
+[ 1857413ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:135
+[ 1857416ms] TypeError: Cannot read properties of null (reading 'useContext')
+    at Object.useContext (http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:1062:29)
+    at http://localhost:1420/node_modules/.vite/deps/@radix-ui_themes.js?v=cfe7bccf:8992:43
+    at renderWithHooks (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:11596:26)
+    at updateForwardRef (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:14373:28)
+    at beginWork (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:15994:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:3680:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:3705:24)
+    at invokeGuardedCallback (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:3739:39)
+    at beginWork$1 (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19818:15)
+    at performUnitOfWork (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19251:20)
+[ 1857418ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:135
+[ 1857419ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:135
+[ 1857419ms] TypeError: Cannot read properties of null (reading 'useContext')
+    at Object.useContext (http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:1062:29)
+    at http://localhost:1420/node_modules/.vite/deps/@radix-ui_themes.js?v=cfe7bccf:8992:43
+    at renderWithHooks (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:11596:26)
+    at updateForwardRef (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:14373:28)
+    at beginWork (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:15994:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:3680:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:3705:24)
+    at invokeGuardedCallback (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:3739:39)
+    at beginWork$1 (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19818:15)
+    at performUnitOfWork (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19251:20)
+[ 1857421ms] [ERROR] The above error occurred in the <Theme> component:
+
+    at http://localhost:1420/node_modules/.vite/deps/@radix-ui_themes.js?v=cfe7bccf:8992:43
+    at App (http://localhost:1420/src/App.tsx?t=1774962247433:24:24)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:14079
+[ 1857422ms] TypeError: Cannot read properties of null (reading 'useContext')
+    at Object.useContext (http://localhost:1420/node_modules/.vite/deps/chunk-HBVZQQYS.js?v=a02f3c58:1062:29)
+    at http://localhost:1420/node_modules/.vite/deps/@radix-ui_themes.js?v=cfe7bccf:8992:43
+    at renderWithHooks (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:11596:26)
+    at updateForwardRef (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:14373:28)
+    at beginWork (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:15994:22)
+    at beginWork$1 (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19806:22)
+    at performUnitOfWork (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19251:20)
+    at workLoopSync (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19190:13)
+    at renderRootSync (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19169:15)
+    at recoverFromConcurrentError (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18786:28)
+[ 1857423ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=6738d465:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=6738d465:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-HBJ3AJOL.js?v=6738d465:19381:17
+[ 1858016ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 1858086ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 1858087ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774960884854:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 2080254ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 2080350ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962440982:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 2080351ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962440982:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 2336532ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1420/src/components/ui/badge.tsx?t=1774962727364:0
+[ 2336534ms] [ERROR] [vite] Failed to reload /src/components/ui/badge.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:1420/@vite/client:881
+[ 2338861ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1420/src/components/ui/button.tsx?t=1774962729754:0
+[ 2338862ms] [ERROR] [vite] Failed to reload /src/components/ui/button.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:1420/@vite/client:881
+[ 2343880ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1420/src/components/ui/select.tsx?t=1774962734777:0
+[ 2343880ms] [ERROR] [vite] Failed to reload /src/components/ui/select.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:1420/@vite/client:881
+[ 2347492ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 2349097ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 2349098ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+[ 2474936ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:21608
+[ 2475024ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at invokePassiveEffectMountInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18374:19)
+    at invokeEffectsInDev (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19754:19)
+    at commitDoubleInvokeEffectsInDEV (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19739:15)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19556:13)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)
+    at http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19381:17
+[ 2475025ms] TypeError: Cannot read properties of undefined (reading 'transformCallback')
+    at transformCallback (http://localhost:1420/node_modules/.vite/deps/chunk-ES5NGWZA.js?v=a02f3c58:22:37)
+    at listen (http://localhost:1420/node_modules/.vite/deps/@tauri-apps_api_event.js?v=a02f3c58:38:14)
+    at http://localhost:1420/src/components/layout/MainPanel.tsx?t=1774962656341:69:22
+    at commitHookEffectListMount (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:16963:34)
+    at commitPassiveMountOnFiber (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18206:19)
+    at commitPassiveMountEffects_complete (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18179:17)
+    at commitPassiveMountEffects_begin (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18169:15)
+    at commitPassiveMountEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:18159:11)
+    at flushPassiveEffectsImpl (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19543:11)
+    at flushPassiveEffects (http://localhost:1420/node_modules/.vite/deps/chunk-NGHL4ZZ5.js?v=a02f3c58:19500:22)

@@ -5,11 +5,11 @@ import type { DocumentRecord } from "../types";
 
 // ── Mock @tauri-apps/plugin-fs ─────────────────────────────────────
 
-vi.mock("@tauri-apps/plugin-fs", () => ({
+vi.mock("../reader/fs", () => ({
   readTextFile: vi.fn(),
 }));
 
-import { readTextFile } from "@tauri-apps/plugin-fs";
+import { readTextFile } from "../reader/fs";
 import { readDocumentContent } from "../reader/document";
 
 // ── Helpers ─────────────────────────────────────────────────────────
