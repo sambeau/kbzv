@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { ChevronLeft, FileX } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@radix-ui/themes";
+import { AlertCircle } from "lucide-react";
 import { MarkdownViewer } from "./MarkdownViewer";
 import { MetadataPanel } from "./MetadataPanel";
 import { EmptyState } from "@/components/common/EmptyState";
@@ -21,6 +22,18 @@ function LoadingState({ message }: { message: string }) {
   );
 }
 
+function ErrorState({ message }: { message: string }) {
+  return (
+    <div className="flex h-full items-center justify-center">
+      <div className="flex flex-col items-center gap-2 text-center max-w-sm">
+        <AlertCircle className="h-8 w-8 text-destructive" />
+        <p className="text-sm font-medium">Failed to load document</p>
+        <p className="text-xs text-muted-foreground">{message}</p>
+      </div>
+    </div>
+  );
+}
+
 // ── Component ───────────────────────────────────────────────────────
 
 function DocumentViewer() {
@@ -29,6 +42,7 @@ function DocumentViewer() {
 
   const [readResult, setReadResult] = useState<DocumentReadResult | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   const record = useProjectStore((s) =>
     viewingDocumentId ? s.documents.get(viewingDocumentId) : undefined,
@@ -41,6 +55,7 @@ function DocumentViewer() {
     let cancelled = false;
     setIsLoading(true);
     setReadResult(null);
+    setLoadError(null);
 
     if (!record || !projectPath) {
       setReadResult({
@@ -53,12 +68,20 @@ function DocumentViewer() {
       return;
     }
 
-    readDocumentContent(projectPath, record).then((result) => {
-      if (!cancelled) {
-        setReadResult(result);
-        setIsLoading(false);
-      }
-    });
+    readDocumentContent(projectPath, record)
+      .then((result) => {
+        if (!cancelled) {
+          setReadResult(result);
+          setIsLoading(false);
+        }
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          console.error("[DocumentViewer] Failed to load document:", err);
+          setLoadError(err instanceof Error ? err.message : String(err));
+          setIsLoading(false);
+        }
+      });
 
     return () => {
       cancelled = true;
@@ -74,8 +97,8 @@ function DocumentViewer() {
     <div className="flex flex-col h-full">
       {/* Viewer header */}
       <div className="flex items-center gap-2 px-4 py-3 border-b border-border shrink-0">
-        <Button variant="ghost" size="sm" onClick={navigateBack}>
-          <ChevronLeft className="h-4 w-4 mr-1" />
+        <Button variant="soft" size="1" onClick={navigateBack}>
+          <ChevronLeft size={14} />
           Back
         </Button>
         <h1 className="text-lg font-semibold truncate">{displayTitle}</h1>
@@ -87,6 +110,8 @@ function DocumentViewer() {
         <div className="flex-1 overflow-y-auto px-8 py-6">
           {isLoading ? (
             <LoadingState message="Loading document…" />
+          ) : loadError ? (
+            <ErrorState message={loadError} />
           ) : readResult?.fileMissing ? (
             <EmptyState
               icon={FileX}

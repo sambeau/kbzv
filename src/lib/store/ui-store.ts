@@ -4,7 +4,7 @@ import { useProjectStore } from "@/lib/store/project-store";
 
 // ─── Types ─────────────────────────────────────────────────────────────
 
-type ActiveView = "documents" | "workflows";
+type ActiveView = "documents" | "workflows" | "bugs";
 type DocumentViewMode = "list" | "viewer";
 
 type SortOption =
@@ -79,6 +79,7 @@ interface UIState {
   // --- App shell ---
   projectPath: string | null;
   activeView: ActiveView;
+  themeAppearance: "light" | "dark";
 
   // --- F4: document list filters (legacy, preserved for DocumentFilterBar compat) ---
   documentListFilters: DocumentListFilters;
@@ -107,6 +108,7 @@ interface UIState {
   setProjectPath: (path: string | null) => void;
   setActiveView: (view: ActiveView) => void;
   setDocumentListFilters: (filters: DocumentListFilters) => void;
+  toggleThemeAppearance: () => void;
 
   // ── Actions: workflow selection ──────────────────────────────────
   selectEntity: (id: string | null, type: string | null) => void;
@@ -144,25 +146,9 @@ interface UIState {
 
 // ─── Default filter sets ────────────────────────────────────────────────
 
-const DEFAULT_ACTIVE_TYPES = new Set([
-  "plan",
-  "feature",
-  "task",
-  "bug",
-  "decision",
-  "incident",
-  "checkpoint",
-]);
+const DEFAULT_ACTIVE_TYPES = new Set<string>();
 
-const DEFAULT_ACTIVE_STATUS_COLOURS = new Set([
-  "grey",
-  "blue",
-  "yellow",
-  "orange",
-  "green",
-  "red",
-  "purple",
-]);
+const DEFAULT_ACTIVE_STATUS_COLOURS = new Set<string>();
 
 // ─── Store ──────────────────────────────────────────────────────────────
 
@@ -170,6 +156,7 @@ const useUIStore = create<UIState>((set, get) => ({
   // --- App shell ---
   projectPath: null,
   activeView: "workflows",
+  themeAppearance: "light",
   documentListFilters: DEFAULT_DOCUMENT_LIST_FILTERS,
 
   // --- F3 ---
@@ -191,6 +178,10 @@ const useUIStore = create<UIState>((set, get) => ({
   setProjectPath: (path) => set({ projectPath: path }),
   setActiveView: (view) => set({ activeView: view }),
   setDocumentListFilters: (filters) => set({ documentListFilters: filters }),
+  toggleThemeAppearance: () =>
+    set((s) => ({
+      themeAppearance: s.themeAppearance === "light" ? "dark" : "light",
+    })),
 
   // ── Workflow selection actions ────────────────────────────────────
 
@@ -223,8 +214,8 @@ const useUIStore = create<UIState>((set, get) => ({
 
   clearFilters: () =>
     set({
-      activeTypes: new Set(DEFAULT_ACTIVE_TYPES),
-      activeStatusColours: new Set(DEFAULT_ACTIVE_STATUS_COLOURS),
+      activeTypes: new Set<string>(),
+      activeStatusColours: new Set<string>(),
     }),
 
   activateStatusFilter: (status) =>
@@ -308,23 +299,18 @@ const useUIStore = create<UIState>((set, get) => ({
       if (feature?.parent) {
         expansionIds.push(feature.parent);
       }
-    } else if (type === "bug") {
-      expansionIds.push("__bugs__");
-    } else if (type === "decision") {
-      expansionIds.push("__decisions__");
-    } else if (type === "incident") {
-      expansionIds.push("__incidents__");
-    } else if (type === "checkpoint") {
-      expansionIds.push("__checkpoints__");
     } else if (type === "knowledge") {
       expansionIds.push("__knowledge__");
     }
     // type === "plan" → top-level, no ancestors to expand
 
+    // Bugs get their own view; everything else goes to workflows
+    const targetView: ActiveView = type === "bug" ? "bugs" : "workflows";
+
     set({
       selectedEntityId: id,
       selectedEntityType: type,
-      activeView: "workflows",
+      activeView: targetView,
       expandedNodeIds: new Set([...state.expandedNodeIds, ...expansionIds]),
     });
   },

@@ -1,5 +1,5 @@
+import { Button } from "@radix-ui/themes";
 import type { LucideIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface EmptyStateProps {
   icon: LucideIcon;
@@ -11,19 +11,26 @@ interface EmptyStateProps {
   };
 }
 
-function EmptyState({ icon: Icon, title, description, action }: EmptyStateProps) {
+function EmptyState({
+  icon: Icon,
+  title,
+  description,
+  action,
+}: EmptyStateProps) {
   return (
     <div className="flex h-full items-center justify-center">
       <div className="flex flex-col items-center gap-4 text-center">
-        <Icon className="h-12 w-12 text-muted-foreground" />
+        <Icon className="h-12 w-12 text-muted-foreground" strokeWidth={1.5} />
         <div className="flex flex-col gap-1">
-          <h2 className="text-lg font-medium">{title}</h2>
+          <h2 className="text-base font-medium">{title}</h2>
           {description && (
-            <p className="text-sm text-muted-foreground">{description}</p>
+            <p className="text-sm text-muted-foreground max-w-xs">
+              {description}
+            </p>
           )}
         </div>
         {action && (
-          <Button onClick={action.onClick}>
+          <Button variant="soft" onClick={action.onClick}>
             {action.label}
           </Button>
         )}

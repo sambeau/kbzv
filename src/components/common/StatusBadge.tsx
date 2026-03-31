@@ -1,7 +1,20 @@
-import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+// src/components/common/StatusBadge.tsx
+
+import { Badge } from "@radix-ui/themes";
 import { getStatusColour } from "@/lib/constants/status-colours";
 import { useUIStore } from "@/lib/store/ui-store";
+
+// Map the status-colour names used internally to Radix Themes colour names.
+// Radix uses "gray" (not "grey") and its own amber/orange scale.
+const RT_COLOUR: Record<string, string> = {
+  grey: "gray",
+  blue: "blue",
+  yellow: "yellow",
+  orange: "orange",
+  green: "green",
+  red: "red",
+  purple: "purple",
+};
 
 interface StatusBadgeProps {
   status: string;
@@ -10,22 +23,10 @@ interface StatusBadgeProps {
   onClick?: () => void;
 }
 
-const STATUS_BADGE_STYLES: Record<string, string> = {
-  grey: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
-  blue: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300",
-  yellow:
-    "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300",
-  orange:
-    "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300",
-  green: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
-  red: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300",
-  purple:
-    "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300",
-};
-
 function StatusBadge({ status, className, onClick }: StatusBadgeProps) {
   const activateFilter = useUIStore((s) => s.activateFilter);
   const colour = getStatusColour(status);
+  const rtColour = RT_COLOUR[colour] ?? "gray";
 
   function handleClick(e: React.MouseEvent) {
     e.stopPropagation();
@@ -38,11 +39,10 @@ function StatusBadge({ status, className, onClick }: StatusBadgeProps) {
 
   return (
     <Badge
-      className={cn(
-        STATUS_BADGE_STYLES[colour] ?? STATUS_BADGE_STYLES.grey,
-        "cursor-pointer hover:brightness-90 transition-colors",
-        className,
-      )}
+      color={rtColour as React.ComponentProps<typeof Badge>["color"]}
+      variant="soft"
+      className={className}
+      style={{ cursor: "pointer" }}
       onClick={handleClick}
     >
       {status}

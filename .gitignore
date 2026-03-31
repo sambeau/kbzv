@@ -22,3 +22,10 @@ node_modules/
 *.tsbuildinfo
 node_modules/.tmp/
 .worktrees/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

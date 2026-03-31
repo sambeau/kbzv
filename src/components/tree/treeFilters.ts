@@ -1,5 +1,5 @@
-import { getStatusColour } from '@/lib/constants/status-colours';
-import type { TreeNode } from '@/lib/query/tree';
+import { getStatusColour } from "@/lib/constants/status-colours";
+import type { TreeNode } from "@/lib/query/tree";
 
 // ── Filter types ────────────────────────────────────────────────────
 
@@ -16,10 +16,11 @@ export function isVisible(
   activeTypes: Set<string>,
   activeStatusColours: Set<string>,
 ): boolean {
-  return (
-    activeTypes.has(entityType) &&
-    activeStatusColours.has(getStatusColour(entity.status))
-  );
+  const typeOk = activeTypes.size === 0 || activeTypes.has(entityType);
+  const colourOk =
+    activeStatusColours.size === 0 ||
+    activeStatusColours.has(getStatusColour(entity.status));
+  return typeOk && colourOk;
 }
 
 export function filterFeatureNode(
@@ -29,19 +30,23 @@ export function filterFeatureNode(
 ): FilteredTreeNode | null {
   const featureVisible = isVisible(
     featureNode.entity,
-    'feature',
+    "feature",
     activeTypes,
     activeStatusColours,
   );
 
   const filteredChildren = featureNode.children.filter((taskNode) =>
-    isVisible(taskNode.entity, 'task', activeTypes, activeStatusColours),
+    isVisible(taskNode.entity, "task", activeTypes, activeStatusColours),
   );
 
   if (featureVisible) {
     return {
       ...featureNode,
-      children: filteredChildren.map((c) => ({ ...c, _ghost: false, children: [] })),
+      children: filteredChildren.map((c) => ({
+        ...c,
+        _ghost: false,
+        children: [],
+      })),
       _ghost: false,
     };
   }
@@ -49,7 +54,11 @@ export function filterFeatureNode(
   if (filteredChildren.length > 0) {
     return {
       ...featureNode,
-      children: filteredChildren.map((c) => ({ ...c, _ghost: false, children: [] })),
+      children: filteredChildren.map((c) => ({
+        ...c,
+        _ghost: false,
+        children: [],
+      })),
       _ghost: true,
     };
   }
@@ -64,7 +73,7 @@ export function filterPlanNode(
 ): FilteredTreeNode | null {
   const planVisible = isVisible(
     planNode.entity,
-    'plan',
+    "plan",
     activeTypes,
     activeStatusColours,
   );

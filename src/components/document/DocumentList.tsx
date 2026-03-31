@@ -3,14 +3,15 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { FileText, Filter } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
+import React from "react";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@radix-ui/themes";
 
 import { EmptyState } from "@/components/common/EmptyState";
 import { DocumentFilterBar } from "./DocumentFilterBar";
 import { useProjectStore } from "@/lib/store/project-store";
 import { useUIStore } from "@/lib/store/ui-store";
-import { getTypeColour } from "@/lib/constants/type-colours";
+
 import type { DocumentRecord } from "@/lib/types";
 import type { SortOption } from "@/lib/store/ui-store";
 
@@ -20,17 +21,21 @@ type SortOptionValue = SortOption;
 
 const DEFAULT_SORT: SortOptionValue = "newest";
 
-const STATUS_COLOURS: Record<string, { bg: string; text: string }> = {
-  approved: { bg: "bg-green-100", text: "text-green-800" },
-  draft: { bg: "bg-gray-100", text: "text-gray-600" },
-  superseded: { bg: "bg-purple-100", text: "text-purple-800" },
+const DOC_TYPE_COLOUR: Record<string, string> = {
+  design: "blue",
+  specification: "teal",
+  "dev-plan": "indigo",
+  research: "amber",
+  report: "gray",
+  policy: "orange",
+  rca: "red",
 };
 
-const UNKNOWN_STATUS_COLOUR = { bg: "bg-gray-100", text: "text-gray-500" };
-
-function getStatusColour(status: string): { bg: string; text: string } {
-  return STATUS_COLOURS[status] ?? UNKNOWN_STATUS_COLOUR;
-}
+const STATUS_COLOUR: Record<string, string> = {
+  approved: "green",
+  draft: "gray",
+  superseded: "purple",
+};
 
 function sortDocuments(
   docs: DocumentRecord[],
@@ -231,8 +236,10 @@ function DocumentList() {
         ) : (
           <div className="space-y-2">
             {sorted.map((doc) => {
-              const typeColour = getTypeColour(doc.type);
-              const statusColour = getStatusColour(doc.status);
+              const typeColor = (DOC_TYPE_COLOUR[doc.type] ??
+                "gray") as React.ComponentProps<typeof Badge>["color"];
+              const statusColor = (STATUS_COLOUR[doc.status] ??
+                "gray") as React.ComponentProps<typeof Badge>["color"];
               const displayTitle =
                 doc.title || doc.path.split("/").pop() || doc.id;
 
@@ -265,27 +272,19 @@ function DocumentList() {
                   {/* Right column — badges */}
                   <div className="flex items-center gap-1.5 shrink-0 pt-0.5">
                     <Badge
-                      variant="secondary"
-                      className={cn(
-                        typeColour.bg,
-                        typeColour.text,
-                        "border-0 font-normal cursor-pointer hover:brightness-90 transition-colors",
-                        activeTypes.has(doc.type) &&
-                          "ring-2 ring-offset-1 ring-primary",
-                      )}
+                      color={typeColor}
+                      variant={activeTypes.has(doc.type) ? "solid" : "soft"}
+                      style={{ cursor: "pointer" }}
                       onClick={(e) => handleTypeBadgeClick(e, doc.type)}
                     >
                       {doc.type}
                     </Badge>
                     <Badge
-                      variant="secondary"
-                      className={cn(
-                        statusColour.bg,
-                        statusColour.text,
-                        "border-0 font-normal cursor-pointer hover:brightness-90 transition-colors",
-                        activeStatuses.has(doc.status) &&
-                          "ring-2 ring-offset-1 ring-primary",
-                      )}
+                      color={statusColor}
+                      variant={
+                        activeStatuses.has(doc.status) ? "solid" : "soft"
+                      }
+                      style={{ cursor: "pointer" }}
                       onClick={(e) => handleStatusBadgeClick(e, doc.status)}
                     >
                       {doc.status}

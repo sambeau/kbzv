@@ -1,7 +1,7 @@
 // src/lib/reader/loader.ts
 
-import { readTextFile, readDir } from '@tauri-apps/plugin-fs';
-import { parse as parseYaml } from 'yaml';
+import { readTextFile, readDir } from "./fs";
+import { parse as parseYaml } from "yaml";
 import type {
   ProjectConfig,
   Plan,
@@ -13,7 +13,7 @@ import type {
   DocumentRecord,
   Incident,
   HumanCheckpoint,
-} from '../types';
+} from "../types";
 
 // ── Types ───────────────────────────────────────────────────────────
 
@@ -42,21 +42,21 @@ export interface LoadResult {
  */
 const ENTITY_DIRECTORIES: Array<{
   dir: string;
-  key: keyof Omit<LoadResult, 'config'>;
+  key: keyof Omit<LoadResult, "config">;
 }> = [
-  { dir: 'plans',       key: 'plans' },
-  { dir: 'features',    key: 'features' },
-  { dir: 'tasks',       key: 'tasks' },
-  { dir: 'bugs',        key: 'bugs' },
-  { dir: 'decisions',   key: 'decisions' },
-  { dir: 'documents',   key: 'documents' },
-  { dir: 'knowledge',   key: 'knowledge' },
-  { dir: 'incidents',   key: 'incidents' },
-  { dir: 'checkpoints', key: 'checkpoints' },
+  { dir: "plans", key: "plans" },
+  { dir: "features", key: "features" },
+  { dir: "tasks", key: "tasks" },
+  { dir: "bugs", key: "bugs" },
+  { dir: "decisions", key: "decisions" },
+  { dir: "documents", key: "documents" },
+  { dir: "knowledge", key: "knowledge" },
+  { dir: "incidents", key: "incidents" },
+  { dir: "checkpoints", key: "checkpoints" },
 ];
 
 /** Log prefix for all console output from this module. */
-const LOG_PREFIX = '[kbzv]';
+const LOG_PREFIX = "[kbzv]";
 
 // ── Main Loader ─────────────────────────────────────────────────────
 
@@ -88,7 +88,7 @@ export async function loadProject(projectPath: string): Promise<LoadResult> {
   try {
     configYaml = await readTextFile(`${kbzPath}/config.yaml`);
   } catch {
-    throw new Error('Not a Kanbanzai project: .kbz/config.yaml not found');
+    throw new Error("Not a Kanbanzai project: .kbz/config.yaml not found");
   }
 
   let config: ProjectConfig;
@@ -98,7 +98,7 @@ export async function loadProject(projectPath: string): Promise<LoadResult> {
     throw new Error(`Failed to parse .kbz/config.yaml: ${String(err)}`);
   }
 
-  if (!config || typeof config !== 'object' || !('version' in config)) {
+  if (!config || typeof config !== "object" || !("version" in config)) {
     throw new Error(".kbz/config.yaml is missing required 'version' field");
   }
 
@@ -138,7 +138,10 @@ export async function loadProject(projectPath: string): Promise<LoadResult> {
     // Filter to .yaml files only
     const yamlFiles = entries
       .map((e) => e.name)
-      .filter((name): name is string => typeof name === 'string' && name.endsWith('.yaml'));
+      .filter(
+        (name): name is string =>
+          typeof name === "string" && name.endsWith(".yaml"),
+      );
 
     for (const filename of yamlFiles) {
       try {
@@ -153,7 +156,7 @@ export async function loadProject(projectPath: string): Promise<LoadResult> {
         const parsed = parseYaml(content);
 
         // Validate that the parsed result is an object with an 'id' field
-        if (parsed && typeof parsed === 'object' && 'id' in parsed) {
+        if (parsed && typeof parsed === "object" && "id" in parsed) {
           (result[key] as Map<string, unknown>).set(
             (parsed as { id: string }).id,
             parsed,

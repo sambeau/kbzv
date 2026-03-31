@@ -1,35 +1,53 @@
-import { FileText, GitBranch } from "lucide-react";
+import { FileText, ListChecks, Bug, Sun, Moon } from "lucide-react";
+import { Tabs, IconButton } from "@radix-ui/themes";
 import { GitInfo } from "@/components/layout/GitInfo";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useUIStore } from "@/lib/store/ui-store";
 import type { ActiveView } from "@/lib/store/ui-store";
 
 function HeaderBar() {
   const activeView = useUIStore((s) => s.activeView);
   const setActiveView = useUIStore((s) => s.setActiveView);
-
-  const handleViewChange = (value: string) => {
-    setActiveView(value as ActiveView);
-  };
+  const themeAppearance = useUIStore((s) => s.themeAppearance);
+  const toggleThemeAppearance = useUIStore((s) => s.toggleThemeAppearance);
 
   return (
-    <header className="flex h-12 shrink-0 items-center justify-between border-b bg-background px-4">
-      {/* Left: View Switcher */}
-      <Tabs value={activeView} onValueChange={handleViewChange}>
-        <TabsList>
-          <TabsTrigger value="documents" className="gap-2">
-            <FileText className="h-4 w-4" />
+    <header className="relative flex h-12 shrink-0 items-stretch bg-background">
+      {/* Full-width tabs — the Tabs.List bottom border spans the entire header */}
+      <Tabs.Root
+        value={activeView}
+        onValueChange={(v) => setActiveView(v as ActiveView)}
+        className="flex-1"
+        color="indigo"
+      >
+        <Tabs.List className="w-full h-12 px-4">
+          <Tabs.Trigger value="documents">
+            <FileText size={14} />
             Docs
-          </TabsTrigger>
-          <TabsTrigger value="workflows" className="gap-2">
-            <GitBranch className="h-4 w-4" />
-            Workflows
-          </TabsTrigger>
-        </TabsList>
-      </Tabs>
+          </Tabs.Trigger>
+          <Tabs.Trigger value="workflows">
+            <ListChecks size={14} />
+            Work
+          </Tabs.Trigger>
+          <Tabs.Trigger value="bugs">
+            <Bug size={14} />
+            Bugs
+          </Tabs.Trigger>
+        </Tabs.List>
+      </Tabs.Root>
 
-      {/* Right: Git info */}
-      <GitInfo />
+      {/* Right controls — absolutely positioned so they don't affect tab width */}
+      <div className="absolute right-4 top-0 bottom-0 flex items-center gap-2">
+        <GitInfo />
+        <IconButton
+          variant="ghost"
+          size="1"
+          color="gray"
+          onClick={toggleThemeAppearance}
+          aria-label="Toggle dark mode"
+        >
+          {themeAppearance === "dark" ? <Sun size={14} /> : <Moon size={14} />}
+        </IconButton>
+      </div>
     </header>
   );
 }

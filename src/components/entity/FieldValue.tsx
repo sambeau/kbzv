@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { formatDistanceToNow } from 'date-fns';
-import { Badge } from '@/components/ui/badge';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { StatusBadge } from '@/components/common/StatusBadge';
-import { EntityLink } from '@/components/common/EntityLink';
-import { cn } from '@/lib/utils';
+// src/components/entity/FieldValue.tsx
+
+import { useState } from "react";
+import { formatDistanceToNow } from "date-fns";
+import { Badge, Tooltip } from "@radix-ui/themes";
+import { StatusBadge } from "@/components/common/StatusBadge";
+import { EntityLink } from "@/components/common/EntityLink";
 
 // ── Types ───────────────────────────────────────────────────────────
 
@@ -14,34 +14,40 @@ interface FieldValueProps {
   label: string;
   value: FieldValueType;
   type:
-    | 'text'
-    | 'timestamp'
-    | 'entity-ref'
-    | 'entity-ref-list'
-    | 'tag-list'
-    | 'string-list'
-    | 'long-text'
-    | 'number'
-    | 'severity'
-    | 'priority'
-    | 'status';
+    | "text"
+    | "timestamp"
+    | "entity-ref"
+    | "entity-ref-list"
+    | "tag-list"
+    | "string-list"
+    | "long-text"
+    | "number"
+    | "severity"
+    | "priority"
+    | "status";
   className?: string;
   alwaysExpanded?: boolean;
 }
 
 // ── Severity / Priority badge colours ──────────────────────────────
 
-const SEVERITY_PRIORITY_STYLES: Record<string, string> = {
-  critical: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
-  high: 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300',
-  medium: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300',
-  low: 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
+const SEVERITY_COLOURS: Record<string, "red" | "orange" | "yellow" | "gray"> = {
+  critical: "red",
+  high: "orange",
+  medium: "yellow",
+  low: "gray",
 };
 
 // ── Long text collapsible ───────────────────────────────────────────
 
-function LongTextValue({ value, alwaysExpanded }: { value: string; alwaysExpanded?: boolean }) {
-  const lines = value.split('\n');
+function LongTextValue({
+  value,
+  alwaysExpanded,
+}: {
+  value: string;
+  alwaysExpanded?: boolean;
+}) {
+  const lines = value.split("\n");
   const needsCollapse = !alwaysExpanded && lines.length > 3;
   const [isOpen, setIsOpen] = useState(false);
 
@@ -49,18 +55,18 @@ function LongTextValue({ value, alwaysExpanded }: { value: string; alwaysExpande
     return <pre className="text-sm whitespace-pre-wrap font-mono">{value}</pre>;
   }
 
-  const preview = lines.slice(0, 3).join('\n');
+  const preview = lines.slice(0, 3).join("\n");
 
   return (
     <div>
       <pre className="text-sm whitespace-pre-wrap font-mono">
-        {isOpen ? value : preview + '…'}
+        {isOpen ? value : preview + "…"}
       </pre>
       <button
-        className="text-xs text-primary hover:underline mt-1"
+        className="text-xs text-[var(--accent-11)] hover:underline mt-1"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? 'Show less' : 'Show more'}
+        {isOpen ? "Show less" : "Show more"}
       </button>
     </div>
   );
@@ -77,25 +83,28 @@ function TimestampValue({ value }: { value: string }) {
   }
 
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <span className="text-sm text-muted-foreground cursor-default">{relative}</span>
-      </TooltipTrigger>
-      <TooltipContent>
-        <p>{value}</p>
-      </TooltipContent>
+    <Tooltip content={value}>
+      <span className="text-sm text-muted-foreground cursor-default">
+        {relative}
+      </span>
     </Tooltip>
   );
 }
 
 // ── Main component ──────────────────────────────────────────────────
 
-function FieldValue({ label, value, type, className, alwaysExpanded }: FieldValueProps) {
+function FieldValue({
+  label,
+  value,
+  type,
+  className,
+  alwaysExpanded,
+}: FieldValueProps) {
   // Absent-field rule: render nothing for empty values
   if (
     value === undefined ||
     value === null ||
-    value === '' ||
+    value === "" ||
     (Array.isArray(value) && value.length === 0)
   ) {
     return null;
@@ -104,19 +113,21 @@ function FieldValue({ label, value, type, className, alwaysExpanded }: FieldValu
   let content: React.ReactNode;
 
   switch (type) {
-    case 'text':
-      content = <span className={cn('text-sm', className)}>{value as string}</span>;
+    case "text":
+      content = (
+        <span className={`text-sm ${className ?? ""}`}>{value as string}</span>
+      );
       break;
 
-    case 'timestamp':
+    case "timestamp":
       content = <TimestampValue value={value as string} />;
       break;
 
-    case 'entity-ref':
+    case "entity-ref":
       content = <EntityLink entityId={value as string} />;
       break;
 
-    case 'entity-ref-list':
+    case "entity-ref-list":
       content = (
         <div className="flex flex-wrap gap-1.5">
           {(value as string[]).map((id) => (
@@ -126,11 +137,11 @@ function FieldValue({ label, value, type, className, alwaysExpanded }: FieldValu
       );
       break;
 
-    case 'tag-list':
+    case "tag-list":
       content = (
         <div className="flex flex-wrap gap-1">
           {(value as string[]).map((tag) => (
-            <Badge key={tag} variant="secondary" className="text-xs">
+            <Badge key={tag} variant="soft" color="gray" radius="full">
               {tag}
             </Badge>
           ))}
@@ -138,11 +149,16 @@ function FieldValue({ label, value, type, className, alwaysExpanded }: FieldValu
       );
       break;
 
-    case 'string-list':
+    case "string-list":
       content = (
         <div className="flex flex-wrap gap-1">
           {(value as string[]).map((item) => (
-            <Badge key={item} variant="outline" className="text-xs font-mono">
+            <Badge
+              key={item}
+              variant="outline"
+              color="gray"
+              style={{ fontFamily: "monospace" }}
+            >
               {item}
             </Badge>
           ))}
@@ -150,26 +166,32 @@ function FieldValue({ label, value, type, className, alwaysExpanded }: FieldValu
       );
       break;
 
-    case 'long-text':
-      content = <LongTextValue value={value as string} alwaysExpanded={alwaysExpanded} />;
+    case "long-text":
+      content = (
+        <LongTextValue
+          value={value as string}
+          alwaysExpanded={alwaysExpanded}
+        />
+      );
       break;
 
-    case 'number':
+    case "number":
       content = <span className="text-sm font-mono">{value as number}</span>;
       break;
 
-    case 'severity':
-    case 'priority': {
+    case "severity":
+    case "priority": {
       const v = (value as string).toLowerCase();
+      const color = SEVERITY_COLOURS[v] ?? "gray";
       content = (
-        <Badge className={cn(SEVERITY_PRIORITY_STYLES[v] ?? SEVERITY_PRIORITY_STYLES.low)}>
+        <Badge color={color} variant="soft">
           {value as string}
         </Badge>
       );
       break;
     }
 
-    case 'status':
+    case "status":
       content = <StatusBadge status={value as string} />;
       break;
 

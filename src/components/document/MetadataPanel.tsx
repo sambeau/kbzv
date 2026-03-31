@@ -1,15 +1,47 @@
 // src/components/document/MetadataPanel.tsx
 
+import { useMemo } from "react";
+import { Badge } from "@radix-ui/themes";
 import { useProjectStore } from "@/lib/store/project-store";
 import { useUIStore } from "@/lib/store/ui-store";
 import { getRelatedEntities } from "@/lib/query/references";
-import { getTypeColour } from "@/lib/constants/type-colours";
 import { DriftBadge } from "./DriftBadge";
 import { EntityLink } from "@/components/common/EntityLink";
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 import type { DocumentRecord } from "@/lib/types";
 import type { DocumentReadResult } from "@/lib/reader/document";
+
+// Fields already covered by the record — skip these in front matter display
+const RECORD_COVERED_KEYS = new Set([
+  "title",
+  "type",
+  "status",
+  "owner",
+  "path",
+  "content_hash",
+  "superseded_by",
+  "supersedes",
+  "created",
+  "created_by",
+  "updated",
+]);
+
+function formatFrontMatterValue(value: unknown): string {
+  if (value === null || value === undefined) return "";
+  if (Array.isArray(value)) return value.join(", ");
+  if (typeof value === "object") return JSON.stringify(value);
+  return String(value);
+}
+
+// Map document type strings to Radix Themes colour names
+const DOC_TYPE_COLOUR: Record<string, string> = {
+  design: "blue",
+  specification: "teal",
+  "dev-plan": "indigo",
+  research: "amber",
+  report: "gray",
+  policy: "orange",
+  rca: "red",
+};
 
 // ── Props ───────────────────────────────────────────────────────────
 
@@ -70,16 +102,29 @@ function ContentHashStatus({
 // ── MetadataPanel ───────────────────────────────────────────────────
 
 function MetadataPanel({ record, readResult }: MetadataPanelProps) {
-  const relatedEntities = useProjectStore((state) =>
-    getRelatedEntities(record.id, state),
+  // Subscribe to the two maps that feed getRelatedEntities so that the memo
+  // dependency array receives stable Map references (Zustand creates a new Map
+  // instance on every update, so these are reliable change signals).
+  const plans = useProjectStore((s) => s.plans);
+  const features = useProjectStore((s) => s.features);
+
+  // Derive related entities only when the relevant data actually changes.
+  // Calling getRelatedEntities directly inside a Zustand selector creates a
+  // new array reference on every store update, which triggers an infinite
+  // re-render loop via useSyncExternalStore's snapshot comparison.
+  const relatedEntities = useMemo(
+    () => getRelatedEntities(record.id, useProjectStore.getState()),
+    [record.id, plans, features],
   );
+
   const activateFilter = useUIStore((s) => s.activateFilter);
   const documentFilters = useUIStore((s) => s.documentFilters);
 
   const contentHashActual =
     readResult && !readResult.fileMissing ? readResult.contentHash : undefined;
 
-  const colour = getTypeColour(record.type);
+  const typeColour = (DOC_TYPE_COLOUR[record.type] ??
+    "gray") as React.ComponentProps<typeof Badge>["color"];
   const isTypeActive = documentFilters.types.includes(record.type);
 
   return (
@@ -104,13 +149,9 @@ function MetadataPanel({ record, readResult }: MetadataPanelProps) {
       {/* 3. Type — clickable to activate document type filter */}
       <MetadataField label="Type">
         <Badge
-          variant="secondary"
-          className={cn(
-            colour.bg,
-            colour.text,
-            "border-0 font-normal cursor-pointer hover:brightness-90 transition-colors",
-            isTypeActive && "ring-2 ring-offset-1 ring-primary",
-          )}
+          color={typeColour}
+          variant={isTypeActive ? "solid" : "soft"}
+          style={{ cursor: "pointer" }}
           onClick={() => activateFilter("documents", "type", record.type)}
         >
           {record.type}
@@ -167,6 +208,33 @@ function MetadataPanel({ record, readResult }: MetadataPanelProps) {
       <MetadataField label="Content Hash">
         <ContentHashStatus record={record} readResult={readResult} />
       </MetadataField>
+
+      {/* 8. Front Matter */}
+      {(() => {
+        const fm =
+          readResult && !readResult.fileMissing ? readResult.frontMatter : null;
+        if (!fm) return null;
+        const entries = Object.entries(fm).filter(
+          ([key]) => !RECORD_COVERED_KEYS.has(key),
+        );
+        if (entries.length === 0) return null;
+        return (
+          <MetadataField label="Front Matter">
+            <div className="space-y-2">
+              {entries.map(([key, value]) => (
+                <div key={key}>
+                  <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
+                    {key}
+                  </div>
+                  <span className="text-xs text-muted-foreground break-all">
+                    {formatFrontMatterValue(value)}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </MetadataField>
+        );
+      })()}
     </div>
   );
 }

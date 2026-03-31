@@ -1,10 +1,7 @@
+// src/components/common/EntityLink.tsx
+
 import React from "react";
-import { cn } from "@/lib/utils";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { Tooltip } from "@radix-ui/themes";
 import { useProjectStore } from "@/lib/store/project-store";
 import { useUIStore, resolveEntityType } from "@/lib/store/ui-store";
 import type {
@@ -73,26 +70,16 @@ function EntityLink({ entityId, className }: EntityLinkProps) {
     return storeMap[type]?.get(entityId) ?? null;
   });
 
-  // Loading state: project is open but entities haven't loaded yet
   const isLoading = useProjectStore(
     (s) => s.projectPath !== null && s.plans.size === 0,
   );
   const isResolved = entity !== null;
   const isBroken = !isLoading && !isResolved;
 
-  const tooltip = isResolved
-    ? getEntityLabel(type!, entity)
-    : isBroken
-      ? "Entity not found"
-      : "Loading…";
-
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    // Prevent click from bubbling to parent clickable elements (tree nodes, list rows, etc.)
     e.stopPropagation();
-
-    if (!isResolved || !type) return; // broken or loading → no-op
-
+    if (!isResolved || !type) return;
     if (type === "document") {
       navigateToDocument(entityId);
     } else {
@@ -100,10 +87,16 @@ function EntityLink({ entityId, className }: EntityLinkProps) {
     }
   };
 
+  const label = isResolved
+    ? getEntityLabel(type!, entity)
+    : isBroken
+      ? "Entity not found"
+      : "Loading…";
+
   if (isLoading) {
     return (
       <span
-        className={cn("font-mono text-sm text-muted-foreground", className)}
+        className={`font-mono text-sm text-muted-foreground ${className ?? ""}`}
       >
         {entityId}
       </span>
@@ -112,42 +105,25 @@ function EntityLink({ entityId, className }: EntityLinkProps) {
 
   if (isBroken) {
     return (
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <span
-            className={cn(
-              "font-mono text-sm text-muted-foreground/50 line-through cursor-default",
-              className,
-            )}
-          >
-            {entityId}
-          </span>
-        </TooltipTrigger>
-        <TooltipContent>
-          <p>Entity not found</p>
-        </TooltipContent>
+      <Tooltip content="Entity not found">
+        <span
+          className={`font-mono text-sm text-muted-foreground/50 line-through cursor-default ${className ?? ""}`}
+        >
+          {entityId}
+        </span>
       </Tooltip>
     );
   }
 
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <button
-          type="button"
-          className={cn(
-            "font-mono text-sm text-primary underline-offset-4 hover:underline cursor-pointer",
-            "bg-transparent border-none p-0 m-0 inline text-left",
-            className,
-          )}
-          onClick={handleClick}
-        >
-          {entityId}
-        </button>
-      </TooltipTrigger>
-      <TooltipContent>
-        <p>{tooltip}</p>
-      </TooltipContent>
+    <Tooltip content={label}>
+      <button
+        type="button"
+        className={`font-mono text-sm text-[var(--accent-11)] underline-offset-4 hover:underline cursor-pointer bg-transparent border-none p-0 m-0 inline text-left ${className ?? ""}`}
+        onClick={handleClick}
+      >
+        {entityId}
+      </button>
     </Tooltip>
   );
 }

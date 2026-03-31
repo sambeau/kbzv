@@ -229,7 +229,7 @@ export const useProjectStore = create<ProjectState>((set, get) => ({
 
   // ── reloadEntity ──────────────────────────────────────────────
   reloadEntity: async (entityType: EntityTypeName, filePath: string) => {
-    const { readTextFile } = await import("@tauri-apps/plugin-fs");
+    const { readTextFile } = await import("../reader/fs");
     const { parse: parseYaml } = await import("yaml");
 
     const content = await readTextFile(filePath);

@@ -1,6 +1,6 @@
 import { ChevronRight, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@radix-ui/themes";
 import { StatusDot } from "./StatusDot";
 import { useTreeContext } from "./TreeContext";
 import { useUIStore } from "@/lib/store/ui-store";
@@ -65,7 +65,7 @@ function StandaloneSection({
         )}
         <span>{title}</span>
         {entities.length > 0 && (
-          <Badge variant="secondary" className="text-xs px-1.5 py-0">
+          <Badge variant="soft" color="gray" size="1">
             {entities.length}
           </Badge>
         )}

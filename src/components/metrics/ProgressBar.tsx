@@ -1,5 +1,6 @@
-import { cn } from '@/lib/utils';
-import { Progress } from '@/components/ui/progress';
+// src/components/metrics/ProgressBar.tsx
+
+import { Progress } from "@radix-ui/themes";
 
 interface ProgressBarProps {
   done: number;
@@ -12,7 +13,7 @@ function ProgressBar({ done, total, percentage, label }: ProgressBarProps) {
   if (total === 0) {
     return (
       <p className="text-sm text-muted-foreground italic">
-        No {label?.toLowerCase() ?? 'items'}
+        No {label?.toLowerCase() ?? "items"}
       </p>
     );
   }
@@ -25,10 +26,8 @@ function ProgressBar({ done, total, percentage, label }: ProgressBarProps) {
       </p>
       <Progress
         value={percentage}
-        className={cn(
-          'h-2',
-          percentage === 100 && '[&>div]:bg-green-500',
-        )}
+        color={percentage === 100 ? "green" : "blue"}
+        size="1"
       />
     </div>
   );
