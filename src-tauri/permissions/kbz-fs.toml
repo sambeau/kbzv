@@ -1,0 +1,7 @@
+[[set]]
+identifier = "kbz-fs-read"
+description = "Read access to all files under $HOME for reading Kanbanzai project state"
+permissions = [
+    "fs:read-all",
+    "fs:scope-home-recursive",
+]

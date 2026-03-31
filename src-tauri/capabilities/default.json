@@ -4,8 +4,12 @@
   "windows": ["main"],
   "permissions": [
     "core:default",
-    "fs:default",
     "dialog:default",
+    "fs:allow-home-read-recursive",
+    "kbz-fs-read",
+    "allow-validate-project",
+    "allow-read-text-file",
+    "allow-read-directory",
     {
       "identifier": "shell:allow-execute",
       "allow": [

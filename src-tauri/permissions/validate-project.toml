@@ -1,0 +1,14 @@
+[[permission]]
+identifier = "allow-validate-project"
+description = "Allow the validate_project command"
+commands.allow = ["validate_project"]
+
+[[permission]]
+identifier = "allow-read-text-file"
+description = "Allow the read_text_file command"
+commands.allow = ["read_text_file"]
+
+[[permission]]
+identifier = "allow-read-directory"
+description = "Allow the read_directory command"
+commands.allow = ["read_directory"]
